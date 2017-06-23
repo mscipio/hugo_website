@@ -1,7 +1,7 @@
 +++
 # Contact widget.
 
-date = "2016-04-20T00:00:00"
+date = "2017-06-23T00:00:00"
 draft = false
 
 title = "Contact"
@@ -15,4 +15,3 @@ weight = 70
 autolink = true
 
 +++
-

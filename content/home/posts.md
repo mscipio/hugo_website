@@ -2,7 +2,7 @@
 # Recent Posts widget.
 # This widget displays recent posts from `content/post/`.
 
-date = "2016-04-20T00:00:00"
+date = "2017-06-23T00:00:00"
 draft = false
 
 title = "Recent Posts"
@@ -10,7 +10,7 @@ subtitle = ""
 widget = "posts"
 
 # Order that this section will appear in.
-weight = 40
+weight = 2
 
 # Show posts that contain the following tags. Default to any tags.
 tags = []
@@ -19,4 +19,3 @@ tags = []
 count = 5
 
 +++
-

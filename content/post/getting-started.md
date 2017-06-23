@@ -5,12 +5,12 @@ tags = ["academic", "hugo"]
 title = "Getting started with the Academic framework for Hugo"
 math = true
 summary = """
-Create a beautifully simple personal or academic website in under 10 minutes. 
+Create a beautifully simple personal or academic website in under 10 minutes.
 """
 
 [header]
-image = "headers/getting-started.png"
-caption = "Image credit: [**Academic**](https://github.com/gcushen/hugo-academic/)"
+#image = "headers/getting-started.png"
+#caption = "Image credit: [**Academic**](https://github.com/gcushen/hugo-academic/)"
 
 +++
 
@@ -66,7 +66,7 @@ The core parameters for the website can be edited in the `config.toml` configura
 - Set `baseurl` to your website URL (we recommend [GitHub Pages](https://georgecushen.com/create-your-website-with-hugo/) for free hosting)
 - Set `title` to your desired website title such as your name
 - The example Disqus commenting variable should be cleared (e.g. `disqusShortname = ""`) or set to your own [Disqus](https://disqus.com/) shortname to enable commenting
-- Edit your details under `[params]`; these will be displayed mainly in the homepage *about* and *contact* widgets (if used). To disable a contact field, simply clear the value to `""`. 
+- Edit your details under `[params]`; these will be displayed mainly in the homepage *about* and *contact* widgets (if used). To disable a contact field, simply clear the value to `""`.
 - Place a square cropped portrait photo named `portrait.jpg` into the `static/img/` folder, overwriting any defaults. Alternatively, you can edit the `avatar` filepath to point to a different image name or clear the value to disable the avatar feature.
 - To enable LaTeX math for your site, set `math = true`
 - Social/academic networking links are defined as multiples of `[[params.social]]`. They can be created or deleted as necessary.
