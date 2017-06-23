@@ -1,5 +1,5 @@
 baseurl = "https://mscipio.github.io/"  # End your URL with a `/` trailing slash.
-title = "Michele Scipioni's personal page"
+title = "Michele Scipioni"
 copyright = "&copy; 2017 Michele Scipioni"
 theme = "academic"
 enableEmoji = true
