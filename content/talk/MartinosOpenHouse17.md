@@ -21,7 +21,7 @@ url_video = ""
 
 +++
 
-![Kinetic compressive sensing: improving image reconstruction and parametric maps - Athinoula A. Martinos Center Scientific Open House 2017 - poster](data/conferences/MartinosOpenHouse2017/image_poster.png)
+![Kinetic compressive sensing: improving image reconstruction and parametric maps - Athinoula A. Martinos Center Scientific Open House 2017 - poster](../../data/conferences/MartinosOpenHouse2017/image_poster.png)
 
 **Introduction**
 
