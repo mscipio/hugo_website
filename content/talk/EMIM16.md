@@ -21,6 +21,8 @@ url_video = ""
 
 +++
 
+![Pharmacokinetic analysis of dynamic PET data: comparison between direct parametric reconstruction and conventional indirect voxel-based estimation - European Molecular Imaging Meeting - 2016 - poster](../../data/conferences/EMIM16/poster.png)
+
 **Introduction**
 
 Dynamic positron emission tomography (PET) studies allow to quantify tissue-specific biochemical properties. Conventional pharmacokinetic analysis requires the voxel-wise time activity curve fitting performed on a sequence of independently reconstructed PET images. Direct parametric reconstruction methods combine emission image reconstruction and kinetic modeling into a single formula, estimating parametric images directly from raw data. In the present work a comparison between the two pharmacokinetic analysis methods is performed on simulated and clinical brain 18F[FDG] PET data.

@@ -4,7 +4,7 @@ title = "Kinetic compressive sensing: improving image reconstruction and paramet
 abstract = ""
 abstract_short = ""
 event = "Athinoula A. Martinos Center Scientific Open House 2017"
-event_url = "http://www.cyprusconferences.org/medicon2016/"
+event_url = ""
 location = "Athinoula A. Martinos Center for Biomedical Imaging, Boston, MA, USA"
 
 selected = false
