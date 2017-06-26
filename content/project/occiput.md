@@ -6,7 +6,7 @@ date = "2017-06-26"
 title = "Occiput.io"
 
 # Project summary to display on homepage.
-summary = "Open source tomographic reconstruction software for PET, PET-MRI and SPECT in 2D, 3D (volumetric) and 4D (spatio-temporal) in Python, using GPUs."
+summary = "Open source tomographic reconstruction software for 2D, 3D and 4D PET, PET-MRI and SPECT, in Python using GPUs."
 
 # Optional image to display on homepage (relative to `static/img/` folder).
 image_preview = "occiput.png"

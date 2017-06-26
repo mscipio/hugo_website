@@ -133,20 +133,32 @@ defaultContentLanguageInSubdir = false
     icon_pack = "fa"
     link = "http://it.linkedin.com/in/scipionimichele"
 
+  [[params.social]]
+    icon = "id-card"
+    icon_pack = "fa"
+    link = "data/CV_eng_LONG.pdf"
+
   #[[params.social]]
   #  icon = "twitter"
   #  icon_pack = "fa"
   #  link = "//twitter.com/GeorgeCushen"
 
   [[params.social]]
+    icon = "github"
+    icon_pack = "fa"
+    link = "//github.com/mscipio"
+
+  [[params.social]]
+    icon = "researchgate"
+    icon_pack = "ai"
+    link = "https://www.researchgate.net/profile/Michele_Scipioni"
+
+  [[params.social]]
     icon = "google-scholar"
     icon_pack = "ai"
     link = "https://scholar.google.co.uk/citations?user=fiF9xP8AAAAJ"
 
-  [[params.social]]
-    icon = "github"
-    icon_pack = "fa"
-    link = "//github.com/mscipio"
+
 
 
 # Navigation Links

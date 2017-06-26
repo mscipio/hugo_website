@@ -1,7 +1,7 @@
 +++
 date = "2016-04-20T10:00:00"
 draft = false
-tags = []
+tags = ["academic", "hugo","tutorial"]
 title = "Writing content with Markdown, LaTeX, and Shortcodes"
 math = true
 +++
@@ -61,7 +61,7 @@ A numbered figure with caption:
 See the [Emoji cheat sheet](http://www.webpagefx.com/tools/emoji-cheat-sheet/) for available emoticons. The following serves as an example, but you should remove the spaces between each emoji name and pair of semicolons:
 
     I : heart : Academic : smile :
-    
+
 I :heart: Academic :smile:
 
 ## Blockquote
@@ -73,7 +73,7 @@ I :heart: Academic :smile:
 ## Footnotes
 
     I have more [^1] to say.
-    
+
     [^1]: Footnote example.
 
 I have more [^1] to say.
