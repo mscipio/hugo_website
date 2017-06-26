@@ -37,10 +37,12 @@ weight = 1
 
 +++
 
-# Biography
+# About me
 
-I am an italian Ph.D. student in Biomedical Engineering. My main research interests, at the present moment, include tomographic image reconstruction for medical imaging (mainly PET and MRI), and dynamic studies with a specific focus on kinetic modeling and parametric maps generation.
+I am an Italian Biomedical Engineering Ph.D. student. My main research interests, at the moment, include tomographic image reconstruction for medical imaging (mainly PET and MRI), and kinetic modeling of dynamic acquisitions with a specific focus on parametric maps generation.
 
-During the first years of my Ph.D., I have been dealing with problems of non-linear optimization and fitting of complex ODE-based compartmental models, as well as with the development of hierarchical Bayesian models, both from a theoretical and computational point of view. Giving the particular nature of the problem of parametric mapping, I have had the chance to get in touch with CUDA GP-GPU programming, with the aim of efficiently parallelize the problem of fitting a certain model to all the voxel of a 3D PET or DCE-MRI volume.
+During the first two years of my Ph.D., I have been dealing with theoretical and computational issues, related to the previously mentioned topics. Working with pharmacokinetic modeling basically means working with **non-linear optimization** and fitting of complex **ODE-based compartmental models**, while including this metabolic information into the reconstruction of 4D PET/MRI time series required me to develop and implement **hierarchical Bayesian models**. Giving the particular nature of the problem of parametric mapping, I have also had the chance to get in touch with **CUDA GP-GPU programming**, with the aim of efficiently parallelize the problem of fitting a specific model to every voxel of a 3D PET or DCE-MRI volume.
+
+My *alma mater* is the ***University of Pisa***, in Italy, but I also spent part of my Ph.D. at the ***Athinoula A. Martinos Center for Biomedical Imaging***, in Boston, and I am still working with them, above all with the two groups mainly involved with PET/MR: [Catana Lab](https://www.nmr.mgh.harvard.edu/user/7025), and [Price Lab](https://www.nmr.mgh.harvard.edu/user/3482467).
 
 [//]: # (Michele Scipioni is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of # self-organizing robots, and mobile sensor networks.)

@@ -1,7 +1,7 @@
 +++
 date = "2016-04-20T11:00:00"
 draft = false
-tags = ["academic", "hugo"]
+tags = ["academic", "hugo","tutorial"]
 title = "Managing content"
 math = false
 +++
@@ -12,7 +12,7 @@ To enable LaTeX math rendering for a page, you should include `math = true` in t
 
 To disable source code highlighting by default for all pages, set `highlight = false` in `config.toml`. You can then enable source code highlighting only on pages that need it by setting `highlight = true` in that page's preamble. See the [code-highlighting docs]({{< ref "post/writing-markdown-latex.md#code-highlighting" >}}) for more details.
 
-To display a featured image in content page headers, the parameters below can be inserted towards the end of a page's `+++` preamble. It is assumed that the image is located in your `static/img/` folder, so the full path in the example below will be `static/img/headers/getting-started.png`. The `caption` parameter can be used to write an image caption or credit. 
+To display a featured image in content page headers, the parameters below can be inserted towards the end of a page's `+++` preamble. It is assumed that the image is located in your `static/img/` folder, so the full path in the example below will be `static/img/headers/getting-started.png`. The `caption` parameter can be used to write an image caption or credit.
 
 ```toml
 [header]
@@ -109,7 +109,7 @@ You can edit the title and add your own content, such as an introduction, by cre
     hugo new post/_index.md
     hugo new publication/_index.md
     hugo new talk/_index.md
-    
+
 Then remove all parameters except for `title`, `math`, `highlight`, and `date`. Edit the `title` parameter as desired and add any content after the `+++` preamble/frontmatter ends. For example, you should have something similar to:
 
 ```toml

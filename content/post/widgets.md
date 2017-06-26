@@ -1,7 +1,7 @@
 +++
 date = "2016-04-20T11:00:00"
 draft = false
-tags = ["academic", "hugo"]
+tags = ["academic", "hugo","tutorial"]
 title = "Customizing the homepage with widgets"
 math = false
 summary = """
@@ -31,7 +31,7 @@ By default, publications will be displayed in a simple list. If you prefer a mor
 
 ## Add a widget to the homepage
 
-To add a widget manually, copy the relevant widget from `themes/academic/exampleSite/content/home/` to your `content/home/` folder. 
+To add a widget manually, copy the relevant widget from `themes/academic/exampleSite/content/home/` to your `content/home/` folder.
 
 Widget identifiers are set to their respective filenames, so a `content/home/about.md` widget can be linked from the navigation bar by setting the relevant URL as `"#about"` in `config.toml`.
 

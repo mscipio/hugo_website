@@ -29,14 +29,18 @@ caption = ""
 
 +++
 
-Occiput.io in an open source software for Tomographic reconstruction based on GPU computing and on Python.
-The design of occiput.io makes it extremely easy to reconstruct tomographic images starting from the raw data produced by imaging systems: PET, PET-MRI and SPECT. Occiput.io is designed for GPU computing, it’s blazing fast.
-To date, Occiput and the NiftyRec ray-tracer (on which Occiput is based), have been downloaded more than 12000 times.
+[***OFFICIAL WEBSITE OF THE PROJECT***](http://occiput.mgh.harvard.edu/)
 
-The design of occiput.io enables 2D, 3D (volumetric) and 4D (spatio-temporal) dynamic tomographic imaging, joint reconstruction of multiple parameters (e.g. MLAA), motion-aware imaging and more.
+**Occiput.io** is an open source software for Tomographic reconstruction based on GPU computing and on Python.
 
-Occiput enables the interactive tomographic reconstruction in the cloud, using Jupyter and IPython.
+The design of *occiput.io* makes it extremely easy to reconstruct tomographic images starting from the raw data produced by imaging systems: PET, PET-MRI and SPECT. Occiput.io is designed for GPU computing, it’s ***blazing fast***!
 
-A Python package implementing the interface to the Siemens Biograph mMR PET-MRI scanner (including access to raw listmode data, sinograms, scatter data, physiological data) is available upon request (occiput.reconstruction@gmail.com). Authorization from Siemens will be required.
+To date, **Occiput** and the **NiftyRec** ray-tracer (on which Occiput is based), have been downloaded more than 12000 times.
+
+The design of occiput.io enables 2D, 3D (volumetric) and 4D (spatio-temporal) dynamic tomographic imaging, joint reconstruction of multiple parameters (e.g. *MLAA*), motion-aware imaging and more.
+
+Occiput enables the interactive tomographic reconstruction in the cloud, using ***Jupyter*** and ***IPython***.
+
+A Python package implementing the interface to the ***Siemens Biograph mMR PET-MRI scanner*** (including access to raw listmode data, sinograms, scatter data, physiological data) is available upon request (occiput.reconstruction@gmail.com). <u>Authorization from Siemens will be required</u>.
 
 To get started with Occiput, go to the [project source code](https://github.com/mscipio/occiput)  and follow the installation instructions. The source code contains Jupyter notebooks with documentation and examples.

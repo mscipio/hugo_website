@@ -9,7 +9,7 @@ title = "CUDA-GPU kinetic modeling"
 summary = "GPU-LMfit - Python/CUDA library for parallel fitting of compartmental models to 4D medical imaging volumes."
 
 # Optional image to display on homepage (relative to `static/img/` folder).
-image_preview = "nvidia.png"
+image_preview = "GPU-LMfit.png"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
@@ -28,3 +28,6 @@ image = "headers/cuda.jpg"
 caption = ""
 
 +++
+
+The source code and detailed instruction about how to install and use this toolbox will be provided soon.
+Keep checking the website for future updates.
