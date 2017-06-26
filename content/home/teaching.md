@@ -14,14 +14,8 @@ weight = 60
 
 +++
 
-This is an example of using the *custom* widget to create your own homepage section.
+During my Ph.D. at the University of Pisa, I have had the chance to work as a Graduate Teaching Assistant for the following classes:
 
-I am a teaching instructor for the following courses at University X:
-
-- CS101: An intro to computer science
-- CS102: An intro to computer science
-- CS103: An intro to computer science
-- CS104: An intro to computer science
-- CS105: An intro to computer science
-- CS106: An intro to computer science
-- CS107: An intro to computer science
+- **[Ing-Inf/06]**: <span style="color:blue"><b>Biomedical Imaging</b></span> (***6 CFU***)
+  - *Iterative reconstruction algorithms for emission tomography (ML-EM and OS-EM)* [[Download slides]](data/teaching/Iterative_reconstruction_of_tomographic_images_28_10_2016.pdf")
+  - *Kinetic modeling of PET dynamic datasets; introduction to the solution of ODE systems in Matlab (ode45) and non linear curve fitting (lsqnonlin and lsqcurvefit)* [[Download slides]](data/teaching/Kinetic_Modeling_02_12_2016.pdf")
