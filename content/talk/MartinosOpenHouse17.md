@@ -10,8 +10,8 @@ location = "Athinoula A. Martinos Center for Biomedical Imaging, Boston, MA, USA
 selected = false
 math = true
 
-url_pdf = "data/conferences/MEDICON16/proceeding.pdf"
-url_slides = "data/conferences/MEDICON16/slides.pdf"
+url_pdf = ""
+url_slides = "data/conferences/MartinosOpenHouse2017/poster.pdf"
 url_video = ""
 
 # Optional featured image (relative to `static/img/` folder).
@@ -20,6 +20,8 @@ url_video = ""
 #caption = "My caption :smile:"
 
 +++
+
+![Kinetic compressive sensing: improving image reconstruction and parametric maps - Athinoula A. Martinos Center Scientific Open House 2017 - poster](data/conferences/MartinosOpenHouse2017/image_poster.png)
 
 **Introduction**
 
