@@ -24,7 +24,7 @@ math = false
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-image = "headers/cuda.jpg"
+image = "headers/kmtool.png"
 caption = ""
 
 +++
@@ -35,48 +35,48 @@ Kinetic Modeling Toolbox designed to estimate kinetic parameters from 4D PET and
 
 #### A few screenshots:
 
----
+
 
 **Loading 4D volume:**
 
 ![alt text](../../img/KMtool_project_page/import.png "Logo Title Text 1")
 
----
+
 **Select colormap and adjust visual scale:**
 
 ![alt text](../../img/KMtool_project_page/colormap.png "Logo Title Text 1")
 
----
+
 
 **Main window after loading 4D volume:**
 
 ![alt text](../../img/KMtool_project_page/main.png "Logo Title Text 1")
 
----
+
 
 **Roi selection mode (example: selecting input function):**
 
 ![alt text](../../img/KMtool_project_page/ROI.png "Logo Title Text 1")
 
----
+
 
 **Fitting image-derived AIF with a theoretical model:**
 
 ![alt text](../../img/KMtool_project_page/input.png "Logo Title Text 1")
 
----
+
 
 **After selecting a tissue ROI, choose the suitable model:**
 
 ![alt text](../../img/KMtool_project_page/tissue.png "Logo Title Text 1")
 
----
+
 
 **Fitting result:**
 
 ![alt text](../../img/KMtool_project_page/fitting.png "Logo Title Text 1")
 
----
+
 
 **Residuals:**
 
