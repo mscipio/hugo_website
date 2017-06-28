@@ -1,7 +1,7 @@
 +++
 date = "2016-05-01T11:00:00"
 draft = false
-tags = ["bayes" "bayesian" "emcee" "posterior" "pymc" "python"]
+tags = ["bayes" ,"bayesian" ,"emcee", "posterior", "pymc", "python"]
 title = "Calculating the posterior probability distribution of parameters with emcee python module"
 math = false
 summary = """
