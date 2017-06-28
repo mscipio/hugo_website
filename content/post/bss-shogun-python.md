@@ -147,7 +147,7 @@ wavPlayer(s1, fs1)
 
 
 
-![png](../../img/bss-shogun-python/output_8_2.png)
+![png](../../img/posts/bss-shogun-python/output_8_2.png)
 
 
 Now let's load a second audio clip:
@@ -168,7 +168,7 @@ wavPlayer(s2, fs2)
 ```
 
 
-![png](../../img/bss-shogun-python/output_10_0.png)
+![png](../../img/posts/bss-shogun-python/output_10_0.png)
 
 
 
@@ -190,7 +190,7 @@ wavPlayer(s3, fs3)
 ```
 
 
-![png](../../img/bss-shogun-python/output_12_0.png)
+![png](../../img/posts/bss-shogun-python/output_12_0.png)
 
 
 
@@ -249,16 +249,16 @@ for i in range(X.shape[0]):
 
 
 
-![png](../../img/bss-shogun-python/output_14_1.png)
+![png](../../img/posts/bss-shogun-python/output_14_1.png)
 
 
 
 
 
-![png](../../img/bss-shogun-python/output_14_3.png)
+![png](../../img/posts/bss-shogun-python/output_14_3.png)
 
 
-![png](../../img/bss-shogun-python/output_14_5.png)
+![png](../../img/posts/bss-shogun-python/output_14_5.png)
 
 
 Now before we can work on separating these signals we need to get the data ready for Shogun.
@@ -324,11 +324,11 @@ for i in range(S_.shape[0]):
 ```
 
 
-![png](../../img/bss-shogun-python/output_20_0.png)
+![png](../../img/posts/bss-shogun-python/output_20_0.png)
 
-![png](../../img/bss-shogun-python/output_20_2.png)
+![png](../../img/posts/bss-shogun-python/output_20_2.png)
 
-![png](../../img/bss-shogun-python/output_20_4.png)
+![png](../../img/posts/bss-shogun-python/output_20_4.png)
 
 BSS isn't only useful for working with Audio, it is also useful for image processing and pre-processing other forms of high dimensional data.
 Have a google for ICA and machine learning if you want to learn more, but we will sure come back in the future on this topic!
