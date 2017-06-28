@@ -1,3 +1,13 @@
++++
+date = "2016-05-01T11:00:00"
+draft = false
+tags = ["PCA", "python","scikit-learn"]
+title = "PCA tutorial using scikit-learn python module"
+math = false
+summary = """
+Here we'll explore Principal Component Analysis, which is an extremely useful linear dimensionality reduction technique. Using Scikit-learn and Python.
+"""
++++
 
 ## Dimensionality Reduction: Principal Component Analysis in-depth
 
@@ -34,10 +44,10 @@ print(X.shape)
 ```
 
     (200, 2)
-    
 
 
-![png](output_4_1.png)
+
+![png](../../img/posts/pca-tutorial-using-scikit-learn-python-module/output_4_1.png)
 
 
 We can see that there is a definite trend in the data. What PCA seeks to do is to find the Principal Axes in the data, and explain how important those axes are in describing the data distribution:
@@ -54,7 +64,7 @@ print(pca.components_)
     [ 0.75871884  0.01838551]
     [[ 0.94446029  0.32862557]
      [ 0.32862557 -0.94446029]]
-    
+
 
 To see what these numbers mean, let's view them as vectors plotted on top of the data:
 
@@ -85,7 +95,7 @@ print(X_trans.shape)
 
     (200, 2)
     (200, 1)
-    
+
 
 By specifying that we want to throw away 5% of the variance, the data is now compressed by a factor of 50%! Let's see what the data look like after this compression:
 
@@ -106,7 +116,7 @@ plt.legend()
 
 
 
-![png](output_12_1.png)
+![png](../../img/posts/pca-tutorial-using-scikit-learn-python-module/output_12_1.png)
 
 
 The light points are the original data, while the dark points are the projected version. We see that after truncating 5% of the variance of this dataset and then reprojecting it, the "most important" features of the data are maintained, and we've compressed the data by 50%!
@@ -139,7 +149,7 @@ plt.ylabel('cumulative explained variance');
 ```
 
 
-![png](output_18_0.png)
+![png](../../img/posts/pca-tutorial-using-scikit-learn-python-module/output_18_0.png)
 
 
 Here we see that our two-dimensional projection loses a lot of information (as measured by the explained variance) and that we'd need about 20 components to retain 90% of the variance. Looking at this plot for a high-dimensional dataset can help you understand the level of redundancy present in multiple observations.

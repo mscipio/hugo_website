@@ -1,3 +1,13 @@
++++
+date = "2016-05-01T11:00:00"
+draft = false
+tags = ["curve fitting", "optimization", "python", "scipy"]
+title = "Simple nonlinear least squares curve fitting in Python"
+math = false
+summary = """
+Testing a very simple example of nonlinear least squares curve fitting using the scipy.optimize module.
+"""
++++
 
 ## The problem
 
@@ -36,7 +46,7 @@ plt.ylabel('ydata');
 ```
 
 
-![png](output_3_0.png)
+![png](../../img/posts/Python_nonlinear_least_squares/output_3_0.png)
 
 
 ## Define fit function
@@ -73,9 +83,9 @@ print(pcov)
     Covariance matrix of the estimate:
     [[  7.52408290e-04   1.00812823e-04]
      [  1.00812823e-04   8.37695698e-05]]
-    
 
-## Sum of squares of residuals 
+
+## Sum of squares of residuals
 
 Since it's not given by the *curve_fit* function, we have to compute it *by hand*
 
@@ -92,7 +102,7 @@ print(fres)
 
     Residuals sum of squared:
     0.0538126964188
-    
+
 
 Plot fitted curve along with data
 
@@ -107,5 +117,4 @@ plt.ylabel('ydata');
 ```
 
 
-![png](output_11_0.png)
-
+![png](../../img/posts/Python_nonlinear_least_squares/output_11_0.png)

@@ -1,5 +1,13 @@
-
-# Fitting Functions to Data
++++
+date = "2016-05-01T11:00:00"
+draft = false
+tags = ["least squares" ,"lmfit" ,"optimization" ,"python", "scipy"]
+title = "Fitting theoretical model to data in python"
+math = false
+summary = """
+Besic ideas about curve fitting, in Python.
+"""
++++
 
 There are several data fitting utilities available. We will focus on two:
 * scipy.optimize
@@ -84,7 +92,7 @@ print fitcoeffs
 
     Parameter fitted using polyfit
     [ 1.00811611 -0.21729382  0.6272779 ]
-    
+
 
 Define the function you want to fit, remembering that **p** will be our array of initial guesses to the fit parameters, the coefficients **a, b, c**:
 
@@ -119,7 +127,7 @@ print('Fitted Parameters using scipy\'s leastsq():\na = %.2f , b = %.2f , c = %.
 
     Fitted Parameters using scipy's leastsq():
     a = 1.01 , b = -0.22 , c = 0.63
-    
+
 
 Now to get an array values for the results, just call your function definition with the fitted parameters, while the residuals, of course, will just be their difference from the original data:
 
@@ -132,7 +140,7 @@ plt.rc('font',family='serif')
 fig1=plt.figure(1)
 frame1=fig1.add_axes((.1,.3,.8,.6))
     #xstart, ystart, xwidth, yheight --> units are fraction of the image from bottom left
-    
+
 xsmooth=np.linspace(xarray1[0],xarray1[-1])
 plt.plot(xarray1,yarray1,'.')
 plt.plot(xsmooth,quadratic(paramsout,xsmooth))
@@ -147,7 +155,7 @@ from matplotlib.ticker import MaxNLocator
 plt.gca().yaxis.set_major_locator(MaxNLocator(prune='lower')) #Removes lowest ytick label
 
 frame2=fig1.add_axes((.1,.1,.8,.2))
- 
+
 plt.plot(xarray1,quadratic(paramsout,xarray1)-yarray1)
 plt.ylabel('Residuals')
 plt.grid(True)
@@ -157,7 +165,7 @@ plt.show()
 ```
 
 
-![png](output_11_0.png)
+![png](../../img/posts/fitting-functions-to-data/output_11_0.png)
 
 
 ## Example 2: More complex functions, with constraints
@@ -174,10 +182,10 @@ The **Parameters()** object is then updated with every iteration.
 
 Let's use more real data for a typical real-world application: fitting a profile to spectral data.
 * **The data**: stacked velocity-amplitude spectra from a VLA observation
-* **The functions**: 
+* **The functions**:
     - A modified Gaussian to include Hermite polynomials (approximations to skew and kurtosis)
     - A double gaussian (gaus1 + gaus2 = gausTot)
-    
+
 The data have been downloaded from https://science.nrao.edu/science/surveys/littlethings/data/wlm.html
 
 
@@ -186,7 +194,7 @@ import pyfits
 
 cube=pyfits.getdata('WLM_NA_ICL001.FITS')[0,:,:,:]
 cubehdr=pyfits.getheader('WLM_NA_ICL001.FITS')
- 
+
 cdelt3=cubehdr['CDELT3']/1000.; crval3=cubehdr['CRVAL3']/1000.; crpix3=cubehdr['CRPIX3'];
 minvel=crval3+(-crpix3+1)*cdelt3; maxvel=crval3+(cube.shape[0]-crpix3)*cdelt3
 chanwidth=abs(cdelt3)
@@ -207,7 +215,7 @@ We are going to use the default *Marquardt-Levenberg algorithm*.  Note that fitt
 
 I said that we want to fit this dataset with a more complex model. Let me explain it a bit before to proced.
 
-* **Standard Gaussian**: 
+* **Standard Gaussian**:
 
 > $f(x) = Ae^{-g^2/2}$ where $g = \frac{x-x_c}{\sigma}$
 
@@ -215,15 +223,15 @@ I said that we want to fit this dataset with a more complex model. Let me explai
 
 > $F(x) = \sum_i f_i(x) = A_1e^{-g_1^2/2} + A_2e^{-g_2^2/2} + \dots$
 
-* **Gauss-Hermite Polynomial**: 
+* **Gauss-Hermite Polynomial**:
 
 > $f(x) = Ae^{-g^2/2} [ 1+h_3(-\sqrt{3}g+\frac{2}{\sqrt{3}}g^3 ) + h_4 (\frac{\sqrt{6}}{4}-\sqrt{6}g^2+\frac{\sqrt{6}}{3}g^4)] $
 
-* **H_3 → (Fisher) Skew: asymmetric component**: 
+* **H_3 → (Fisher) Skew: asymmetric component**:
 
 > $\xi_1 \sim 4\sqrt{3}h_3$
 
-* **H_4 → (Fisher) Kurtosis: how 'fat' the tails are**: 
+* **H_4 → (Fisher) Kurtosis: how 'fat' the tails are**:
 
 > $xi_2 \sim 3+8\sqrt{6}h_4$
 
@@ -243,25 +251,25 @@ p_gh.add('center',value=vels[50],min=np.min(vels),max=np.max(vels));
 p_gh.add('sig',value=3*chanwidth,min=chanwidth,max=abs(maxvel-minvel));
 p_gh.add('skew',value=0,vary=True,min=None,max=None);
 p_gh.add('kurt',value=0,vary=True,min=None,max=None);
- 
+
 def gaussfunc_gh(paramsin,x):
     amp=paramsin['amp'].value
     center=paramsin['center'].value
     sig=paramsin['sig'].value
-    c1=-np.sqrt(3); 
+    c1=-np.sqrt(3);
     c2=-np.sqrt(6)
-    c3=2/np.sqrt(3); 
-    c4=np.sqrt(6)/3; 
+    c3=2/np.sqrt(3);
+    c4=np.sqrt(6)/3;
     c5=np.sqrt(6)/4
     skew=paramsin['skew'].value
     kurt=paramsin['kurt'].value
     g=(x-center)/sig
     gaustot_gh=amp*np.exp(-.5*g**2)*(1+skew*(c1*g+c3*g**3)+ kurt*(c5+c2*g**2+c4*(g**4)))
-                                     
+
     return gaustot_gh
 ```
 
-Now do the same for the **double gaussian** 
+Now do the same for the **double gaussian**
 
 >**Bounds**
 >amp : 10% of max to max   
@@ -278,17 +286,17 @@ p_2g.add('sig1',value=2*chanwidth,min=chanwidth,max=abs(maxvel-minvel));
 p_2g.add('amp2',value=np.max(stackspec)/2.,min=.1*np.max(stackspec),max=np.max(stackspec));
 p_2g.add('center2',value=vels[50-10],min=np.min(vels),max=np.max(vels));
 p_2g.add('sig2',value=3*chanwidth,min=chanwidth,max=abs(maxvel-minvel));
- 
+
 def gaussfunc_2g(paramsin,x):
-    amp1=paramsin['amp1'].value; 
+    amp1=paramsin['amp1'].value;
     amp2=paramsin['amp2'].value;
-    center1=paramsin['center1'].value; 
+    center1=paramsin['center1'].value;
     center2=paramsin['center2'].value;
-    sig1=paramsin['sig1'].value; 
+    sig1=paramsin['sig1'].value;
     sig2=paramsin['sig2'].value;
     g1=(x-center1)/sig1
     g2=(x-center2)/sig2
-    
+
     gaus1=amp1*np.exp(-.5*g1**2)
     gaus2=amp2*np.exp(-.5*g2**2)
     gaustot_2g=(gaus1+gaus2)
@@ -339,7 +347,7 @@ resid_2g=fit_2g-stackspec
 
 print('Fitted Parameters (Gaus+Hermite):\nAmp = %.2f , Center = %.2f , Disp = %.2f\nSkew = %.2f , Kurt = %.2f' \
 %(pars_gh[0],pars_gh[1],pars_gh[2],pars_gh[3],pars_gh[4]))
- 
+
 print('Fitted Parameters (Double Gaussian):\nAmp1 = %.2f , Center1 = %.2f , Sig1 = %.2f\nAmp2 = %.2f , Center2 = %.2f , Sig2 = %.2f' \
 %(pars_2g[0],pars_2g[1],pars_2g[2],pars_2g[3],pars_2g[4],pars_2g[5]))
 ```
@@ -350,7 +358,7 @@ print('Fitted Parameters (Double Gaussian):\nAmp1 = %.2f , Center1 = %.2f , Sig1
     Fitted Parameters (Double Gaussian):
     Amp1 = 189.58 , Center1 = -112.89 , Sig1 = 14.55
     Amp2 = 91.58 , Center2 = -146.19 , Sig2 = 10.26
-    
+
 
 
 ```python
@@ -366,7 +374,7 @@ f1.set_xticklabels([]) #We will plot the residuals below, so no x-ticks on this 
 plt.title('Multiple Gaussian Fit Example')
 plt.ylabel('Amplitude (Some Units)')
 f1.legend([pgh,p2g,p2ga,p2gb],['Gaus-Hermite','2-Gaus','Comp. 1','Comp2'],prop={'size':10},loc='center left')
- 
+
 from matplotlib.ticker import MaxNLocator
 plt.gca().yaxis.set_major_locator(MaxNLocator(prune='lower')) #Removes lowest ytick label
 
@@ -380,9 +388,9 @@ f1.annotate('Double Gaussian:\nAmp$_1$ = %.2f\nAmp$_2$ = %.2f\nCenter$_1$ = %.2f
     bbox=dict(boxstyle="round", fc='1'),fontsize=10)
 
 f2=fig3.add_axes((.1,.1,.8,.2))
- 
+
 resgh,res2g,=plt.plot(vels,resid_gh,'k--',vels,resid_2g,'k')
- 
+
 plt.ylabel('Residuals')
 plt.xlabel('Velocity (km s$^{-1}$)')
 f2.legend([resgh,res2g],['Gaus-Hermite','2-Gaus'],numpoints=4,prop={'size':9},loc='upper left')
@@ -396,5 +404,4 @@ f2.legend([resgh,res2g],['Gaus-Hermite','2-Gaus'],numpoints=4,prop={'size':9},lo
 
 
 
-![png](output_26_1.png)
-
+![png](../../img/posts/fitting-functions-to-data/output_26_1.png)

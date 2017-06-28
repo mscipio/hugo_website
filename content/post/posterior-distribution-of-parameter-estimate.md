@@ -1,3 +1,13 @@
++++
+date = "2016-05-01T11:00:00"
+draft = false
+tags = ["bayes" "bayesian" "emcee" "posterior" "pymc" "python"]
+title = "Calculating the posterior probability distribution of parameters with emcee python module"
+math = false
+summary = """
+Exploring the functionality of the ***emcee*** and ***pymc*** Python modules.
+"""
++++
 
 ## The **emcee()** python module
 
@@ -34,7 +44,7 @@ plt.plot(x, y)
 
 
 
-![png](output_3_1.png)
+![png](../../img/posts/posterior-distribution-of-parameter-estimate/output_3_1.png)
 
 
 ### Initializing our example creating a parameter set for the initial guesses:
@@ -69,13 +79,13 @@ plt.show()
         t1:   1.30993185 (init= 3)
         t2:   11.8240752 (init= 3)
     [[Correlations]] (unreported correlations are <  0.500)
-    
 
 
-![png](output_7_1.png)
+
+![png](../../img/posts/posterior-distribution-of-parameter-estimate/output_7_1.png)
 
 
-However, **this doesn’t give a probability distribution** for the parameters. Furthermore, we wish to deal with the data uncertainty. This is called marginalisation of a nuisance parameter. **emcee** requires a function that returns the log-posterior probability. 
+However, **this doesn’t give a probability distribution** for the parameters. Furthermore, we wish to deal with the data uncertainty. This is called marginalisation of a nuisance parameter. **emcee** requires a function that returns the log-posterior probability.
 
 ### Posterior distribution estimation
 
@@ -109,11 +119,11 @@ corner.corner(res.flatchain, labels=res.var_names, truths=list(res.params.values
 
 
 
-![png](output_11_0.png)
+![png](../../img/posts/posterior-distribution-of-parameter-estimate/output_11_0.png)
 
 
 
-**The values reported in the MinimizerResult are the medians of the probability distributions and a 1 sigma quantile**, estimated as half the difference between the 15.8 and 84.2 percentiles. 
+**The values reported in the MinimizerResult are the medians of the probability distributions and a 1 sigma quantile**, estimated as half the difference between the 15.8 and 84.2 percentiles.
 
 The median value is not necessarily the same as the Maximum Likelihood Estimate. We’ll get that as well. You can see that we recovered the right uncertainty level on the data:
 
@@ -143,13 +153,13 @@ lmfit.report_fit(res.params)
         t2:   11.8062444 +/- 0.457356 (3.87%) (init= 11.82408)
         f:    0.09810770 +/- 0.004350 (4.43%) (init= 1)
     [[Correlations]] (unreported correlations are <  0.100)
-        C(a2, t2)                    =  0.980 
-        C(a2, t1)                    = -0.926 
-        C(t1, t2)                    = -0.873 
-        C(a1, t1)                    = -0.541 
-        C(a1, a2)                    =  0.224 
-        C(a1, t2)                    =  0.171 
-    
+        C(a2, t2)                    =  0.980
+        C(a2, t1)                    = -0.926
+        C(t1, t2)                    = -0.873
+        C(a1, t1)                    = -0.541
+        C(a1, a2)                    =  0.224
+        C(a1, t2)                    =  0.171
+
 
 ### Let's find the maximum likelihood solution
 
@@ -166,11 +176,11 @@ print('-----------------------------')
 print(p)
 ```
 
-    
+
     Maximum likelihood Estimation
     -----------------------------
     Parameters([('a1', <Parameter 'a1', 2.9874185587879265, bounds=[-inf:inf]>), ('a2', <Parameter 'a2', -4.3357546840836836, bounds=[-inf:inf]>), ('t1', <Parameter 't1', 1.3090319527167826, bounds=[-inf:inf]>), ('t2', <Parameter 't2', 11.823518108067935, bounds=[-inf:inf]>)])
-    
+
 
 ### Finally lets work out a 1 and 2-sigma error estimate for 't1'
 
@@ -181,4 +191,3 @@ print("2 sigma spread", 0.5 * (quantiles[-1] - quantiles[0]))
 ```
 
     ('2 sigma spread', 0.2826990333440581)
-    
