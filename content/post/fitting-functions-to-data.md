@@ -3,14 +3,16 @@ date = "2016-05-01T11:00:00"
 draft = false
 tags = ["least squares" ,"lmfit" ,"optimization" ,"python", "scipy"]
 title = "Fitting theoretical model to data in python"
-math = false
+math = true
 summary = """
 Besic ideas about curve fitting, in Python.
 """
 +++
 
 There are several data fitting utilities available. We will focus on two:
+
 * scipy.optimize
+
 * lmfit.minimize
 
 Using both those modules, you can fit any arbitrary function that you define and it is, also, possible to constrain given parameters during the fit. Another important aspect is that both packages come with useful
@@ -19,7 +21,9 @@ diagnostic tools.
 ## Fitting Basics
 
 The *fitting* we discuss here is an iterative process.
+
 * First, we define our **desired function**, and calculate values given certain parameters
+
 * Then we **calculate the difference** between the initial and the new values
 
 The final aim is to minimize this difference (specifically, we generally minimize the sum of the squares of these differences).<!-- TEASER_END -->
@@ -27,16 +31,19 @@ The final aim is to minimize this difference (specifically, we generally minimiz
 Several examples can be found at http://www.scipy.org/Cookbook/FittingData
 
 Minimization is usually done by the method of **least squares fitting**. There are several algorithms available for this minimization.
+
 * The most common is the **Levenberg-Marquardt**:
     - Susceptible to finding *local minima* instead of *global*
     - Fast
     - Usually well-behaved for most functions
     - By far the *most tested of methods*, with many accompanying statistics implemented
-* Other methods include the **Nelder-Mead**, **L-BFGS-B**, and **Simulated Annealing**algorithms
+
+* Other methods include the **Nelder-Mead**, **L-BFGS-B**, and **Simulated Annealing** algorithms
 
 ## Goodness-of-Fit (GoF)
 
 There are several statistics that can help you determine the goodness-of-fit. Most commonly used are:
+
 * reduced chi-squared
 * Standard error
 
@@ -49,6 +56,7 @@ First, let's try fitting a simple quadratic to some fake data:
 $$ y = ax^2 + bx + c $$
 
 What we will do:
+
 * Generate some data for the example
 * Define the function we wish to fit
 * Use **scipy.optimize** to do the actual optimization
@@ -56,7 +64,7 @@ What we will do:
 Let's assume the following:
 
 1. The x-data is an array from -3 to 10
-2. The y-data is x2, with some random noise added.
+2. The y-data is $x^2$, with some random noise added.
 3. Let's put our initial guesses for the coefficients a,b,c into a list called p0 (for fit parameters)
 
 
@@ -217,15 +225,17 @@ I said that we want to fit this dataset with a more complex model. Let me explai
 
 * **Standard Gaussian**:
 
-> $f(x) = Ae^{-g^2/2}$ where $g = \frac{x-x_c}{\sigma}$
+> $ f(x) = A e^{\frac{-g^2}{2}} $
+
+> $ g = \frac{x-x_c}{\sigma} $
 
 * **Multiple Gaussians**:
 
-> $F(x) = \sum_i f_i(x) = A_1e^{-g_1^2/2} + A_2e^{-g_2^2/2} + \dots$
+> $ F(x) = \sum_i f_i(x) = A_1e^{\frac{-g_1^2}{2}} + A_2e^{\frac{-g_2^2}{2}} + \dots $
 
 * **Gauss-Hermite Polynomial**:
 
-> $f(x) = Ae^{-g^2/2} [ 1+h_3(-\sqrt{3}g+\frac{2}{\sqrt{3}}g^3 ) + h_4 (\frac{\sqrt{6}}{4}-\sqrt{6}g^2+\frac{\sqrt{6}}{3}g^4)] $
+> $f(x) = Ae^{\frac{-g^2}{2}} [ 1+h_3(-\sqrt{3}g+\frac{2}{\sqrt{3}}g^3 ) + h_4 (\frac{\sqrt{6}}{4}-\sqrt{6}g^2+\frac{\sqrt{6}}{3}g^4)] $
 
 * **H_3 → (Fisher) Skew: asymmetric component**:
 
@@ -237,7 +247,7 @@ I said that we want to fit this dataset with a more complex model. Let me explai
 
 > $\xi_f = \xi_2-3$
 
-> $\xi_f \sim 8\sqrt{6}h_4$
+> $\xi_f \sim 8\sqrt{6}h_4$$
 
 Set up the **lmfit.Parameters()** and define the *Gauss-Hermite function*:
 
@@ -398,8 +408,6 @@ f2.legend([resgh,res2g],['Gaus-Hermite','2-Gaus'],numpoints=4,prop={'size':9},lo
 
 
 
-
-    <matplotlib.legend.Legend at 0x7fe51bc4ee50>
 
 
 
