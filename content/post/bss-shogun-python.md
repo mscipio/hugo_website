@@ -138,16 +138,9 @@ pl.show()
 # player
 wavPlayer(s1, fs1)
 ```
-
-    Populating the interactive namespace from numpy and matplotlib
-
-
-    /usr/local/lib/python2.7/dist-packages/scipy/signal/signaltools.py:1741: VisibleDeprecationWarning: using a non-integer number instead of an integer will result in an error in the future
-      Y = zeros(newshape, 'D')
-
-
-
 ![png](../../img/posts/bss-shogun-python/output_8_2.png)
+
+![](../../data/posts/audio1.wav)
 
 
 Now let's load a second audio clip:
