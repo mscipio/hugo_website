@@ -140,8 +140,12 @@ wavPlayer(s1, fs1)
 ```
 ![png](../../img/posts/bss-shogun-python/output_8_2.png)
 
-![](../../data/posts/audio1.wav)
-
+<div ID="div-2" style="display: table; margin: 0 auto;">
+<audio controls="controls" >
+  <source type="audio/wav" src="../../data/posts/audio1.wav"></source>
+</audio>
+<p></p>
+</div>
 
 Now let's load a second audio clip:
 
@@ -162,7 +166,12 @@ wavPlayer(s2, fs2)
 
 
 ![png](../../img/posts/bss-shogun-python/output_10_0.png)
-
+<div ID="div-2" style="display: table; margin: 0 auto;">
+<audio controls="controls" >
+  <source type="audio/wav" src="../../data/posts/audio2.wav"></source>
+</audio>
+<p></p>
+</div>
 
 
 and a third audio clip:
@@ -184,7 +193,12 @@ wavPlayer(s3, fs3)
 
 
 ![png](../../img/posts/bss-shogun-python/output_12_0.png)
-
+<div ID="div-2" style="display: table; margin: 0 auto;">
+<audio controls="controls" >
+  <source type="audio/wav" src="../../data/posts/audio3.wav"></source>
+</audio>
+<p></p>
+</div>
 
 
 
@@ -243,16 +257,28 @@ for i in range(X.shape[0]):
 
 
 ![png](../../img/posts/bss-shogun-python/output_14_1.png)
-
-
-
-
+<div ID="div-2" style="display: table; margin: 0 auto;">
+<audio controls="controls" >
+  <source type="audio/wav" src="../../data/posts/mixaudio1.wav"></source>
+</audio>
+<p></p>
+</div>
 
 ![png](../../img/posts/bss-shogun-python/output_14_3.png)
-
+<div ID="div-2" style="display: table; margin: 0 auto;">
+<audio controls="controls" >
+  <source type="audio/wav" src="../../data/posts/mixaudio2.wav"></source>
+</audio>
+<p></p>
+</div>
 
 ![png](../../img/posts/bss-shogun-python/output_14_5.png)
-
+<div ID="div-2" style="display: table; margin: 0 auto;">
+<audio controls="controls" >
+  <source type="audio/wav" src="../../data/posts/mixaudio3.wav"></source>
+</audio>
+<p></p>
+</div>
 
 Now before we can work on separating these signals we need to get the data ready for Shogun.
 Thankfully this is pretty easy!
@@ -318,10 +344,28 @@ for i in range(S_.shape[0]):
 
 
 ![png](../../img/posts/bss-shogun-python/output_20_0.png)
+<div ID="div-2" style="display: table; margin: 0 auto;">
+<audio controls="controls" >
+  <source type="audio/wav" src="../../data/posts/unmixaudio1.wav"></source>
+</audio>
+<p></p>
+</div>
 
 ![png](../../img/posts/bss-shogun-python/output_20_2.png)
+<div ID="div-2" style="display: table; margin: 0 auto;">
+<audio controls="controls" >
+  <source type="audio/wav" src="../../data/posts/unmixaudio2.wav"></source>
+</audio>
+<p></p>
+</div>
 
 ![png](../../img/posts/bss-shogun-python/output_20_4.png)
+<div ID="div-2" style="display: table; margin: 0 auto;">
+<audio controls="controls" >
+  <source type="audio/wav" src="../../data/posts/unmixaudio3.wav"></source>
+</audio>
+<p></p>
+</div>
 
 BSS isn't only useful for working with Audio, it is also useful for image processing and pre-processing other forms of high dimensional data.
 Have a google for ICA and machine learning if you want to learn more, but we will sure come back in the future on this topic!
