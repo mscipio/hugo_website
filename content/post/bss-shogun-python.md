@@ -293,9 +293,9 @@ mixed_signals = RealFeatures((X).astype(np.float64))
 
 Now lets **unmix** those signals!
 
-In this example I'm going to use an **Independent Component Analysis (ICA)** algorithm called *JADE*. JADE is one of the ICA algorithms available in Shogun and it works by performing *Aproximate Joint Diagonalization* (AJD) on a 4th order cumulant tensor. I'm not going to go into a lot of detail on how JADE works behind the scenes but here is the reference for the original paper:
+In this example I'm going to use an **Independent Component Analysis (ICA)** algorithm called *JADE*. JADE is one of the ICA algorithms available in Shogun and it works by performing ***Approximate Joint Diagonalization*** (AJD) on a 4th order cumulant tensor. I'm not going to go into a lot of detail on how JADE works behind the scenes but here is the reference for the original paper:
 
-*Cardoso, J. F., & Souloumiac, A. (1993). Blind beamforming for non-Gaussian signals. In IEE Proceedings F (Radar and Signal Processing) (Vol. 140, No. 6, pp. 362-370). IET Digital Library.*
+*Cardoso, J. F., & Souloumiac, A. (1993). Blind beamforming for non-Gaussian signals. In IEEE Proceedings F (Radar and Signal Processing) (Vol. 140, No. 6, pp. 362-370). IET Digital Library.*
 
 > **Note:**
 
