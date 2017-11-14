@@ -1,8 +1,12 @@
 !/bin/bash
 
-echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
+echo "\033[0;32mDeploying updates to GitHub...\033[0m"
 
 rm -rf ./public
+rm ./.git/index.lock
+git rm -r --cached .
+git submodule add -f -b master git@github.com:mscipio/mscipio.github.io.git public
+
 
 # Build the project.
 hugo #-t academic # if using a theme, replace with `hugo -t <YOURTHEME>`
