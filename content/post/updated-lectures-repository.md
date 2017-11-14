@@ -4,7 +4,7 @@ tags = ["lecture", "university", "medical imaging", "PET"]
 draft = false
 date = "2017-11-14T13:49:34+01:00"
 title = "Creation of a GitHub repository for lectures material"
-summary="""How to do Blind Source Separation (BSS) using algorithms available in the Shogun Machine Learning Toolbox."""
+summary="""Introduction of the new repository and list of lectures material organized by year."""
 +++
 
 #### New GitHub repository with material from given lectures (Update Nov 2017)
