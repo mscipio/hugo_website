@@ -1,15 +1,13 @@
 +++
 math = false
-tags = []
+tags = ["dicom", "medical imaging", "python"]
 draft = false
-
 date = "2017-11-14T13:49:34+01:00"
 title = "updated lectures repository"
-summary="""test
-"""
+summary="""How to do Blind Source Separation (BSS) using algorithms available in the Shogun Machine Learning Toolbox."""
 +++
 
-# New GitHub repository with material from given lectures (Update Nov 2017)
+#### New GitHub repository with material from given lectures (Update Nov 2017)
 
 During my Ph.D. at the University of Pisa, I have had the chance to work as a Graduate Teaching Assistant for the following classes:
 
