@@ -5,7 +5,7 @@ tags = ["least squares" ,"lmfit" ,"optimization" ,"python", "scipy"]
 title = "Fitting theoretical model to data in python"
 math = true
 summary = """
-Besic ideas about curve fitting, in Python.
+Basic ideas about curve fitting, in Python.
 """
 +++
 
