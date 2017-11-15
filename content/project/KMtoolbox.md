@@ -29,11 +29,36 @@ caption = ""
 
 +++
 
-[SOURCE CODE](https://github.com/mscipio/KMtoolbox)
-
 Kinetic Modeling Toolbox designed to estimate kinetic parameters from 4D PET and DCE-MRI dataset at a ROI level
 
-#### A few screenshots:
+<a href="https://github.com/mscipio/KMtoolbox" style="color:red"><b>[GitHub SOURCE CODE]</b></a>
+
+***
+
+### Updates:
+
+*November 14, 2017* --> [[Check the related blog post]](http://mscipio.github.io/post/update_kmtool_repo_14november17/)
+
+```text
+> Fixed some issues on code duplication
+
+> Created a setup file to add all the needed source files to Matlab's path
+
+> Added some new colormap and a multiple choice of how to set up colorbar limit to improve the quality of image visualization 
+
+> Added a new example dataset with heart data
+```
+
+*June, 2017* 
+```text
+> First commit and publication of the toolbox on GitHub
+```
+
+***
+
+
+
+### A few screenshots:
 
 
 
