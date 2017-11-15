@@ -14,8 +14,11 @@ weight = 60
 
 +++
 
-During my Ph.D. at the University of Pisa, I have had the chance to work as a Graduate Teaching Assistant for the following classes:
+## 2017
+- **University of Pisa - Department of Information Engineering - Master of Science in Biomedical Engineering**
+  - [Iterative reconstruction techniques for emission tomography imaging: ML-EM, OS-EM, and MAP-OSL-EM](https://github.com/mscipio/Lectures/tree/master/2017/University%20of%20Pisa/Biomedical%20Imaging%20Course/Iterative%20Reconstruction%20in%20Emission%20Tomography)
 
-- **[Ing-Inf/06]**: <span style="color:blue"><b>Biomedical Imaging</b></span> (***6 CFU***)
-  - *Iterative reconstruction algorithms for emission tomography (ML-EM and OS-EM)* [[Download slides]](data/teaching/Iterative_reconstruction_of_tomographic_images_28_10_2016.pdf")
-  - *Kinetic modeling of PET dynamic datasets; introduction to the solution of ODE systems in Matlab (ode45) and non linear curve fitting (lsqnonlin and lsqcurvefit)* [[Part1]](data/teaching/Kinetic_Modeling_01_12_2016.pdf") [[Part2]](data/teaching/Kinetic_Modeling_02_12_2016.pdf")
+## 2016
+- **University of Pisa - Department of Information Engineering - Master of Science in Biomedical Engineering**
+  - [Iterative reconstruction techniques for emission tomography imaging: ML-EM, OS-EM, and MAP-OSL-EM](https://github.com/mscipio/Lectures/tree/master/2016/University%20of%20Pisa/Biomedical%20Imaging%20Course/Tracer%20Kinetic%20Modeling%20in%20PET%20dynamic%20imaging)
+  - [Introduction to kinetic modeling for emission tomography: focus on compartmental models (meaning, use, and interpratation)](https://github.com/mscipio/Lectures/tree/master/2016/University%20of%20Pisa/Biomedical%20Imaging%20Course/Iterative%20Reconstruction%20in%20Emission%20Tomography)

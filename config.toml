@@ -31,6 +31,7 @@ defaultContentLanguageInSubdir = false
   #phone = "888 888 88 88"
   skype = "scipioni.michele"
   telegram = "mscipio"
+  twitter = "@MicheleScipio"
 
   # Enable Keybase in Contact section by entering your keybase.io username.
   keybase = ""
@@ -124,6 +125,11 @@ defaultContentLanguageInSubdir = false
   #   Full list: https://jpswalsh.github.io/academicons/
 
   [[params.social]]
+    icon = "twitter"
+    icon_pack = "fa"
+    link = "https://twitter.com/MicheleScipio"
+
+  [[params.social]]
     icon = "envelope"
     icon_pack = "fa"
     link = "mailto:scipioni.michele@gmail.com"
@@ -137,11 +143,6 @@ defaultContentLanguageInSubdir = false
     icon = "id-card"
     icon_pack = "fa"
     link = "data/CV_eng_LONG.pdf"
-
-  #[[params.social]]
-  #  icon = "twitter"
-  #  icon_pack = "fa"
-  #  link = "//twitter.com/GeorgeCushen"
 
   [[params.social]]
     icon = "github"
