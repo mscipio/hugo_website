@@ -8,16 +8,14 @@ title = "Changelog for KMtoolbox repository - November 14, 2017"
 summary="""Kinetic Modeling Toolbox designed to estimate kinetic parameters from 4D PET and DCE-MRI dataset at a ROI level."""
 +++
 
-#### Changelog for KMtoolbox repository - November 14, 2017
-
 - Fixed some issues on code duplication
 
 - Created a setup file to add all the needed source files to Matlab's path
-![new setup script](../../img/KMtool_project_page/setup_script.png "Logo Title Text 1")
+![new setup script](../../img/KMtool_project_page/setup_script.png "new setup script")
 
 - Added some new colormap and a multiple choice of how to set up colorbar limit to improve the quality of image visualization 
-![new colormap choices](../../img/KMtool_project_page/new_colormaps.png "Logo Title Text 1")
-![new clims controls](../../img/KMtool_project_page/new_clim.png "Logo Title Text 1")
+![new colormap choices](../../img/KMtool_project_page/new_colormaps.png "new colormap choices")
+![new clims controls](../../img/KMtool_project_page/new_clim.png "new clims controls")
 
 - Added a new example dataset with heart data
-![new example heart dataset](../../img/KMtool_project_page/heart_dataset.png "Logo Title Text 1")
+![new example heart dataset](../../img/KMtool_project_page/heart_dataset.png "new example heart dataset")
