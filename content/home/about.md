@@ -1,7 +1,7 @@
 +++
 # About/Biography widget.
 
-date = "2017-06-23T00:00:00"
+date = "2017-11-16T00:00:00"
 draft = false
 
 widget = "about"
@@ -21,7 +21,7 @@ weight = 1
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "PhD in Information Engineering"
+  course = "[ongoing] Ph.D. in Information Engineering"
   institution = "University of Pisa - Pisa (IT)"
   year = 2018
 
@@ -39,10 +39,10 @@ weight = 1
 
 # About me
 
-I am an Italian Biomedical Engineering Ph.D. student. My main research interests, at the moment, include tomographic image reconstruction for medical imaging (mainly PET and MRI), and kinetic modeling of dynamic acquisitions with a specific focus on parametric maps generation.
+I'm an Italian Biomedical Engineer and Ph.D. student. My main research interests, at the moment, include medical imaging tomographic image reconstruction (mainly PET and MRI), and kinetic modeling of dynamic acquisitions, with a specific focus on parametric mapping.
 
-During the first two years of my Ph.D., I have been dealing with theoretical and computational issues, related to the previously mentioned topics. Working with pharmacokinetic modeling basically means working with **non-linear optimization** and fitting of complex **ODE-based compartmental models**, while including this metabolic information into the reconstruction of 4D PET/MRI time series required me to develop and implement **hierarchical Bayesian models**. Giving the particular nature of the problem of parametric mapping, I have also had the chance to get in touch with **CUDA GP-GPU programming**, with the aim of efficiently parallelize the problem of fitting a specific model to every voxel of a 3D PET or DCE-MRI volume.
+During the first two years of my Ph.D., I have been dealing with theoretical and computational issues, related to the previously mentioned topics. Working with pharmacokinetic modeling, I have to deal with **non-linear optimization**, and fitting of complex **ODE-based compartmental models**, while tomographic image reconstruction requires me to solve complex **inverse optimization problems**. Putting everything together (i.e. integrating metabolic information into the reconstruction of 4D PET/MRI time series) goes through the design of **hierarchical Bayesian models**, on which eventually we want to do some kind probabilistic inference. 
 
-My *alma mater* is the ***University of Pisa***, in Italy, but I also spent part of my Ph.D. at the ***Athinoula A. Martinos Center for Biomedical Imaging***, in Boston, and I am still working with them, above all with the two groups mainly involved with PET/MR: [Catana Lab](https://www.nmr.mgh.harvard.edu/user/7025), and [Price Lab](https://www.nmr.mgh.harvard.edu/user/3482467).
+Given the particular nature of the problem of parametric mapping, I have also had the chance to get in touch with **CUDA GP-GPU programming**, with the aim of efficiently parallelize the problem of fitting a specific model to every voxel of a 3D PET or DCE-MRI volume.
 
-[//]: # (Michele Scipioni is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of # self-organizing robots, and mobile sensor networks.)
+My *alma mater* is the ***University of Pisa***, in Italy, but I also spent part of my Ph.D. at the ***Athinoula A. Martinos Center for Biomedical Imaging***, in Boston, working with the two groups mainly involved with PET/MR imaging: [Catana Lab](https://www.nmr.mgh.harvard.edu/user/7025), and [Price Lab](https://www.nmr.mgh.harvard.edu/user/3482467).
