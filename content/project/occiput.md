@@ -29,7 +29,7 @@ caption = ""
 
 +++
 
-[***OFFICIAL WEBSITE OF THE PROJECT***](http://occiput.mgh.harvard.edu/)
+[***OFFICIAL WEBSITE OF THE PROJECT***](http://tomographylab.scienceontheweb.net/)
 
 **Occiput.io** is an open source software for Tomographic reconstruction based on GPU computing and on Python.
 
@@ -43,4 +43,4 @@ Occiput enables the interactive tomographic reconstruction in the cloud, using *
 
 A Python package implementing the interface to the ***Siemens Biograph mMR PET-MRI scanner*** (including access to raw listmode data, sinograms, scatter data, physiological data) is available upon request (occiput.reconstruction@gmail.com). <u>Authorization from Siemens will be required</u>.
 
-To get started with Occiput, go to the [project source code](https://github.com/mscipio/occiput)  and follow the installation instructions. The source code contains Jupyter notebooks with documentation and examples.
+To get started with Occiput, go to the [project source code](https://github.com/TomographyLab/Occiput)  and follow the installation instructions. The source code contains Jupyter notebooks with documentation and examples.
