@@ -141,14 +141,14 @@ figcaption h4 {
   margin: 0;
 }
 
-pre,
-code {
-  font-family: 'Roboto Mono', 'Courier New', 'Courier', monospace;
-}
-
 pre {
   margin: 0 0 1rem 0;
   overflow: auto;
+  padding: 0px;
+}
+code {
+  font-family: 'Roboto Mono', 'Courier New', 'Courier', monospace;
+  padding-left:10px;
 }
 
 hr {

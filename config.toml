@@ -78,10 +78,12 @@ defaultContentLanguageInSubdir = false
   #   For more info on the highlighting options, see:
   #   https://gcushen.github.io/hugo-academic-demo/post/writing-markdown-latex/#highlighting-options
   highlight = true
-  highlight_languages = []
-  highlight_style = "github"
-  # highlight_version = "9.9.0"
-
+  highlight_languages = ["python", "matlab"]
+  highlight_style = "github" #"idea"
+  highlight_version = "9.9.0"
+  #pygmentsCodeFences = true
+  #pygmentsStyle = "monokai"
+  
   # Enable native social sharing buttons?
   sharing = true
 
