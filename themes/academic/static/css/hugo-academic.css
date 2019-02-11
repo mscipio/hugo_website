@@ -398,6 +398,21 @@ article {
 .article-header {
   position: relative;
   clear: both;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pub .article-header{
+  background-color: rgb(151, 1, 1);
+}
+.article .article-header{
+  background-color: rgb(0, 149, 235);
+}
+.article-project .article-header{
+  background-color: rgb(16, 133, 1);
 }
 
 .article-banner {
@@ -406,23 +421,19 @@ article {
 }
 
 .article-header h1{
-  z-index: 2;
-  position: absolute;
+  z-index: 0;
+  position: relative;
   top: 30%;
-  left: 25%;
-  right: 25%;
   bottom: 20%;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  margin-bottom: .5rem;
-  line-height: 1.25;
-  color: #313131;
+  line-height: 100%;
+  color: white;
   text-rendering: optimizeLegibility;
   max-width: 760px;
   height: auto;
   padding: 0;
   margin: 0;
-  margin-top: -13px; /* 1/2 height */
   text-align: center;
 }
 
@@ -537,12 +548,16 @@ article {
 }
 
 .pub .pub-title {
+  margin-top: 20px;
   margin-bottom: 5px;
+  max-width: 900px;
 }
 
 .pub .pub-authors {
+  display: block;
   font-style: italic;
   line-height: 30px; /* Match share bar line height. */
+  width: 700px;
 }
 
 .pub .pub-row-heading {
