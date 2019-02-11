@@ -15,12 +15,12 @@
 
 </article>
 
-<div class="container">
-  {{ partial "section_pager.html" . }}
+<div class="article-container"></div>
+{{ partial "comments.html" . }}
 </div>
 
-<div class="article-container">
-  {{ partial "comments.html" . }}
+<div class="container">
+    {{ partial "section_pager.html" . }}
 </div>
 
 {{ partial "footer_container.html" . }}

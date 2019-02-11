@@ -1,7 +1,13 @@
-{{ if and .Site.DisqusShortname (not (or .Site.Params.disable_comments .Params.disable_comments)) }}
+<!--  {{ if and .Site.DisqusShortname (not (or .Site.Params.disable_comments .Params.disable_comments)) }}
 <section id="comments">
-  <div id="disqus_thread">
-    {{ template "_internal/disqus.html" . }}
-  </div>
+    
 </section>
-{{ end }}
+{{ end }}-->
+<script src="https://utteranc.es/client.js"
+  repo="mscipio/mscipio.github.io"
+  issue-term="pathname"
+  label="Comment"
+  theme="github-light"
+  crossorigin="anonymous"
+  async>
+</script>
