@@ -2,12 +2,12 @@
 {{ $page := .page }}
 
 <div class="article-list-item" itemscope itemprop="blogPost">
-  {{ $preview := $post.Params.header.preview | default true }}
+  <!---{{ $preview := $post.Params.header.preview | default true }}
   {{ if and $post.Params.header.image $preview }}
   <a href="{{ $post.Permalink }}">
     <img src="{{ "/img/" | relURL }}{{ $post.Params.header.image }}" class="article-banner" itemprop="image">
   </a>
-  {{end}}
+  {{end}}-->
   <h3 class="article-title" itemprop="name">
     <a href="{{ $post.Permalink }}" itemprop="url">{{ $post.Title }}</a>
   </h3>

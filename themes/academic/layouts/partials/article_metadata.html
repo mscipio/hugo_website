@@ -6,7 +6,7 @@
     <time datetime="{{ $.Date }}" itemprop="datePublished">
       {{ $.Date.Format $.Site.Params.date_format }}
     </time>
-  </span>
+  </span><br/>
 
   {{ if isset $.Params "categories" }}
   {{ $categoriesLen := len $.Params.categories }}

@@ -7,6 +7,9 @@ math = true
 summary = """
 Different strategies to call and use matlab scripts and functions from Python code.
 """
+[header]
+image = "headers/cool-backgrounds/cool-background14.png"
+caption = "coolbackgrounds.io"
 +++
 
 
