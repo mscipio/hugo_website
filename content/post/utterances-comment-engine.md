@@ -8,7 +8,8 @@ summary = """
 A lightweight comments widget built on GitHub issues. Use GitHub issues for blog comments!
 """
 [header]
-image = ""
+image = "/headers/cool-backgrounds/cool-background1.png"
+caption = "test"
 +++
 
 [**Utteranc.es**](https://utteranc.es/) is a lightweigth comments widget, which allows you to use **Github Issues** for blog comments. It's open source, looks clean, comments are stored on Github, and even comes with a dark theme. Sure, you need to sign with Github, but that's fine since most coders already have an account. <!--more-->
