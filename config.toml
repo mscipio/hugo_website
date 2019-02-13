@@ -144,7 +144,7 @@ defaultContentLanguageInSubdir = false
   [[params.social]]
     icon = "id-card"
     icon_pack = "fa"
-    link = "data/CV_eng_LONG.pdf"
+    link = "data/Resume_MicheleScipioni_Dec2018.pdf"
 
   [[params.social]]
     icon = "github"
