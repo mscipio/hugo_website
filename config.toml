@@ -21,8 +21,8 @@ defaultContentLanguageInSubdir = false
 [params]
   name = "Michele Scipioni"
   role = "Research Associate @ IFC-CNR"
-  organization = "Institute of Clinical Physiology of the National Research Council, Pisa, Italy"
-  organization_url = ""
+  organization = "Institute of Clinical Physiology, CNR, Pisa, Italy"
+  organization_url = "https://www.ifc.cnr.it/index.php/it/"
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "foto_bw.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
   email = "scipioni.michele@gmail.com"
@@ -141,10 +141,10 @@ defaultContentLanguageInSubdir = false
     icon_pack = "fa"
     link = "http://it.linkedin.com/in/scipionimichele"
 
-  [[params.social]]
-    icon = "id-card"
-    icon_pack = "fa"
-    link = "data/Resume_MicheleScipioni_Dec2018.pdf"
+  #[[params.social]]
+    #icon = "id-card"
+    #icon_pack = "fa"
+    #link = "data/Resume_MicheleScipioni_Dec2018.pdf"
 
   [[params.social]]
     icon = "github"

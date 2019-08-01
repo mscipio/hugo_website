@@ -46,3 +46,6 @@ During the first two years of my Ph.D., I have been dealing with theoretical and
 Given the particular nature of the problem of parametric mapping, I have also had the chance to get in touch with **CUDA GP-GPU programming**, with the aim of efficiently parallelize the problem of fitting a specific model to every voxel of a 3D PET or DCE-MRI volume.
 
 My *alma mater* is the ***University of Pisa***, in Italy, but I also spent part of my Ph.D. at the ***Athinoula A. Martinos Center for Biomedical Imaging***, in Boston, working with the two groups mainly involved with PET/MR imaging: [Catana Lab](https://www.nmr.mgh.harvard.edu/user/7025), and [Price Lab](https://www.nmr.mgh.harvard.edu/user/3482467).
+
+- [**Curriculum Vitae**](data/CurriculumVitae_MicheleScipioni.pdf)
+- [**Resume**](data/Resume_MicheleScipioni.pdf)
