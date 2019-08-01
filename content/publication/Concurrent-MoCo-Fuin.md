@@ -34,7 +34,7 @@ highlight = false
 image_preview = ""
 
 # Is this a selected publication? (true/false)
-selected = true
+selected = false
 
 # Links (optional)
 url_pdf = "http://jnm.snmjournals.org/content/59/9/1474.full.pdf+html"

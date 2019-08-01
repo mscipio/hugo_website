@@ -34,7 +34,7 @@ highlight = false
 image_preview = ""
 
 # Is this a selected publication? (true/false)
-selected = true
+selected = false
 
 # Links (optional)
 url_pdf = "https://doi.org/10.1016/j.compbiomed.2018.06.015"
@@ -46,7 +46,8 @@ url_video = ""
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-image = "publication/fast-fitting.jpg"
+#"publication/fast-fitting.jpg"
+image = ""
 caption = "Graphical Abstract"
 
 +++

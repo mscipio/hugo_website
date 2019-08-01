@@ -21,7 +21,7 @@ weight = 1
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "[ongoing] Ph.D. in Information Engineering"
+  course = "Ph.D. in Biomedical Engineering"
   institution = "University of Pisa - Pisa (IT)"
   year = 2018
 
@@ -41,7 +41,7 @@ weight = 1
 
 I'm an Italian Biomedical Engineer and Ph.D. student. My main research interests, at the moment, include medical imaging tomographic image reconstruction (mainly PET and MRI), and kinetic modeling of dynamic acquisitions, with a specific focus on parametric mapping.
 
-During the first two years of my Ph.D., I have been dealing with theoretical and computational issues, related to the previously mentioned topics. Working with pharmacokinetic modeling, I have to deal with **non-linear optimization**, and fitting of complex **ODE-based compartmental models**, while tomographic image reconstruction requires me to solve complex **inverse optimization problems**. Putting everything together (i.e. integrating metabolic information into the reconstruction of 4D PET/MRI time series) goes through the design of **hierarchical Bayesian models**, on which eventually we want to do some kind probabilistic inference. 
+During the first two years of my Ph.D., I have been dealing with theoretical and computational issues, related to the previously mentioned topics. Working with pharmacokinetic modeling, I have to deal with **non-linear optimization**, and fitting of complex **ODE-based compartmental models**, while tomographic image reconstruction requires me to solve complex **inverse optimization problems**. Putting everything together (i.e. integrating metabolic information into the reconstruction of 4D PET/MRI time series) goes through the design of **hierarchical Bayesian models**, on which eventually we want to do some kind probabilistic inference.
 
 Given the particular nature of the problem of parametric mapping, I have also had the chance to get in touch with **CUDA GP-GPU programming**, with the aim of efficiently parallelize the problem of fitting a specific model to every voxel of a 3D PET or DCE-MRI volume.
 

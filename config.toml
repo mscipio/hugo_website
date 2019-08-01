@@ -20,8 +20,8 @@ defaultContentLanguageInSubdir = false
 
 [params]
   name = "Michele Scipioni"
-  role = "Ph.D. student in Biomedical Engineering"
-  organization = "University of Pisa, Pisa (IT)"
+  role = "Research Associate @ IFC-CNR"
+  organization = "Institute of Clinical Physiology of the National Research Council, Pisa, Italy"
   organization_url = ""
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "foto_bw.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
@@ -31,7 +31,7 @@ defaultContentLanguageInSubdir = false
   #phone = "888 888 88 88"
   skype = "scipioni.michele"
   telegram = "mscipio"
-  twitter = "@MicheleScipio"
+  twitter = "@mscipioTW"
 
   # Enable Keybase in Contact section by entering your keybase.io username.
   keybase = ""
@@ -83,7 +83,7 @@ defaultContentLanguageInSubdir = false
   highlight_version = "9.9.0"
   #pygmentsCodeFences = true
   #pygmentsStyle = "monokai"
-  
+
   # Enable native social sharing buttons?
   sharing = true
 
@@ -129,7 +129,7 @@ defaultContentLanguageInSubdir = false
   [[params.social]]
     icon = "twitter"
     icon_pack = "fa"
-    link = "https://twitter.com/MicheleScipio"
+    link = "https://twitter.com/mscipioTW"
 
   [[params.social]]
     icon = "envelope"
@@ -181,24 +181,28 @@ defaultContentLanguageInSubdir = false
 
 [[menu.main]]
   name = "Publications"
-  #url = "#publications_selected"
   url = "#publications"
   weight = 3
 
 [[menu.main]]
+  name = "Talks"
+  url = "#talks"
+  weight = 4
+
+[[menu.main]]
   name = "Projects"
   url = "#projects"
-  weight = 4
+  weight = 5
 
 [[menu.main]]
   name = "Teaching"
   url = "#teaching"
-  weight = 5
+  weight = 6
 
 [[menu.main]]
   name = "Contact"
   url = "#contact"
-  weight = 6
+  weight = 7
 
 # Taxonomies.
 [taxonomies]

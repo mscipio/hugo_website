@@ -12,17 +12,17 @@ authors = ["Michele Scipioni", "Stefano Pedemonte", "Maria Filomena Santarelli",
 # 4 = Technical report
 # 5 = Book
 # 6 = Book chapter
-publication_types = ["3"]
+publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-title = "Probabilistic Graphical Modeling approach to dynamic PET direct parametric map estimation and image reconstruction"
-publication = "pre-print"
-publication_short = " "
-date = "2018-08-24"
+title = "Probabilistic Graphical Models for dynamic PET: a novel approach to direct parametric map estimation and image reconstruction"
+publication = "IEEE Transactions on Medical Imaging"
+publication_short = "IEEE TMI (2019)"
+date = "2019-06-30"
 
 # Abstract and optional shortened version.
-abstract = "In the context of dynamic emission tomography, the conventional processing pipeline consists of independent image reconstruction of single time frames, followed by the application of a suitable kinetic model to time activity curves (TACs) at the voxel or region-of-interest level. The relatively new field of 4D PET direct reconstruction, by contrast, seeks to move beyond this scheme and incorporate information from multiple time frames within the reconstruction task. Existing 4D direct models are based on a deterministic description of voxels' TACs, captured by the chosen kinetic model, considering the photon counting process the only source of uncertainty. In this work, we introduce a new probabilistic modeling strategy based on the key assumption that activity time course would be subject to uncertainty even if the parameters of the underlying dynamic process were known. This leads to a hierarchical Bayesian model, which we formulate using the formalism of Probabilistic Graphical Modeling (PGM). The inference of the joint probability density function arising from PGM is addressed using a new gradient-based iterative algorithm, which presents several advantages compared to existing direct methods: it is flexible to an arbitrary choice of linear and nonlinear kinetic model; it enables the inclusion of arbitrary (sub)differentiable priors for parametric maps; it is simpler to implement and suitable to integration in computing frameworks for machine learning. Computer simulations and an application to real patient scan showed how the proposed approach allows us to weight the importance of the kinetic model, providing a bridge between indirect and deterministic direct methods. "
-abstract_short = ""
+abstract = "In the context of dynamic emission tomography, the conventional processing pipeline consists of independent image reconstruction of single time frames, followed by the application of a suitable kinetic model to time-activity curves (TACs) at the voxel or region-of-interest level. Direct 4D PET reconstruction, by contrast, seeks to move beyond this scheme and incorporate information from multiple time frames within the reconstruction task. Established direct methods are based on a deterministic description of voxelwise TACs, captured by the chosen kinetic model, considering the photon counting process the only source of uncertainty. In this work, we introduce a new probabilistic modeling strategy based on the key assumption that activity time course would be subject to uncertainty even if the parameters of the underlying dynamic process are known. This leads to a hierarchical model, which we formulate using the formalism of Probabilistic Graphical Modeling. The inference is addressed using a new iterative algorithm, in which kinetic modeling results are treated as prior expectation of activity time course, rather than as a deterministic match, making it possible to control the trade-off between a data-driven and a model-driven reconstruction. The proposed method is flexible to an arbitrary choice of (linear and nonlinear) kinetic models, it enables the inclusion of arbitrary (sub)differentiable priors for parametric maps, and it is simple to implement. Computer simulations and an application to a real patient scan show how the proposed method is able to generalize over conventional indirect and direct approaches, providing a bridge between them by properly tuning the impact of the kinetic modeling step on image reconstruction. "
+abstract_short = "[...] In this work, we introduce a new probabilistic modeling strategy based on the key assumption that activity time course would be subject to uncertainty even if the parameters of the underlying dynamic process are known. This leads to a hierarchical model, which we formulate using the formalism of Probabilistic Graphical Modeling. The inference is addressed using a new iterative algorithm, in which kinetic modeling results are treated as prior expectation of activity time course, rather than as a deterministic match, making it possible to control the trade-off between a data-driven and a model-driven reconstruction. [...]"
 
 # Does this page contain LaTeX math? (true/false)
 math = false
@@ -37,7 +37,7 @@ image_preview = ""
 selected = true
 
 # Links (optional)
-url_pdf = "https://arxiv.org/pdf/1808.08286"
+url_pdf = "https://ieeexplore.ieee.org/abstract/document/8735911"
 url_code = ""
 url_dataset = ""
 url_project = ""

@@ -34,7 +34,7 @@ highlight = false
 image_preview = ""
 
 # Is this a selected publication? (true/false)
-selected = true
+selected = false
 
 # Links (optional)
 url_pdf = "https://www.hindawi.com/journals/jhe/2018/5942873/abs/"
