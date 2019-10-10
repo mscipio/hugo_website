@@ -16,8 +16,9 @@ publication_types = ["3"]
 
 # Publication name and optional abbreviated version.
 title = "(preprint) Probabilistic Graphical Modeling approach to dynamic PET direct parametric map estimation and image reconstruction"
-publication = "pre-print"
-publication_short = " "
+publication = "ArXiV preprint"
+publication_short = "ArXiV"
+publication_url = "https://arxiv.org/pdf/1808.08286"
 date = "2018-08-24"
 
 # Abstract and optional shortened version.

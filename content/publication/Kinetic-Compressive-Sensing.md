@@ -17,6 +17,7 @@ publication_types = ["1"]
 # Publication name and optional abbreviated version.
 title = "Kinetic Compressive Sensing"
 publication = "2017 IEEE Nuclear Science Symposium and Medical Imaging Conference (NSS/MIC)"
+publication_url = "https://ieeexplore.ieee.org/document/8532954"
 publication_short = "2017 IEEE NSS/MIC"
 date = "2018-11-15"
 

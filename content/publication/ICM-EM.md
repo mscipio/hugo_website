@@ -16,8 +16,9 @@ publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
 title = "Direct parametric maps estimation from dynamic PET data: an iterated conditional modes approach"
-publication = "Journal of healthcare engineering"
-publication_short = "Journal of healthcare engineering"
+publication = "Journal of Healthcare Engineering"
+publication_url = "https://www.hindawi.com/journals/jhe/2018/5942873/abs/"
+publication_short = "Journal of Healthcare Engineering"
 date = "2018-07-08"
 
 # Abstract and optional shortened version.

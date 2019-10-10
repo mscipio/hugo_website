@@ -17,6 +17,7 @@ publication_types = ["2"]
 # Publication name and optional abbreviated version.
 title = "Probabilistic Graphical Models for dynamic PET: a novel approach to direct parametric map estimation and image reconstruction"
 publication = "IEEE Transactions on Medical Imaging"
+publication_url = "https://ieeexplore.ieee.org/abstract/document/8735911"
 publication_short = "IEEE TMI (2019)"
 date = "2019-06-30"
 
@@ -37,7 +38,7 @@ image_preview = ""
 selected = true
 
 # Links (optional)
-url_pdf = "https://ieeexplore.ieee.org/abstract/document/8735911"
+url_pdf = ""
 url_code = ""
 url_dataset = ""
 url_project = ""

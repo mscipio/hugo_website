@@ -18,6 +18,7 @@ publication_types = ["1"]
 title = "Direct 4D PET reconstruction with discrete tissue types"
 publication = "41st IEEE Engineering in Medicine and Biology Conference"
 publication_short = "IEEE EMBC (2019)"
+publication_url = "https://ieeexplore.ieee.org/document/8856326"
 date = "2019-07-26"
 
 # Abstract and optional shortened version.

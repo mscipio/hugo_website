@@ -18,6 +18,7 @@ publication_types = ["2"]
 title = "Comparison of the clinical performance of upper abdominal PET/DCE-MRI with and without concurrent respiratory motion correction (MoCo)"
 publication = "European journal of nuclear medicine and molecular imaging"
 publication_short = "EJNMMI"
+publication_url = "http://jnm.snmjournals.org/content/59/9/1474"
 date = "2018-07-11"
 
 # Abstract and optional shortened version.

@@ -18,6 +18,7 @@ publication_types = ["2"]
 title = "Accelerated PET kinetic maps estimation by analytic fitting method"
 publication = "Computers in Biology and Medicine"
 publication_short = "Computers in Biology and Medicine"
+publication_url = "https://doi.org/10.1016/j.compbiomed.2018.06.015"
 date = "2018-06-20"
 
 # Abstract and optional shortened version.
@@ -37,7 +38,7 @@ image_preview = ""
 selected = false
 
 # Links (optional)
-url_pdf = "https://doi.org/10.1016/j.compbiomed.2018.06.015"
+url_pdf = ""
 url_code = ""
 url_dataset = ""
 url_project = ""

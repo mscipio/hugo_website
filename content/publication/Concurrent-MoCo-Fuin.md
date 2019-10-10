@@ -18,6 +18,7 @@ publication_types = ["2"]
 title = "Concurrent Respiratory Motion Correction of Abdominal PET and Dynamic Contrast-Enhanced–MRI Using a Compressed Sensing Approach"
 publication = "Journal of Nuclear Medicine"
 publication_short = "JNM"
+publication_url = "http://jnm.snmjournals.org/content/59/9/1474"
 date = "2018-09-01"
 
 # Abstract and optional shortened version.
