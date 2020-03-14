@@ -1,0 +1,1389 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python | MICHELE SCIPIONI</title>
+    <link>/tags/python/</link>
+      <atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <description>python</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2020</copyright><lastBuildDate>Tue, 05 Feb 2019 10:26:46 +0100</lastBuildDate>
+    <image>
+      <url>/img/foto_bw.jpg</url>
+      <title>python</title>
+      <link>/tags/python/</link>
+    </image>
+    
+    <item>
+      <title>Calling Matlab (custom) functions from Python</title>
+      <link>/post/matlab-from-python/</link>
+      <pubDate>Tue, 05 Feb 2019 10:26:46 +0100</pubDate>
+      <guid>/post/matlab-from-python/</guid>
+      <description>&lt;p&gt;Nowadays &lt;em&gt;the ability to write codes&lt;/em&gt; has become an essential skill in technical and scientific disciplines. Either you like it or not, during your studies you will find yourself doing assignments, solving equations or bigger &amp;lsquo;problems&amp;rsquo; of your projects with some sort of coding. And, if you think of going for higher studies and doing some extensive research, then &lt;em&gt;writing codes&lt;/em&gt; is a must know skill for you.&lt;/p&gt;
+&lt;p&gt;Quite often, students will become familiar with &lt;em&gt;scientific programming&lt;/em&gt; (note that I am not specifically refferring to CS students, focused on general purpose coding and programming) through &lt;strong&gt;MATLAB&lt;/strong&gt;. The simple reason for that is that MATLAB has been there for scientific computing for a long while, and it has become a legacy language or tool for the scientific community. Engineers and Scientists always needed a programming language that expresses matrix and array mathematics directly, and then MATLAB (matrix laboratory) came into existence. MATLAB is a math and matrix oriented language comes with different types of specialized toolboxes (you have to pay for toolbox) for several purposes e.g. modelling economic data, image analysis or driving a robot. These toolboxes are professionally developed, rigorously tested and well documented for scientific and engineering applications. And that’s why you pay the price for it.&lt;/p&gt;
+&lt;p&gt;MATLAB has a solid amount of functions amd an extraordinarily good documentation to start learning, and a large scientific community who have either answered the questions that are going to be asked or will be answered by someone as you post them in the MATLAB Central. There are 365,000 contributors, 120 questions are answered and 25,000 sample scripts or codes are downloaded per day. It has toolboxes for computational biology, computational finances, control systems, data science, image processing and computer vision, machine learning, physical modelling and simulation, robotics, signal processing and communications and IOT.&lt;/p&gt;
+&lt;p&gt;On the other side, we have &lt;strong&gt;Python&lt;/strong&gt;, whcih is a much younger programming language, whose history of scientific computing packages, e.g. &lt;code&gt;SciPy&lt;/code&gt;, &lt;code&gt;NumPy&lt;/code&gt;, have not been antiquated. Moreover, in Python you often have to rely on &lt;em&gt;community-authored&lt;/em&gt; packages for scientific and engineering usages. Calling Python as an alternative to MATLAB is technically incorrect. It is a &lt;em&gt;general purpose programming language&lt;/em&gt;, which you to develop fully fledged apps and software tools, and to create applications using any of the major GUI libraries (e.g. Qt), use OpenGL, drive your USB port, etc.&lt;/p&gt;
+&lt;p&gt;Being a free, cross-platform, general-purpose and high-level programming language, lots of people are now adopting Python. IDES like pycharm, ipython notebook, jupyter notebook an distributions like anaconda has made python far more usable for researchers. As a result of this popularity, plenty of Python scientific packages have become available with extensive documentation for data visualization, machine learning, natural language processing, complex data analysis and more. For example, scikit-learn includes start-of-the-art ‘Machine Learning’ approaches with very good documentation and tutorials.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/matlab-from-python/python-matlab1.png&#34; alt=&#34;python-vs-matlab&#34; width=&#34;500&#34; vspace=&#34;150&#34;/&gt;&lt;/p&gt;
+&lt;p&gt;Sometimes, choosing between MATLAB and Python is a personal matter, or it could be task-specific. Other times, you may be forced to opt for Python.
+Personally, there are some fundamental issues that made me search for an alternative to MATLAB. I think the most fundamental problem with Matlab is its commercial nature, and this is the basis for several issues:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The algorithms are &lt;strong&gt;proprietary&lt;/strong&gt;, which means you (most of the times) can not see the code of the algorithms you are using and have to trust that Matlab implemented it right.&lt;/li&gt;
+&lt;li&gt;Obviously, Matlab is &lt;strong&gt;expensive&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;It makes &lt;strong&gt;portability more difficult&lt;/strong&gt;. The portability solution (the Matlab Component Runtime (MCR)) works fine, but Matlab had to take great care that one cannot use it to do generic &lt;em&gt;Matlabing&lt;/em&gt; with it. Maybe this is the reason that the application must be exactly the same version as the installed MCR, which can be a nuisance considering that Matlab releases a new version every 6 months.&lt;/li&gt;
+&lt;li&gt;The proprietary nature also makes it &lt;strong&gt;hard&lt;/strong&gt;, if not impossible, for 3th parties &lt;strong&gt;to extend&lt;/strong&gt; or create tools for Matlab.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Of course, Matlab has its advantages too:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It has a &lt;strong&gt;solid amount of functions&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;It mights also be &lt;strong&gt;easier to use for beginners&lt;/strong&gt;, because the package includes all, while in Python you need to install extra packages and an IDE.&lt;/li&gt;
+&lt;li&gt;It has a &lt;strong&gt;large scientific community&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;It is used on many universities (but few companies have the money to buy a license).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Last point is even more important if you consider the possibility of you working in academic research. It is not so unlikely that your colleagues are more familiar using MATLAB than Python, or that code examples ot functions released alongside published research articles will be written in MATLAB. Moreover, MATLAB supports writing complex (and computationally expensive) function in C/C++ source files, which are later compiled in a proprietary binary format called &lt;em&gt;&lt;strong&gt;MEX&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Long story short:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;you are a hardcore Python user and supported but find yourself dealing with MATLAB-friendly colleagues;&lt;/li&gt;
+&lt;li&gt;you need to use a function which is shipped as a compiled binary MEX file (meaning that even if you wanted, you cannot read and translate the source to Python, or recompile the C/C++ source in such a way it is possible to call it from Python);&lt;/li&gt;
+&lt;li&gt;or simply you like really much how a tool has been implemented in MATLAB (e.g. functions of the Statistical Toolbox, or the Optimization Toolbox, which are really well developed and documented) and you want to directly use them, instead of looking for native Python alternative.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you recognize yourself into one of the previous categories, in the remainder of this post we are going to see a couple of strategies you can use to call MATLAB functions from you Python code, in such a way that they will behave like native Python code, accepting inputs and providing outputs directly into Python current workspace.&lt;/p&gt;
+&lt;h2 id=&#34;matlab-api-for-python&#34;&gt;MATLAB API for Python&lt;/h2&gt;
+&lt;p&gt;To the MATLAB® Engine API for Python® you will need to have a copy of MATLAB installed in you system. There is no workaround for this, as far as I know, and this is a consequence of MATLAB being a proprietary software.
+This API supports almost every version of Python, and requires &lt;strong&gt;CPython&lt;/strong&gt; to be installed on your system, in order to use the referencing of inputs and outputs required to exchange arguments between the two worlds.&lt;/p&gt;
+&lt;p&gt;If you satisfies this requirements, the installation of the API is very simple, and it is done as you would do for every Python source code library.
+On Linux it sounds like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd &amp;quot;matlabroot/extern/engines/python&amp;quot;
+python setup.py install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;where matlabroot is the path where you installed MATLAB on your system.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s it!&lt;/p&gt;
+&lt;p&gt;The API provides a Python package named &lt;code&gt;matlab&lt;/code&gt; that enables you to call MATLAB functions from Python. You install the package once, and then you can call the engine in your current or future Python sessions. You can import this newly installed package by importing it into your current Python session:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import matlab.engine
+eng = matlab.engine.start_matlab()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;IF you want to keep things separated, and you need to have different sessions/workspaces for MATLAB, within you workflor, you can simply start multiple engines, which won&amp;rsquo;t communicate with each other:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;eng1 = matlab.engine.start_matlab()
+eng2 = matlab.engine.start_matlab()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To stop a matlab engine you can either quit your current Python session, or explicitly arrest the engine itself:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;eng1.exit
+eng2.quit()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;call-matlab-built-in-functions-from-python&#34;&gt;Call MATLAB (built-in) functions from Python&lt;/h2&gt;
+&lt;p&gt;You can call &lt;strong&gt;any MATLAB function&lt;/strong&gt; directly and return the results to Python. This holds as long as the function can be found in MATLAB&amp;rsquo;s path (we will come beck to this shortly).&lt;/p&gt;
+&lt;p&gt;For example, to determine &lt;em&gt;if a number is prime&lt;/em&gt;, use the engine to call the &lt;code&gt;isprime&lt;/code&gt; function.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;tf = eng.isprime(37)
+print(tf)
+print(type(tf))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;True
+&amp;lt;type &#39;bool&#39;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This was a simple one: the MATALB function we call produced only one output, and it was a &amp;lsquo;scalar&amp;rsquo; (actually boolean) output, not an array of some type.&lt;/p&gt;
+&lt;p&gt;When you call a function with the engine, &lt;strong&gt;by default the engine returns a single output argument&lt;/strong&gt;. If you know that the function can return multiple arguments, you will need to use the &lt;code&gt;nargout&lt;/code&gt; argument to specify the number of output arguments.&lt;/p&gt;
+&lt;p&gt;As an example, to determine the &lt;em&gt;greatest common denominator of two numbers&lt;/em&gt;, use the &lt;code&gt;gcd&lt;/code&gt; function, by setting &lt;code&gt;nargout&lt;/code&gt; to return the three output arguments from &lt;code&gt;gcd&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;t = eng.gcd(100.0,80.0,nargout=3)
+print(t)
+print(type(t))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;(20.0, 1.0, -1.0)
+&amp;lt;type &#39;tuple&#39;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;transfering-variables-from-python-to-matlab-workspace&#34;&gt;Transfering variables from Python to MATLAB workspace&lt;/h2&gt;
+&lt;p&gt;When you start the engine, it provides an interface to a collection of all MATLAB variables. This collection, named &lt;strong&gt;workspace&lt;/strong&gt;, is implemented as a &lt;strong&gt;Python dictionary&lt;/strong&gt; that is attached to the engine:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The name of each MATLAB variable becomes a key in the workspace dictionary.&lt;/li&gt;
+&lt;li&gt;The keys in workspace must be valid MATLAB identifiers (e.g., you cannot use numbers as keys).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can add variables to the engine workspace in Python, and then you can use the variables in MATLAB functions:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# variable x in Python workspace
+x = 4.0
+# a new variable called y is added to MATLAB workspace, and is value is set to be equal to Python&#39;s x
+eng.workspace[&#39;y&#39;] = x
+# we can use variable y while calling MATLAB functions, ad MATLAB is aware of all the variable availabe in its workspace
+a = eng.eval(&#39;sqrt(y)&#39;)
+print(a)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;2.0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In this example, x exists only as a Python variable. Its value is assigned to a new entry in the engine workspace, called y, creating a MATLAB variable. You can then call the MATLAB &lt;code&gt;eval&lt;/code&gt; function to execute the &lt;code&gt;sqrt(y)&lt;/code&gt; statement in MATLAB and return the output value, 2.0, to Python.&lt;/p&gt;
+&lt;h2 id=&#34;use-matlab-arrays-in-python&#34;&gt;Use MATLAB Arrays in Python&lt;/h2&gt;
+&lt;p&gt;Usually, while working with MATLAB, we are interested in performing complex operations on arrays. The &lt;code&gt;matlab&lt;/code&gt; package provides constructors to create MATLAB arrays in Python. The MATLAB Engine API for Python can pass such arrays as input arguments to MATLAB functions, and can return such arrays as output arguments to Python.&lt;/p&gt;
+&lt;p&gt;You can create arrays of any MATLAB numeric or logical type from Python sequence types, as follows:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;a = matlab.double([1,4,9,16,25])
+b = eng.sqrt(a)
+print(b)
+print(type(b))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;[[1.0,2.0,3.0,4.0,5.0]]
+&amp;lt;class &#39;matlab.mlarray.double&#39;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The engine returns b, which is a 1-by-5 &lt;code&gt;matlab.double&lt;/code&gt; array.&lt;/p&gt;
+&lt;p&gt;The same applies if we want to create a &lt;strong&gt;multidimensional array&lt;/strong&gt;. The &lt;code&gt;magic&lt;/code&gt; function returns a 2-D matlab.double array to Python.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;a = eng.magic(6)
+for x in a: 
+    print(x)
+print(type(a))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;[35.0,1.0,6.0,26.0,19.0,24.0]
+[3.0,32.0,7.0,21.0,23.0,25.0]
+[31.0,9.0,2.0,22.0,27.0,20.0]
+[8.0,28.0,33.0,17.0,10.0,15.0]
+[30.0,5.0,34.0,12.0,14.0,16.0]
+[4.0,36.0,29.0,13.0,18.0,11.0]
+&amp;lt;class &#39;matlab.mlarray.double&#39;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Unfortunately, &lt;code&gt;matlab&lt;/code&gt; package seems to work only with &lt;em&gt;&lt;strong&gt;pure Python&lt;/strong&gt;&lt;/em&gt; data structures, meaning that we will need to use some tricks if we are interested in working with, e.g., &lt;code&gt;numpy&lt;/code&gt; arrays.
+This is important, as usually if we need to call a MATALB function to work on arrays, it is because in Python we were working with arrays and this is usually done via &lt;code&gt;numpy&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s see what happens:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import numpy as np
+
+a = np.array([1,2,3,4]).reshape([1,4])
+b = a**2
+print(type(a))
+print(type(b))
+print(b)
+print(b.shape)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;type &#39;numpy.ndarray&#39;&amp;gt;
+&amp;lt;type &#39;numpy.ndarray&#39;&amp;gt;
+[[ 1  4  9 16]]
+(1, 4)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We created a &lt;code&gt;numpy&lt;/code&gt; array &lt;em&gt;a&lt;/em&gt;, and then we compute the square of each of its values, yelding another &lt;code&gt;numpy&lt;/code&gt; array.&lt;/p&gt;
+&lt;p&gt;If we try to reproduce this operation using &lt;code&gt;matlab&lt;/code&gt; package we will be stuck in an error as soon as we try to cast the &lt;code&gt;numpy&lt;/code&gt; array &lt;em&gt;a&lt;/em&gt; as a matlab.double array:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;a_m = matlab.double(a)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;---------------------------------------------------------------------------
+
+ValueError                                Traceback (most recent call last)
+
+&amp;lt;ipython-input-10-1757930e4e37&amp;gt; in &amp;lt;module&amp;gt;()
+----&amp;gt; 1 a_m = matlab.double(a)
+
+
+/media/DATA/miniconda3/envs/tomolab2/lib/python2.7/site-packages/matlab/mlarray.pyc in __init__(self, initializer, size, is_complex)
+     49             super(double, self).__init__(&#39;d&#39;, initializer, size, is_complex)
+     50         except Exception as ex:
+---&amp;gt; 51             raise ex
+     52 
+     53 
+
+
+ValueError: initializer must be a rectangular nested sequence
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This happens because &lt;em&gt;matlab.double&lt;/em&gt; function is expecting a list or a tuple as input, and it is unable to understand the &lt;em&gt;numpy.ndarray&lt;/em&gt; datatype.&lt;/p&gt;
+&lt;p&gt;A workaraound is to go back to the list format:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;a_m = matlab.double(a.tolist()) # casting a as list
+b_m = eng.power(a_m,2.0)
+print((b_m))
+print(type(b_m))
+print(b_m.size)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;[[1.0,4.0,9.0,16.0]]
+&amp;lt;class &#39;matlab.mlarray.double&#39;&amp;gt;
+(1, 4)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;There are additional problems that we need to face here: the output produced by the call to a MATLAB function is alway os type &lt;em&gt;matlab.mlarray&lt;/em&gt;. This is usefull if it is the endpoint of our computation, but if we need to perform other operations (in Python) on the output of the MATLAB function, this format if of little to no use, for us.&lt;/p&gt;
+&lt;p&gt;If we want to be correct, &lt;em&gt;matlab.mlarray&lt;/em&gt; is seen almost as a &lt;em&gt;list&lt;/em&gt; in Python. Basic operations are supported, but even &lt;em&gt;transpose&lt;/em&gt; or &lt;em&gt;reshape&lt;/em&gt; throw errors. To overcome this limitation we can &lt;strong&gt;recast the output as nupmy array&lt;/strong&gt;*.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;b_n = np.asarray(b_m)
+print(b_n)
+print(type(b_n))
+print(b_n.shape)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;[[ 1.  4.  9. 16.]]
+&amp;lt;type &#39;numpy.ndarray&#39;&amp;gt;
+(1, 4)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This can be done also in one line of code:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;a_m = matlab.double(a.tolist()) # casting a as list
+b_m = np.asarray(eng.power(a_m,2.0))
+print((b_m))
+print(type(b_m))
+print(b_m.shape)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;[[ 1.  4.  9. 16.]]
+&amp;lt;type &#39;numpy.ndarray&#39;&amp;gt;
+(1, 4)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;calling-custom-matlab-user-scripts-and-functions-from-python&#34;&gt;Calling custom MATLAB user scripts and functions from Python&lt;/h2&gt;
+&lt;p&gt;So far we have seen how we can use &lt;code&gt;matlab.engine&lt;/code&gt; to call built-in MATLAB functions to perform some computation on data, and strategies to passa data from Python session to MATLAB workspace.&lt;/p&gt;
+&lt;p&gt;This is rearely something we are interested in.
+Often times, we will be looking for ways to run custom MATLAB code, which can be of different types:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;scripts (*.m)&lt;/li&gt;
+&lt;li&gt;function (*.m)&lt;/li&gt;
+&lt;li&gt;MEX function (*.mexa64)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Let&amp;rsquo;s start with a very basic example, and let&amp;rsquo;s assume that, again we want to compute the power of an array.&lt;/p&gt;
+&lt;p&gt;We can use the following MATLAB code:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;b = [1,2,3,4];
+e = 2;
+r = b.^e
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In your current folder, copy this MATLAB code in a file named &lt;em&gt;pow_script.m&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;After you save the file, we can call it from within Python like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;eng.pow_script(nargout=0)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;r =
+
+     1     4     9    16
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;eng.workspace[&#39;r&#39;]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;matlab.double([[1.0,4.0,9.0,16.0]])
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Specifying &lt;code&gt;nargout=0&lt;/code&gt; is &lt;strong&gt;required&lt;/strong&gt;. Although the script prints output, it returns no output arguments to Python.&lt;/p&gt;
+&lt;p&gt;Alternatively (and in my opinion more interestingly) we can convert the script to a function and call the function from the engine.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;function r = pow_fun(b,e)
+    r = b.^e;
+end
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;All the considerations previously made are still valid for a custom user function:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;base = np.asarray([1.0,2.0,3.0,4.0])
+exp = 2.0
+ret = eng.pow_fun(matlab.double(base.tolist()),exp)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(ret)
+print(type(ret))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;[[1.0,4.0,9.0,16.0]]
+&amp;lt;class &#39;matlab.mlarray.double&#39;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And obviously this would allow us also to use complex MEX function within Python, passing Python arrays as input and receiving the output directly as Python variables (or &lt;code&gt;numpy&lt;/code&gt; arrays).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Blind Source Separation (BSS) with the Shogun Machine Learning Toolbox</title>
+      <link>/post/bss-shogun-python/</link>
+      <pubDate>Sun, 01 May 2016 11:00:00 +0000</pubDate>
+      <guid>/post/bss-shogun-python/</guid>
+      <description>&lt;h4 id=&#34;strongly-inspired-by-an-article-by-kevin-hughes-httpsgithubcomkevinhughes27tabrepositories&#34;&gt;Strongly inspired by an article by Kevin Hughes (&lt;em&gt;&lt;a href=&#34;https://github.com/kevinhughes27?tab=repositories&#34;&gt;https://github.com/kevinhughes27?tab=repositories&lt;/a&gt;&lt;/em&gt;)&lt;/h4&gt;
+&lt;p&gt;Today I am going to show you how we can do Blind Source Separation (BSS) using algorithms available in the Shogun Machine Learning Toolbox. What is &lt;strong&gt;Blind Source Separation&lt;/strong&gt;? &lt;em&gt;BSS&lt;/em&gt; is the separation of a set of source signals from a set of mixed signals.&lt;/p&gt;
+&lt;p&gt;My favorite example of this problem is known as the &lt;strong&gt;cocktail party problem&lt;/strong&gt; where a number of people are talking simultaneously and we want to separate each persons speech so we can listen to it separately. Now the caveat with this type of approach is that we need as many mixtures as we have source signals or in terms of the cocktail party problem &lt;em&gt;we need as many microphones as people talking in the room&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s get started. This example is going to be in Python and the first thing we are going to need to do is &lt;em&gt;load some audio files&lt;/em&gt;. To make things a bit easier further on in this example I&amp;rsquo;m going to wrap the basic scipy wav file reader and add some additional functionality. First I added a case to handle converting stereo wav files back into mono wav files and secondly this loader takes a desired sample rate and resamples the input to match. This is important because when we mix the two audio signals they need to have the same sample rate. &lt;!-- TEASER_END --&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from scipy.io import wavfile
+from scipy.signal import resample
+
+def load_wav(filename,samplerate=44100):
+
+    # load file
+    rate, data = wavfile.read(filename)
+
+    # convert stereo to mono
+    if len(data.shape) &amp;gt; 1:
+        data = data[:,0]/2 + data[:,1]/2
+
+    # re-interpolate samplerate    
+    ratio = float(samplerate) / float(rate)
+    data = resample(data, len(data) * ratio)
+
+    return samplerate, data.astype(np.int16)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next we&amp;rsquo;re going to need a way to play the audio files we&amp;rsquo;re working with (otherwise this wouldn&amp;rsquo;t be very exciting at all would it?). In the next bit of code I&amp;rsquo;ve defined a wavPlayer class that takes the signal and the sample rate and then creates a nice HTML5 webplayer right inline with the notebook.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#import StringIO
+import base64
+import struct  
+
+from IPython.core.display import HTML
+
+def wavPlayer(data, rate):
+    &amp;quot;&amp;quot;&amp;quot; will display html 5 player for compatible browser
+    The browser need to know how to play wav through html5.
+    there is no autoplay to prevent file playing when the browser opens
+    Adapted from SciPy.io. and
+    github.com/Carreau/posts/blob/master/07-the-sound-of-hydrogen.ipynb
+    &amp;quot;&amp;quot;&amp;quot;
+
+    buffer = six.moves.StringIO()
+    buffer.write(b&#39;RIFF&#39;)
+    buffer.write(b&#39;\x00\x00\x00\x00&#39;)
+    buffer.write(b&#39;WAVE&#39;)
+
+    buffer.write(b&#39;fmt &#39;)
+    if data.ndim == 1:
+        noc = 1
+    else:
+        noc = data.shape[1]
+    bits = data.dtype.itemsize * 8
+    sbytes = rate*(bits // 8)*noc
+    ba = noc * (bits // 8)
+    buffer.write(struct.pack(&#39;&amp;lt;ihHIIHH&#39;, 16, 1, noc, rate, sbytes, ba, bits))
+
+    # data chunk
+    buffer.write(b&#39;data&#39;)
+    buffer.write(struct.pack(&#39;&amp;lt;i&#39;, data.nbytes))
+
+    if data.dtype.byteorder == &#39;&amp;gt;&#39; or (data.dtype.byteorder == &#39;=&#39; and sys.byteorder == &#39;big&#39;):
+        data = data.byteswap()
+
+    buffer.write(data.tostring())
+    # return buffer.getvalue()
+    # Determine file size and place it in correct
+    # position at start of the file.
+    size = buffer.tell()
+    buffer.seek(4)
+    buffer.write(struct.pack(&#39;&amp;lt;i&#39;, size-8))
+
+    val = buffer.getvalue()
+
+    src = &amp;quot;&amp;quot;&amp;quot;
+    &amp;lt;head&amp;gt;
+    &amp;lt;meta http-equiv=&amp;quot;Content-Type&amp;quot; content=&amp;quot;text/html; charset=utf-8&amp;quot;&amp;gt;
+    &amp;lt;title&amp;gt;Simple Test&amp;lt;/title&amp;gt;
+    &amp;lt;/head&amp;gt;
+
+    &amp;lt;body&amp;gt;
+    &amp;lt;audio controls=&amp;quot;controls&amp;quot; style=&amp;quot;width:600px&amp;quot; &amp;gt;
+      &amp;lt;source controls src=&amp;quot;data:audio/wav;base64,{base64}&amp;quot; type=&amp;quot;audio/wav&amp;quot; /&amp;gt;
+      Your browser does not support the audio element.
+    &amp;lt;/audio&amp;gt;
+    &amp;lt;/body&amp;gt;
+    &amp;quot;&amp;quot;&amp;quot;.format(base64=base64.encodestring(val))
+    display(HTML(src))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now that we can load and play wav files we actually need some wav files! I found the sounds from Starcraft to be a great source of wav files because they&amp;rsquo;re short, interesting and remind me of my childhood. You can download Starcraft wav files here: &lt;a href=&#34;http://wavs.unclebubby.com/computer/starcraft/&#34;&gt;http://wavs.unclebubby.com/computer/starcraft/&lt;/a&gt; among other places on the web or from your Starcraft install directory (come on I know it&amp;rsquo;s still there).&lt;/p&gt;
+&lt;p&gt;Another good source of data (although lets be honest less cool) is ICA central and various other more academic data sets: &lt;a href=&#34;http://perso.telecom-paristech.fr/~cardoso/icacentral/base_multi.html&#34;&gt;http://perso.telecom-paristech.fr/~cardoso/icacentral/base_multi.html&lt;/a&gt;. Note that for lots of these data sets the data will be mixed already so you&amp;rsquo;ll be able to skip the next few steps.&lt;/p&gt;
+&lt;p&gt;Okay lets load up an audio file. I chose the Terran Battlecruiser saying &amp;ldquo;Good Day Commander&amp;rdquo;. In addition to the creating a wavPlayer I also plotted the data using Matplotlib (and tried my best to have the graph length match the HTML player length). Have a listen!&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# change to the shogun-data directoy
+import os
+os.chdir(&#39;../files&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;%pylab inline
+import pylab as pl
+import numpy as np
+
+# load
+fs1,s1 = load_wav(&#39;audio1.wav&#39;) # Terran Marine - &amp;quot;You want a piece of me, boy?&amp;quot;
+
+# plot
+pl.figure(figsize=(7,2))
+pl.plot(s1)
+pl.title(&#39;Signal 1&#39;)
+pl.show()
+
+# player
+wavPlayer(s1, fs1)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/bss-shogun-python/output_8_2.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;div ID=&#34;div-2&#34; style=&#34;display: table; margin: 0 auto;&#34;&gt;
+&lt;audio controls=&#34;controls&#34; &gt;
+  &lt;source type=&#34;audio/wav&#34; src=&#34;../../data/posts/audio1.wav&#34;&gt;&lt;/source&gt;
+&lt;/audio&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Now let&amp;rsquo;s load a second audio clip:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# load
+fs2,s2 = load_wav(&#39;audio2.wav&#39;) # Terran Battlecruiser - &amp;quot;Good day, commander.&amp;quot;
+
+# plot
+pl.figure(figsize=(6.75,2))
+pl.plot(s2)
+pl.title(&#39;Signal 2&#39;)
+pl.show()
+
+# player
+wavPlayer(s2, fs2)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/bss-shogun-python/output_10_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;div ID=&#34;div-2&#34; style=&#34;display: table; margin: 0 auto;&#34;&gt;
+&lt;audio controls=&#34;controls&#34; &gt;
+  &lt;source type=&#34;audio/wav&#34; src=&#34;../../data/posts/audio2.wav&#34;&gt;&lt;/source&gt;
+&lt;/audio&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;and a third audio clip:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# load
+fs3,s3 = load_wav(&#39;audio3.wav&#39;) # Protoss Zealot - &amp;quot;My life for Aiur!&amp;quot;
+
+# plot
+pl.figure(figsize=(6.75,2))
+pl.plot(s3)
+pl.title(&#39;Signal 3&#39;)
+pl.show()
+
+# player
+wavPlayer(s3, fs3)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/bss-shogun-python/output_12_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;div ID=&#34;div-2&#34; style=&#34;display: table; margin: 0 auto;&#34;&gt;
+&lt;audio controls=&#34;controls&#34; &gt;
+  &lt;source type=&#34;audio/wav&#34; src=&#34;../../data/posts/audio3.wav&#34;&gt;&lt;/source&gt;
+&lt;/audio&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Now we&amp;rsquo;ve got our audio files loaded up into our example program. The next thing we need to do is mix them together!&lt;/p&gt;
+&lt;p&gt;First another nuance - what if the audio clips aren&amp;rsquo;t the same lenth? The solution I came up with for this was to simply resize them all to the length of the longest signal, the extra length will just be filled with zeros so it won&amp;rsquo;t affect the sound.&lt;/p&gt;
+&lt;p&gt;The signals are mixed by creating a mixing matrix $A$ and taking the dot product of $A$ with the signals $S$.&lt;/p&gt;
+&lt;p&gt;Afterwards I plot the mixed signals and create the wavPlayers, have a listen!&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# Adjust for different clip lengths
+fs = fs1
+length = max([len(s1), len(s2), len(s3)])
+
+s1.resize((length,1), refcheck=False)
+s2.resize((length,1), refcheck=False)
+s3.resize((length,1), refcheck=False)
+
+&amp;quot;&amp;quot;&amp;quot;
+The function numpy.c_ concatenates the numpy arrays given as input.
+The method numpy_array.T is the transpose operation that allow us
+to prepare an input source matrix of the right size (3, length),
+according to the chosen mixing matrix (3,3).
+&amp;quot;&amp;quot;&amp;quot;
+S = (np.c_[s1, s2, s3]).T
+
+# Mixing Matrix
+#A = np.random.uniform(size=(3,3))
+#A = A / A.sum(axis=0)
+A = np.array([[1, 0.5, 0.5],
+              [0.5, 1, 0.5],
+              [0.5, 0.5, 1]])
+print &#39;Mixing Matrix:&#39;
+print A.round(2)
+
+# Mixed Signals
+X = np.dot(A,S)
+
+# Exploring Mixed Signals
+for i in range(X.shape[0]):
+    pl.figure(figsize=(6.75,2))
+    pl.plot((X[i]).astype(np.int16))
+    pl.title(&#39;Mixed Signal %d&#39; % (i+1))
+    pl.show()
+    wavPlayer((X[i]).astype(np.int16), fs)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Mixing Matrix:
+[[ 1.   0.5  0.5]
+ [ 0.5  1.   0.5]
+ [ 0.5  0.5  1. ]]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/bss-shogun-python/output_14_1.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;div ID=&#34;div-2&#34; style=&#34;display: table; margin: 0 auto;&#34;&gt;
+&lt;audio controls=&#34;controls&#34; &gt;
+  &lt;source type=&#34;audio/wav&#34; src=&#34;../../data/posts/mixaudio1.wav&#34;&gt;&lt;/source&gt;
+&lt;/audio&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/bss-shogun-python/output_14_3.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;div ID=&#34;div-2&#34; style=&#34;display: table; margin: 0 auto;&#34;&gt;
+&lt;audio controls=&#34;controls&#34; &gt;
+  &lt;source type=&#34;audio/wav&#34; src=&#34;../../data/posts/mixaudio2.wav&#34;&gt;&lt;/source&gt;
+&lt;/audio&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/bss-shogun-python/output_14_5.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;div ID=&#34;div-2&#34; style=&#34;display: table; margin: 0 auto;&#34;&gt;
+&lt;audio controls=&#34;controls&#34; &gt;
+  &lt;source type=&#34;audio/wav&#34; src=&#34;../../data/posts/mixaudio3.wav&#34;&gt;&lt;/source&gt;
+&lt;/audio&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Now before we can work on separating these signals we need to get the data ready for Shogun.
+Thankfully this is pretty easy!&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from shogun.Features  import RealFeatures
+
+# Convert to features for shogun
+mixed_signals = RealFeatures((X).astype(np.float64))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now lets &lt;strong&gt;unmix&lt;/strong&gt; those signals!&lt;/p&gt;
+&lt;p&gt;In this example I&amp;rsquo;m going to use an &lt;strong&gt;Independent Component Analysis (ICA)&lt;/strong&gt; algorithm called &lt;em&gt;JADE&lt;/em&gt;. JADE is one of the ICA algorithms available in Shogun and it works by performing &lt;em&gt;&lt;strong&gt;Approximate Joint Diagonalization&lt;/strong&gt;&lt;/em&gt; (AJD) on a 4th order cumulant tensor. I&amp;rsquo;m not going to go into a lot of detail on how JADE works behind the scenes but here is the reference for the original paper:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Cardoso, J. F., &amp;amp; Souloumiac, A. (1993). Blind beamforming for non-Gaussian signals. In IEEE Proceedings F (Radar and Signal Processing) (Vol. 140, No. 6, pp. 362-370). IET Digital Library.&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Shogun also has several other ICA algorithms including the Second Order Blind Identification (SOBI) algorithm, FFSep, JediSep, UWedgeSep and FastICA. All of the algorithms inherit from the ICAConverter base class and share some common methods for setting an intial guess for the mixing matrix, retrieving the final mixing matrix and getting/setting the number of iterations to run and the desired convergence tolerance. Some of the algorithms have additional getters for intermediate calculations, for example Jade has a method for returning the 4th order cumulant tensor while the &amp;ldquo;Sep&amp;rdquo; algorithms have a getter for the time lagged covariance matrices. Check out the source code on GitHub or the Shogun docs for more details!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from shogun.Converter import Jade
+
+# Separating with JADE
+jade = Jade()
+signals = jade.apply(mixed_signals)
+
+S_ = signals.get_feature_matrix()
+
+A_ = jade.get_mixing_matrix()
+A_ = A_ / A_.sum(axis=0)
+
+print &#39;Estimated Mixing Matrix:&#39;
+print A_
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Estimated Mixing Matrix:
+[[ 0.25098835  0.49907993  0.24442146]
+ [ 0.26235007  0.25543257  0.53186567]
+ [ 0.48666158  0.2454875   0.22371287]]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Thats all there is to it!&lt;/p&gt;
+&lt;p&gt;Check out how nicely those signals have been separated and have a listen!&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# Show separation results
+
+# Separated Signal i
+gain = 4000
+for i in range(S_.shape[0]):
+    pl.figure(figsize=(6.75,2))
+    pl.plot((gain*S_[i]).astype(np.int16))
+    pl.title(&#39;Separated Signal %d&#39; % (i+1))
+    pl.show()
+    wavPlayer((gain*S_[i]).astype(np.int16), fs)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/bss-shogun-python/output_20_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;div ID=&#34;div-2&#34; style=&#34;display: table; margin: 0 auto;&#34;&gt;
+&lt;audio controls=&#34;controls&#34; &gt;
+  &lt;source type=&#34;audio/wav&#34; src=&#34;../../data/posts/unmixaudio1.wav&#34;&gt;&lt;/source&gt;
+&lt;/audio&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/bss-shogun-python/output_20_2.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;div ID=&#34;div-2&#34; style=&#34;display: table; margin: 0 auto;&#34;&gt;
+&lt;audio controls=&#34;controls&#34; &gt;
+  &lt;source type=&#34;audio/wav&#34; src=&#34;../../data/posts/unmixaudio2.wav&#34;&gt;&lt;/source&gt;
+&lt;/audio&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/bss-shogun-python/output_20_4.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;div ID=&#34;div-2&#34; style=&#34;display: table; margin: 0 auto;&#34;&gt;
+&lt;audio controls=&#34;controls&#34; &gt;
+  &lt;source type=&#34;audio/wav&#34; src=&#34;../../data/posts/unmixaudio3.wav&#34;&gt;&lt;/source&gt;
+&lt;/audio&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;BSS isn&amp;rsquo;t only useful for working with Audio, it is also useful for image processing and pre-processing other forms of high dimensional data.
+Have a google for ICA and machine learning if you want to learn more, but we will sure come back in the future on this topic!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Calculating the posterior probability distribution of parameters with emcee python module</title>
+      <link>/post/posterior-distribution-of-parameter-estimate/</link>
+      <pubDate>Sun, 01 May 2016 11:00:00 +0000</pubDate>
+      <guid>/post/posterior-distribution-of-parameter-estimate/</guid>
+      <description>&lt;h2 id=&#34;the-emcee-python-module&#34;&gt;The &lt;strong&gt;emcee()&lt;/strong&gt; python module&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;emcee&lt;/strong&gt; can be used to obtain the posterior probability distribution of parameters, given a set of experimental data. An example problem is a double exponential decay. A small amount of Gaussian noise is also added.&lt;!-- TEASER_END --&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;%matplotlib inline
+import numpy as np
+import lmfit
+from matplotlib import pyplot as plt
+import corner
+import emcee
+from pylab import *
+ion()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;x = np.linspace(1, 10, 250)
+np.random.seed(0)
+y = 3.0 * np.exp(-x / 2) - 5.0 * np.exp(-(x - 0.1) / 10.) + 0.1 * np.random.randn(len(x))
+
+plt.plot(x, y)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;[&amp;lt;matplotlib.lines.Line2D at 0x7fbabac52310&amp;gt;]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/posterior-distribution-of-parameter-estimate/output_3_1.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;initializing-our-example-creating-a-parameter-set-for-the-initial-guesses&#34;&gt;Initializing our example creating a parameter set for the initial guesses:&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;p = lmfit.Parameters()
+p.add_many((&#39;a1&#39;, 4.), (&#39;a2&#39;, 4.), (&#39;t1&#39;, 3.), (&#39;t2&#39;, 3., True))
+
+def residual(p):
+    v = p.valuesdict()
+    return v[&#39;a1&#39;] * np.exp(-x / v[&#39;t1&#39;]) + v[&#39;a2&#39;] * np.exp(-(x - 0.1) / v[&#39;t2&#39;]) - y
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;solving-with-minimize-gives-the-maximum-likelihood-solution&#34;&gt;Solving with minimize() gives the Maximum Likelihood solution.:&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;mi = lmfit.minimize(residual, p, method=&#39;Nelder&#39;)
+#mi = lmfit.minimize(residual, p)
+lmfit.printfuncs.report_fit(mi.params, min_correl=0.5)
+
+plt.plot(x, y)
+plt.plot(x, residual(mi.params) + y, &#39;r&#39;)
+plt.show()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;[[Variables]]
+    a1:   2.98623688 (init= 4)
+    a2:  -4.33525596 (init= 4)
+    t1:   1.30993185 (init= 3)
+    t2:   11.8240752 (init= 3)
+[[Correlations]] (unreported correlations are &amp;lt;  0.500)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/posterior-distribution-of-parameter-estimate/output_7_1.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;However, &lt;strong&gt;this doesn’t give a probability distribution&lt;/strong&gt; for the parameters. Furthermore, we wish to deal with the data uncertainty. This is called marginalisation of a nuisance parameter. &lt;strong&gt;emcee&lt;/strong&gt; requires a function that returns the log-posterior probability.&lt;/p&gt;
+&lt;h3 id=&#34;posterior-distribution-estimation&#34;&gt;Posterior distribution estimation&lt;/h3&gt;
+&lt;p&gt;The log-posterior probability is a &lt;strong&gt;sum of the log-prior probability and log-likelihood functions&lt;/strong&gt;. The log-prior probability is assumed to be zero if all the parameters are within their bounds and -np.inf if any of the parameters are outside their bounds.:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# add a noise parameter
+mi.params.add(&#39;f&#39;, value=1, min=0.001, max=2)
+
+# This is the log-likelihood probability for the sampling. We&#39;re going to estimate the
+# size of the uncertainties on the data as well.
+def lnprob(p):
+    resid = residual(p)
+    s = p[&#39;f&#39;]
+    resid *= 1 / s
+    resid *= resid
+    resid += np.log(2 * np.pi * s**2)
+    return -0.5 * np.sum(resid)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Lets have a look at those posterior distributions for the parameters.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;mini = lmfit.Minimizer(lnprob, mi.params)
+res = mini.emcee(burn=300, steps=600, thin=3, params=mi.params)
+corner.corner(res.flatchain, labels=res.var_names, truths=list(res.params.valuesdict().values()))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/posterior-distribution-of-parameter-estimate/output_11_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The values reported in the MinimizerResult are the medians of the probability distributions and a 1 sigma quantile&lt;/strong&gt;, estimated as half the difference between the 15.8 and 84.2 percentiles.&lt;/p&gt;
+&lt;p&gt;The median value is not necessarily the same as the Maximum Likelihood Estimate. We’ll get that as well. You can see that we recovered the right uncertainty level on the data:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;lmfit.report_fit(mi.params)
+print(&#39;---------------------------------------------&#39;)
+print(&amp;quot;median of posterior probability distribution&amp;quot;)
+print(&#39;---------------------------------------------&#39;)
+lmfit.report_fit(res.params)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;[[Variables]]
+    a1:   2.98623688 (init= 4)
+    a2:  -4.33525596 (init= 4)
+    t1:   1.30993185 (init= 3)
+    t2:   11.8240752 (init= 3)
+    f:    1          (init= 1)
+[[Correlations]] (unreported correlations are &amp;lt;  0.100)
+---------------------------------------------
+median of posterior probability distribution
+---------------------------------------------
+[[Variables]]
+    a1:   2.99754553 +/- 0.151322 (5.05%) (init= 2.986237)
+    a2:  -4.33867001 +/- 0.117687 (2.71%) (init=-4.335256)
+    t1:   1.31237613 +/- 0.132677 (10.11%) (init= 1.309932)
+    t2:   11.8062444 +/- 0.457356 (3.87%) (init= 11.82408)
+    f:    0.09810770 +/- 0.004350 (4.43%) (init= 1)
+[[Correlations]] (unreported correlations are &amp;lt;  0.100)
+    C(a2, t2)                    =  0.980
+    C(a2, t1)                    = -0.926
+    C(t1, t2)                    = -0.873
+    C(a1, t1)                    = -0.541
+    C(a1, a2)                    =  0.224
+    C(a1, t2)                    =  0.171
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;lets-find-the-maximum-likelihood-solution&#34;&gt;Let&amp;rsquo;s find the maximum likelihood solution&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;highest_prob = np.argmax(res.lnprob)
+hp_loc = np.unravel_index(highest_prob, res.lnprob.shape)
+mle_soln = res.chain[hp_loc]
+for i, par in enumerate(p):
+    p[par].value = mle_soln[i]
+
+print(&amp;quot;\nMaximum likelihood Estimation&amp;quot;)
+print(&#39;-----------------------------&#39;)
+print(p)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Maximum likelihood Estimation
+-----------------------------
+Parameters([(&#39;a1&#39;, &amp;lt;Parameter &#39;a1&#39;, 2.9874185587879265, bounds=[-inf:inf]&amp;gt;), (&#39;a2&#39;, &amp;lt;Parameter &#39;a2&#39;, -4.3357546840836836, bounds=[-inf:inf]&amp;gt;), (&#39;t1&#39;, &amp;lt;Parameter &#39;t1&#39;, 1.3090319527167826, bounds=[-inf:inf]&amp;gt;), (&#39;t2&#39;, &amp;lt;Parameter &#39;t2&#39;, 11.823518108067935, bounds=[-inf:inf]&amp;gt;)])
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;finally-lets-work-out-a-1-and-2-sigma-error-estimate-for-t1&#34;&gt;Finally lets work out a 1 and 2-sigma error estimate for &amp;lsquo;t1&amp;rsquo;&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;quantiles = np.percentile(res.flatchain[&#39;t1&#39;], [2.28, 15.9, 50, 84.2, 97.7])
+print(&amp;quot;2 sigma spread&amp;quot;, 0.5 * (quantiles[-1] - quantiles[0]))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;(&#39;2 sigma spread&#39;, 0.2826990333440581)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fitting theoretical model to data in python</title>
+      <link>/post/fitting-functions-to-data/</link>
+      <pubDate>Sun, 01 May 2016 11:00:00 +0000</pubDate>
+      <guid>/post/fitting-functions-to-data/</guid>
+      <description>&lt;p&gt;There are several data fitting utilities available. We will focus on two:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;scipy.optimize&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;lmfit.minimize&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Using both those modules, you can fit any arbitrary function that you define and it is, also, possible to constrain given parameters during the fit. Another important aspect is that both packages come with useful
+diagnostic tools.&lt;/p&gt;
+&lt;h2 id=&#34;fitting-basics&#34;&gt;Fitting Basics&lt;/h2&gt;
+&lt;p&gt;The &lt;em&gt;fitting&lt;/em&gt; we discuss here is an iterative process.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;First, we define our &lt;strong&gt;desired function&lt;/strong&gt;, and calculate values given certain parameters&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Then we &lt;strong&gt;calculate the difference&lt;/strong&gt; between the initial and the new values&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The final aim is to minimize this difference (specifically, we generally minimize the sum of the squares of these differences).&lt;!-- TEASER_END --&gt;&lt;/p&gt;
+&lt;p&gt;Several examples can be found at &lt;a href=&#34;http://www.scipy.org/Cookbook/FittingData&#34;&gt;http://www.scipy.org/Cookbook/FittingData&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Minimization is usually done by the method of &lt;strong&gt;least squares fitting&lt;/strong&gt;. There are several algorithms available for this minimization.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The most common is the &lt;strong&gt;Levenberg-Marquardt&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Susceptible to finding &lt;em&gt;local minima&lt;/em&gt; instead of &lt;em&gt;global&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Fast&lt;/li&gt;
+&lt;li&gt;Usually well-behaved for most functions&lt;/li&gt;
+&lt;li&gt;By far the &lt;em&gt;most tested of methods&lt;/em&gt;, with many accompanying statistics implemented&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Other methods include the &lt;strong&gt;Nelder-Mead&lt;/strong&gt;, &lt;strong&gt;L-BFGS-B&lt;/strong&gt;, and &lt;strong&gt;Simulated Annealing&lt;/strong&gt; algorithms&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;goodness-of-fit-gof&#34;&gt;Goodness-of-Fit (GoF)&lt;/h2&gt;
+&lt;p&gt;There are several statistics that can help you determine the goodness-of-fit. Most commonly used are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;reduced chi-squared&lt;/li&gt;
+&lt;li&gt;Standard error&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can get these and other tools for free with &lt;strong&gt;lmfit.minimize&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;example-1-fit-a-quadratic-curve-with-no-constraints&#34;&gt;Example 1: Fit a quadratic curve with no constraints&lt;/h2&gt;
+&lt;p&gt;First, let&amp;rsquo;s try fitting a simple quadratic to some fake data:&lt;/p&gt;
+&lt;p&gt;$$ y = ax^2 + bx + c $$&lt;/p&gt;
+&lt;p&gt;What we will do:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Generate some data for the example&lt;/li&gt;
+&lt;li&gt;Define the function we wish to fit&lt;/li&gt;
+&lt;li&gt;Use &lt;strong&gt;scipy.optimize&lt;/strong&gt; to do the actual optimization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Let&amp;rsquo;s assume the following:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The x-data is an array from -3 to 10&lt;/li&gt;
+&lt;li&gt;The y-data is $x^2$, with some random noise added.&lt;/li&gt;
+&lt;li&gt;Let&amp;rsquo;s put our initial guesses for the coefficients a,b,c into a list called p0 (for fit parameters)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import numpy as np
+
+#Generate the arrays
+xarray1=np.arange(-3,10,.2)
+yarray1=xarray1**2
+
+#Adding noise
+yarray1+=np.random.randn(yarray1.shape[0])*2
+p0=[2,2,2] #Our initial guesses for our fit parameters
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Since we are dealing with a &lt;strong&gt;quadratic fit&lt;/strong&gt; we can use a &lt;em&gt;cheap &amp;amp; easy&lt;/em&gt; method &lt;em&gt;&lt;strong&gt;for polynomials (only)&lt;/strong&gt;&lt;/em&gt;: &lt;em&gt;scipy.polyfit()&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This method involves the least amount of setup while it simply outputs an array of the coefficients that best fit the data to the specified polynomial order.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;%matplotlib inline
+from scipy import polyfit
+from scipy.optimize import leastsq as lsq
+import matplotlib.pyplot as plt
+
+# polyfit(x, y, deg)
+fitcoeffs=polyfit(xarray1,yarray1,2)
+
+print &amp;quot;Parameter fitted using polyfit&amp;quot;
+print fitcoeffs
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Parameter fitted using polyfit
+[ 1.00811611 -0.21729382  0.6272779 ]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Define the function you want to fit, remembering that &lt;strong&gt;p&lt;/strong&gt; will be our array of initial guesses to the fit parameters, the coefficients &lt;strong&gt;a, b, c&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def quadratic(p,x):
+    y_out=p[0]*(x**2)+p[1]*x+p[2]
+    return y_out
+
+#Is the same as
+#quadratic = lambda p,x: p[0]*(x**2)+p[1]*x+p[2]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then we define a function that &lt;strong&gt;returns the difference&lt;/strong&gt; between the fit iteration value and the initial data:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;quadraticerr = lambda p,x,y: quadratic(p,x)-y
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This difference or residual is the quantity that we will minimize with &lt;em&gt;scipy.optimize&lt;/em&gt;. To do so, we call the least-squares optimization routine with &lt;strong&gt;scipy.optimize.leastsq()&lt;/strong&gt; that stores the parameters you fit &lt;em&gt;in the zeroth element&lt;/em&gt; of the output:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;fitout=lsq(quadraticerr,p0[:],args=(xarray1,yarray1))
+paramsout=fitout[0] #These are the fitted coefficients
+covar=fitout[1] #This is the covariance matrix output
+
+print(&#39;Fitted Parameters using scipy\&#39;s leastsq():\na = %.2f , b = %.2f , c = %.2f&#39;
+% (paramsout[0],paramsout[1],paramsout[2]))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Fitted Parameters using scipy&#39;s leastsq():
+a = 1.01 , b = -0.22 , c = 0.63
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now to get an array values for the results, just call your function definition with the fitted parameters, while the residuals, of course, will just be their difference from the original data:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;fitarray1=quadratic(paramsout,xarray1)
+residualarray1=fitarray1-yarray1
+
+plt.rc(&#39;font&#39;,family=&#39;serif&#39;)
+fig1=plt.figure(1)
+frame1=fig1.add_axes((.1,.3,.8,.6))
+    #xstart, ystart, xwidth, yheight --&amp;gt; units are fraction of the image from bottom left
+
+xsmooth=np.linspace(xarray1[0],xarray1[-1])
+plt.plot(xarray1,yarray1,&#39;.&#39;)
+plt.plot(xsmooth,quadratic(paramsout,xsmooth))
+frame1.set_xticklabels([]) #We will plot the residuals below, so no x-ticks on this plot
+plt.title(&#39;Quadratic Fit Example&#39;)
+plt.ylabel(&#39;y-data&#39;)
+plt.grid(True)
+frame1.annotate(&#39;$y$ = %.2f$\cdot x^2$+%.2f$\cdot x$+%.2f&#39;%(paramsout[0],paramsout[1],paramsout[2]), \
+                xy=(.05,.95),xycoords=&#39;axes fraction&#39;,ha=&amp;quot;left&amp;quot;,va=&amp;quot;top&amp;quot;,bbox=dict(boxstyle=&amp;quot;round&amp;quot;, fc=&#39;1&#39;))
+
+from matplotlib.ticker import MaxNLocator
+plt.gca().yaxis.set_major_locator(MaxNLocator(prune=&#39;lower&#39;)) #Removes lowest ytick label
+
+frame2=fig1.add_axes((.1,.1,.8,.2))
+
+plt.plot(xarray1,quadratic(paramsout,xarray1)-yarray1)
+plt.ylabel(&#39;Residuals&#39;)
+plt.grid(True)
+
+plt.show()
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/fitting-functions-to-data/output_11_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;example-2-more-complex-functions-with-constraints&#34;&gt;Example 2: More complex functions, with constraints&lt;/h2&gt;
+&lt;p&gt;Often we want to set limits on the values that our fitted parameters can have, for example, to be sure that one of the parameters can&amp;rsquo;t be negative, etc.&lt;/p&gt;
+&lt;p&gt;To do this, we can use &lt;em&gt;scipy.optimize.minimize()&lt;/em&gt; or another useful package could be &lt;em&gt;lmfit.minimize()&lt;/em&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;We create an &lt;strong&gt;lmfit.Parameters()&lt;/strong&gt; object&lt;/li&gt;
+&lt;li&gt;We can set limits for the parameters to be fit&lt;/li&gt;
+&lt;li&gt;We can even tell some params not to vary at all&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The &lt;strong&gt;Parameters()&lt;/strong&gt; object is then updated with every iteration.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s use more real data for a typical real-world application: fitting a profile to spectral data.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;The data&lt;/strong&gt;: stacked velocity-amplitude spectra from a VLA observation&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The functions&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;A modified Gaussian to include Hermite polynomials (approximations to skew and kurtosis)&lt;/li&gt;
+&lt;li&gt;A double gaussian (gaus1 + gaus2 = gausTot)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The data have been downloaded from &lt;a href=&#34;https://science.nrao.edu/science/surveys/littlethings/data/wlm.html&#34;&gt;https://science.nrao.edu/science/surveys/littlethings/data/wlm.html&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import pyfits
+
+cube=pyfits.getdata(&#39;WLM_NA_ICL001.FITS&#39;)[0,:,:,:]
+cubehdr=pyfits.getheader(&#39;WLM_NA_ICL001.FITS&#39;)
+
+cdelt3=cubehdr[&#39;CDELT3&#39;]/1000.; crval3=cubehdr[&#39;CRVAL3&#39;]/1000.; crpix3=cubehdr[&#39;CRPIX3&#39;];
+minvel=crval3+(-crpix3+1)*cdelt3; maxvel=crval3+(cube.shape[0]-crpix3)*cdelt3
+chanwidth=abs(cdelt3)
+
+stackspec=np.sum(np.sum(cube,axis=2),axis=1)
+vels=np.arange(minvel,maxvel+int(cdelt3),cdelt3)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The velocity array in the cube goes from positive to negative, so let’s reverse it to make the fitting go smoother.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;vels=vels[::-1]
+stackspec=stackspec[::-1]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We are going to use the default &lt;em&gt;Marquardt-Levenberg algorithm&lt;/em&gt;.  Note that fitting results will depend quite a bit on what you give as initial guesses – ML finds LOCAL extrema quite well, but it doesn’t necessarily find the global extrema.  In short, &lt;strong&gt;do your best to provide a good first guess&lt;/strong&gt; to the fit parameters.&lt;/p&gt;
+&lt;p&gt;I said that we want to fit this dataset with a more complex model. Let me explain it a bit before to proced.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Standard Gaussian&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$ f(x) = A e^{\frac{-g^2}{2}} $&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$ g = \frac{x-x_c}{\sigma} $&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Multiple Gaussians&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$ F(x) = \sum_i f_i(x) = A_1e^{\frac{-g_1^2}{2}} + A_2e^{\frac{-g_2^2}{2}} + \dots $&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Gauss-Hermite Polynomial&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$f(x) = Ae^{\frac{-g^2}{2}} [ 1+h_3(-\sqrt{3}g+\frac{2}{\sqrt{3}}g^3 ) + h_4 (\frac{\sqrt{6}}{4}-\sqrt{6}g^2+\frac{\sqrt{6}}{3}g^4)] $&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;H_3 → (Fisher) Skew: asymmetric component&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$\xi_1 \sim 4\sqrt{3}h_3$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;H_4 → (Fisher) Kurtosis: how &amp;lsquo;fat&amp;rsquo; the tails are&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$xi_2 \sim 3+8\sqrt{6}h_4$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$\xi_f = \xi_2-3$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$\xi_f \sim 8\sqrt{6}h_4$$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Set up the &lt;strong&gt;lmfit.Parameters()&lt;/strong&gt; and define the &lt;em&gt;Gauss-Hermite function&lt;/em&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from lmfit import minimize, Parameters
+
+p_gh=Parameters()
+p_gh.add(&#39;amp&#39;,value=np.max(stackspec),vary=True);
+p_gh.add(&#39;center&#39;,value=vels[50],min=np.min(vels),max=np.max(vels));
+p_gh.add(&#39;sig&#39;,value=3*chanwidth,min=chanwidth,max=abs(maxvel-minvel));
+p_gh.add(&#39;skew&#39;,value=0,vary=True,min=None,max=None);
+p_gh.add(&#39;kurt&#39;,value=0,vary=True,min=None,max=None);
+
+def gaussfunc_gh(paramsin,x):
+    amp=paramsin[&#39;amp&#39;].value
+    center=paramsin[&#39;center&#39;].value
+    sig=paramsin[&#39;sig&#39;].value
+    c1=-np.sqrt(3);
+    c2=-np.sqrt(6)
+    c3=2/np.sqrt(3);
+    c4=np.sqrt(6)/3;
+    c5=np.sqrt(6)/4
+    skew=paramsin[&#39;skew&#39;].value
+    kurt=paramsin[&#39;kurt&#39;].value
+    g=(x-center)/sig
+    gaustot_gh=amp*np.exp(-.5*g**2)*(1+skew*(c1*g+c3*g**3)+ kurt*(c5+c2*g**2+c4*(g**4)))
+
+    return gaustot_gh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now do the same for the &lt;strong&gt;double gaussian&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Bounds&lt;/strong&gt;
+amp : 10% of max to max&lt;br&gt;
+center : velocity range&lt;br&gt;
+disp : channel width to velocity range&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# Double Gaussian   (labeled below as ..._2g)
+p_2g=Parameters()
+p_2g.add(&#39;amp1&#39;,value=np.max(stackspec)/2.,min=.1*np.max(stackspec),max=np.max(stackspec));
+p_2g.add(&#39;center1&#39;,value=vels[50+10],min=np.min(vels),max=np.max(vels));
+p_2g.add(&#39;sig1&#39;,value=2*chanwidth,min=chanwidth,max=abs(maxvel-minvel));
+p_2g.add(&#39;amp2&#39;,value=np.max(stackspec)/2.,min=.1*np.max(stackspec),max=np.max(stackspec));
+p_2g.add(&#39;center2&#39;,value=vels[50-10],min=np.min(vels),max=np.max(vels));
+p_2g.add(&#39;sig2&#39;,value=3*chanwidth,min=chanwidth,max=abs(maxvel-minvel));
+
+def gaussfunc_2g(paramsin,x):
+    amp1=paramsin[&#39;amp1&#39;].value;
+    amp2=paramsin[&#39;amp2&#39;].value;
+    center1=paramsin[&#39;center1&#39;].value;
+    center2=paramsin[&#39;center2&#39;].value;
+    sig1=paramsin[&#39;sig1&#39;].value;
+    sig2=paramsin[&#39;sig2&#39;].value;
+    g1=(x-center1)/sig1
+    g2=(x-center2)/sig2
+
+    gaus1=amp1*np.exp(-.5*g1**2)
+    gaus2=amp2*np.exp(-.5*g2**2)
+    gaustot_2g=(gaus1+gaus2)
+    return gaustot_2g
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And now the functions that compute the difference between the fit iteration and data. In addition, define a function for a simple single gaussian.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;gausserr_gh = lambda p,x,y: gaussfunc_gh(p,x)-y
+gausserr_2g = lambda p,x,y: gaussfunc_2g(p,x)-y
+gausssingle = lambda a,c,sig,x: a*np.exp(-.5*((x-c)/sig)**2)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We will minimize with &lt;em&gt;lmfit&lt;/em&gt;, in order to &lt;strong&gt;keep limits&lt;/strong&gt; on parameters:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;fitout_gh=minimize(gausserr_gh,p_gh,args=(vels,stackspec))
+fitout_2g=minimize(gausserr_2g,p_2g,args=(vels,stackspec))
+
+fitted_p_gh = fitout_gh.params
+fitted_p_2g = fitout_2g.params
+
+pars_gh=[fitout_gh.params[&#39;amp&#39;].value,
+         fitout_gh.params[&#39;center&#39;].value,
+         fitout_gh.params[&#39;sig&#39;].value,
+         fitout_gh.params[&#39;skew&#39;].value,
+         fitout_gh.params[&#39;kurt&#39;].value]
+pars_2g=[fitted_p_2g[&#39;amp1&#39;].value,
+         fitted_p_2g[&#39;center1&#39;].value,
+         fitted_p_2g[&#39;sig1&#39;].value,
+         fitted_p_2g[&#39;amp2&#39;].value,
+         fitted_p_2g[&#39;center2&#39;].value,
+         fitted_p_2g[&#39;sig2&#39;].value]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Finally, if you want to create arrays and residuals of the final fit values:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;fit_gh=gaussfunc_gh(fitted_p_gh,vels)
+fit_2g=gaussfunc_2g(fitted_p_2g,vels)
+
+resid_gh=fit_gh-stackspec
+resid_2g=fit_2g-stackspec
+
+print(&#39;Fitted Parameters (Gaus+Hermite):\nAmp = %.2f , Center = %.2f , Disp = %.2f\nSkew = %.2f , Kurt = %.2f&#39; \
+%(pars_gh[0],pars_gh[1],pars_gh[2],pars_gh[3],pars_gh[4]))
+
+print(&#39;Fitted Parameters (Double Gaussian):\nAmp1 = %.2f , Center1 = %.2f , Sig1 = %.2f\nAmp2 = %.2f , Center2 = %.2f , Sig2 = %.2f&#39; \
+%(pars_2g[0],pars_2g[1],pars_2g[2],pars_2g[3],pars_2g[4],pars_2g[5]))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Fitted Parameters (Gaus+Hermite):
+Amp = 178.66 , Center = -119.13 , Disp = 20.68
+Skew = -0.12 , Kurt = -0.03
+Fitted Parameters (Double Gaussian):
+Amp1 = 189.58 , Center1 = -112.89 , Sig1 = 14.55
+Amp2 = 91.58 , Center2 = -146.19 , Sig2 = 10.26
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;fig3=plt.figure(3,figsize=(15,10))
+f1=fig3.add_axes((.1,.3,.8,.6))
+
+plt.plot(vels,stackspec,&#39;k.&#39;)
+pgh,=plt.plot(vels,fit_gh,&#39;b&#39;)
+p2g,=plt.plot(vels,fit_2g,&#39;r&#39;)
+p2ga,=plt.plot(vels,gausssingle(pars_2g[0],pars_2g[1],pars_2g[2],vels),&#39;-.&#39;,color=&#39;orange&#39;)
+p2gb,=plt.plot(vels,gausssingle(pars_2g[3],pars_2g[4],pars_2g[5],vels),&#39;-.&#39;,color=&#39;green&#39;)
+f1.set_xticklabels([]) #We will plot the residuals below, so no x-ticks on this plot
+plt.title(&#39;Multiple Gaussian Fit Example&#39;)
+plt.ylabel(&#39;Amplitude (Some Units)&#39;)
+f1.legend([pgh,p2g,p2ga,p2gb],[&#39;Gaus-Hermite&#39;,&#39;2-Gaus&#39;,&#39;Comp. 1&#39;,&#39;Comp2&#39;],prop={&#39;size&#39;:10},loc=&#39;center left&#39;)
+
+from matplotlib.ticker import MaxNLocator
+plt.gca().yaxis.set_major_locator(MaxNLocator(prune=&#39;lower&#39;)) #Removes lowest ytick label
+
+f1.annotate(&#39;Gauss-Hermite:\nAmp = %.2f\nCenter = %.2f\n$\sigma$ = %.2f\nH3 = %.2f\nH4 = %.2f&#39; \
+    %(pars_gh[0],pars_gh[1],pars_gh[2],pars_gh[3],pars_gh[4]),xy=(.05,.95), \
+    xycoords=&#39;axes fraction&#39;,ha=&amp;quot;left&amp;quot;, va=&amp;quot;top&amp;quot;, \
+bbox=dict(boxstyle=&amp;quot;round&amp;quot;, fc=&#39;1&#39;),fontsize=10)
+f1.annotate(&#39;Double Gaussian:\nAmp$_1$ = %.2f\nAmp$_2$ = %.2f\nCenter$_1$ = %.2f\nCenter$_2$ = %.2f\n$\sigma_1$ = %.2f\n$\sigma_2$ = %.2f&#39; \
+    %(pars_2g[0],pars_2g[3],pars_2g[1],pars_2g[4],pars_2g[2],pars_2g[5]),xy=(.95,.95), \
+    xycoords=&#39;axes fraction&#39;,ha=&amp;quot;right&amp;quot;, va=&amp;quot;top&amp;quot;, \
+    bbox=dict(boxstyle=&amp;quot;round&amp;quot;, fc=&#39;1&#39;),fontsize=10)
+
+f2=fig3.add_axes((.1,.1,.8,.2))
+
+resgh,res2g,=plt.plot(vels,resid_gh,&#39;k--&#39;,vels,resid_2g,&#39;k&#39;)
+
+plt.ylabel(&#39;Residuals&#39;)
+plt.xlabel(&#39;Velocity (km s$^{-1}$)&#39;)
+f2.legend([resgh,res2g],[&#39;Gaus-Hermite&#39;,&#39;2-Gaus&#39;],numpoints=4,prop={&#39;size&#39;:9},loc=&#39;upper left&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/fitting-functions-to-data/output_26_1.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to read DICOM files into Python</title>
+      <link>/post/read_dicom_files_in_python/</link>
+      <pubDate>Sun, 01 May 2016 11:00:00 +0000</pubDate>
+      <guid>/post/read_dicom_files_in_python/</guid>
+      <description>&lt;h2 id=&#34;dataset&#34;&gt;&lt;strong&gt;Dataset&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Dataset is the main object you will work with directly. Dataset is derived from python’s &lt;strong&gt;dict&lt;/strong&gt;, so it inherits (and overrides some of) the methods of dict. In other words it is a collection of key:value pairs, where the key value is the DICOM (group,element) tag (as a Tag object, described below), and the value is a DataElement instance (also described below).&lt;/p&gt;
+&lt;p&gt;A dataset could be created directly, but you will usually get one by reading an existing DICOM file (it could be a .dcm or a .img file):&lt;!-- TEASER_END --&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import dicom
+ds = dicom.read_file(&amp;quot;1111.img&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can display the entire dataset by simply printing its string (str or repr) value:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;ds
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;(0008, 0000) Group Length             UL: 482
+(0008, 0005) Specific Character Set   CS: &#39;ISO_IR 100&#39;
+(0008, 0008) Image Type               CS: [&#39;ORIGINAL&#39;, &#39;PRIMARY&#39;]
+(0008, 0012) Instance Creation Date   DA: &#39;20150710&#39;
+(0008, 0013) Instance Creation Time   TM: &#39;152456&#39;
+(0008, 0014) Instance Creator UID     UI: 1.2.840.113619.1.131
+(0008, 0016) SOP Class UID            UI: Positron Emission Tomography Image Storage
+(0008, 0018) SOP Instance UID         UI: 1.2.840.113619.2.131.1611270158.1436534696
+(0008, 0020) Study Date               DA: &#39;20150702&#39;
+(0008, 0021) Series Date              DA: &#39;20150702&#39;
+(0008, 0022) Acquisition Date         DA: &#39;20150702&#39;
+(0008, 0023) Content Date             DA: &#39;20150710&#39;
+(0008, 0030) Study Time               TM: &#39;090706&#39;
+(0008, 0031) Series Time              TM: &#39;091216&#39;
+(0008, 0032) Acquisition Time         TM: &#39;094216&#39;
+(0008, 0033) Content Time             TM: &#39;152456&#39;
+(0008, 0050) Accession Number         SH: &#39;120.116962&#39;
+(0008, 0060) Modality                 CS: &#39;PT&#39;
+(0008, 0070) Manufacturer             LO: &#39;GE MEDICAL SYSTEMS&#39;
+(0008, 0080) Institution Name         LO: &#39;FTGM&#39;
+(0008, 0090) Referring Physician Name PN: &#39;&#39;
+(0008, 1010) Station Name             SH: &#39;pet94ct&#39;
+(0008, 1030) Study Description        LO: &#39;&#39;
+(0008, 103e) Series Description       LO: &#39;e+1 NEUROTOTEM&#39;
+    ...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;access-header-data-elements&#34;&gt;&lt;strong&gt;Access header data elements&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;You can access specific data elements by name (DICOM ‘keyword’) or by DICOM tag number:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;ds.ManufacturerModelName
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;&#39;Discovery RX&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;ds[0x0008,0x1090].value
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;&#39;Discovery RX&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In the latter case (using the tag number directly) a DataElement instance is returned, so the .value must be used to get the value.&lt;/p&gt;
+&lt;p&gt;You can also set values by name (DICOM keyword) or tag number:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;ds.PatientID = &amp;quot;12345&amp;quot;
+ds.SeriesNumber = 5
+ds[0x10,0x10].value = &#39;Test&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The use of names is possible because PyDicom intercepts requests for member variables, and checks if they are in the DICOM dictionary. It translates the keyword to a (group,element) number and returns the corresponding value for that key if it exists.&lt;/p&gt;
+&lt;p&gt;If you don’t remember or know the exact tag name, Dataset provides a handy dir() method, useful during interactive sessions at the python prompt:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;ds.dir(&amp;quot;pat&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;[&#39;AdditionalPatientHistory&#39;,
+ &#39;ImageOrientationPatient&#39;,
+ &#39;ImagePositionPatient&#39;,
+ &#39;PatientAge&#39;,
+ &#39;PatientBirthDate&#39;,
+ &#39;PatientGantryRelationshipCodeSequence&#39;,
+ &#39;PatientID&#39;,
+ &#39;PatientName&#39;,
+ &#39;PatientOrientationCodeSequence&#39;,
+ &#39;PatientOrientationModifierCodeSequence&#39;,
+ &#39;PatientPosition&#39;,
+ &#39;PatientSex&#39;,
+ &#39;PatientSize&#39;,
+ &#39;PatientWeight&#39;]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;dir will return any DICOM tag names in the dataset that have the specified string anywhere in the name (case insensitive).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt;
+Calling dir with no string will list all tag names available in the dataset.
+You can also see all the names that pydicom knows about by viewing the _dicom_dict.py file. You could &amp;gt;modify that file to add tags that pydicom doesn’t already know about.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Under the hood, Dataset stores a DataElement object for each item, but when accessed by name (e.g. ds.PatientName) only the value of that DataElement is returned. If you need the whole DataElement (see the DataElement class discussion), you can use Dataset’s data_element() method or access the item using the tag number:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;data_element = ds.data_element(&amp;quot;PatientsName&amp;quot;)  # or data_element = ds[0x10,0x10]
+data_element.VR, data_element.value
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;(&#39;PN&#39;, &#39;Test&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;dataelement&#34;&gt;&lt;em&gt;&lt;strong&gt;DataElement&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;The DataElement class is not usually used directly in user code, but is used extensively by Dataset. DataElement is a simple object which stores the following things:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;tag&lt;/strong&gt; – a DICOM tag (as a Tag object)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;VR&lt;/strong&gt; – DICOM value representation – various number and string formats, etc&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;VM&lt;/strong&gt; – value multiplicity. This is 1 for most DICOM tags, but can be multiple, e.g. for coordinates. You do not have to specify this, the DataElement class keeps track of it based on value.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;value&lt;/strong&gt; – the actual value. A regular value like a number or string (or list of them), or a Sequence.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To check for the existence of a particular tag before using it, use the in keyword:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;quot;PatientName&amp;quot; in ds
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;True
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To remove a data element from the dataset, use del:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;del ds.SoftwareVersions   # or del ds[0x0018, 0x1020]
+&amp;quot;SoftwareVersions&amp;quot; in ds
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;False
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;tag&#34;&gt;&lt;strong&gt;TAG&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Using DICOM keywords is the recommended way to access data elements, but you can also use the tag numbers directly. The Tag class is derived from python’s &lt;em&gt;int&lt;/em&gt;, so in effect, it is just a number with some extra behaviour:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tag enforces that the DICOM tag fits in the expected 4-byte (group,element)&lt;/li&gt;
+&lt;li&gt;A Tag instance can be created from an int or from a tuple containing the (group,element) separately&lt;/li&gt;
+&lt;li&gt;Tag has properties group and element (or elem) to return the group and element portions&lt;/li&gt;
+&lt;li&gt;The is_private property checks whether the tag represents a private tag (i.e. if group number is odd).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from dicom.tag import Tag
+t1=Tag(0x00100010) # all of these are equivalent
+t2=Tag(0x10,0x10)
+t3=Tag((0x10, 0x10))
+print t1
+
+t1==t2, t1==t3
+(True, True)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;(0010, 0010)
+
+(True, True)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;access-image-data&#34;&gt;&lt;strong&gt;Access image data&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;DICOM Sequences are turned into python lists or strings. Items in the sequence are referenced by number, beginning at index 0 as per python convention. &amp;ldquo;Sequence&amp;rdquo; data type is derived from python’s &lt;em&gt;list&lt;/em&gt;. The only added functionality is to &lt;strong&gt;make string representations prettier&lt;/strong&gt;. Otherwise all the usual methods of list like item selection, append, etc. are available. To work with pixel data, the raw bytes are available through the usual tag:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;image_data = ds.PixelData
+print type(image_data)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;type &#39;str&#39;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We then calculate the total dimensions of the NumPy array which are equal to (Number of pixel rows in a slice) x (Number of pixel columns in a slice) x (Number of slices) along the x, y, and z cartesian axes. In this example we are dealing with just a single slice DICOM file, so z=1.&lt;/p&gt;
+&lt;p&gt;Lastly, we use the PixelSpacing and SliceThickness attributes to calculate the spacing between pixels in the three axes. We store the array dimensions in ConstPixelDims and the spacing in ConstPixelSpacing.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import numpy as np
+
+ConstPixelDims = (int(ds.Rows), int(ds.Columns))
+ConstPixelSpacing = (float(ds.PixelSpacing[0]), float(ds.PixelSpacing[1]), float(ds.SliceThickness))
+
+print ConstPixelDims
+print ConstPixelSpacing
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;(128, 128)
+(3.125, 3.125, 3.27)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here, we simply use numpy.arange, ConstPixelDims, and ConstPixelSpacing to calculate axes for this array:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;x = np.arange(0.0, (ConstPixelDims[0]+1)*ConstPixelSpacing[0], ConstPixelSpacing[0])
+y = np.arange(0.0, (ConstPixelDims[1]+1)*ConstPixelSpacing[1], ConstPixelSpacing[1])
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next, comes the last pydicom part:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# The array is sized based on &#39;ConstPixelDims&#39;
+ArrayDicom = np.zeros(ConstPixelDims, dtype=ds.pixel_array.dtype)
+ArrayDicom[:,:] = ds.pixel_array
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;%matplotlib inline
+from matplotlib import pyplot, cm
+
+pyplot.figure(dpi=300)
+pyplot.axes().set_aspect(&#39;equal&#39;)
+pyplot.set_cmap(pyplot.gray())
+pyplot.pcolormesh(x, y, np.flipud(ArrayDicom[:, :]))
+pyplot.show()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/read_dicom_files_in_python/output_27_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PCA tutorial using scikit-learn python module</title>
+      <link>/post/pca-tutorial-using-scikit-learn-python-module/</link>
+      <pubDate>Sun, 01 May 2016 11:00:00 +0000</pubDate>
+      <guid>/post/pca-tutorial-using-scikit-learn-python-module/</guid>
+      <description>&lt;h2 id=&#34;dimensionality-reduction-principal-component-analysis-in-depth&#34;&gt;Dimensionality Reduction: Principal Component Analysis in-depth&lt;/h2&gt;
+&lt;p&gt;Here we&amp;rsquo;ll explore Principal Component Analysis, which is an extremely useful linear dimensionality reduction technique.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ll start with our standard set of initial imports:&lt;!-- TEASER_END --&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from __future__ import print_function, division
+
+%matplotlib inline
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy import stats
+
+# use seaborn plotting style defaults
+import seaborn as sns; sns.set()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;introducing-principal-component-analysis&#34;&gt;Introducing Principal Component Analysis&lt;/h2&gt;
+&lt;p&gt;Principal Component Analysis is a very powerful unsupervised method for dimensionality reduction in data. It&amp;rsquo;s easiest to visualize by looking at a two-dimensional dataset:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;np.random.seed(1)
+X = np.dot(np.random.random(size=(2, 2)), np.random.normal(size=(2, 200))).T
+plt.plot(X[:, 0], X[:, 1], &#39;o&#39;)
+plt.axis(&#39;equal&#39;)
+print(X.shape)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;(200, 2)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/pca-tutorial-using-scikit-learn-python-module/output_4_1.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;We can see that there is a definite trend in the data. What PCA seeks to do is to find the Principal Axes in the data, and explain how important those axes are in describing the data distribution:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from sklearn.decomposition import PCA
+pca = PCA(n_components=2)
+pca.fit(X)
+print(pca.explained_variance_)
+print(pca.components_)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;[ 0.75871884  0.01838551]
+[[ 0.94446029  0.32862557]
+ [ 0.32862557 -0.94446029]]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To see what these numbers mean, let&amp;rsquo;s view them as vectors plotted on top of the data:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;plt.plot(X[:, 0], X[:, 1], &#39;o&#39;, alpha=0.5)
+for length, vector in zip(pca.explained_variance_, pca.components_):
+    v = vector * 3 * np.sqrt(length)
+    plt.plot([0, v[0]], [0, v[1]], &#39;-k&#39;, lw=3)
+plt.axis(&#39;equal&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;output_8_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Notice that one vector is longer than the other. In a sense, this tells us that that direction in the data is somehow more &amp;ldquo;important&amp;rdquo; than the other direction. The explained variance quantifies this measure of &amp;ldquo;importance&amp;rdquo; in direction.&lt;/p&gt;
+&lt;p&gt;Another way to think of it is that the second principal component could be completely ignored without much loss of information! Let&amp;rsquo;s see what our data look like if we only keep 95% of the variance:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;clf = PCA(0.95) # keep 95% of variance
+X_trans = clf.fit_transform(X)
+print(X.shape)
+print(X_trans.shape)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;(200, 2)
+(200, 1)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;By specifying that we want to throw away 5% of the variance, the data is now compressed by a factor of 50%! Let&amp;rsquo;s see what the data look like after this compression:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;X_new = clf.inverse_transform(X_trans)
+x_plot = plt.plot(X[:, 0], X[:, 1], &#39;o&#39;, alpha=0.4, label=&#39;X&#39;)
+xnew_plot = plt.plot(X_new[:, 0], X_new[:, 1], &#39;ob&#39;, alpha=0.8, label=&#39;X_new&#39;)
+plt.axis(&#39;equal&#39;)
+plt.legend()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;matplotlib.legend.Legend at 0x7ff9f16f7f50&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/pca-tutorial-using-scikit-learn-python-module/output_12_1.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The light points are the original data, while the dark points are the projected version. We see that after truncating 5% of the variance of this dataset and then reprojecting it, the &amp;ldquo;most important&amp;rdquo; features of the data are maintained, and we&amp;rsquo;ve compressed the data by 50%!&lt;/p&gt;
+&lt;p&gt;This is the sense in which &amp;ldquo;dimensionality reduction&amp;rdquo; works: if you can approximate a data set in a lower dimension, you can often have an easier time visualizing it or fitting complicated models to the data.&lt;/p&gt;
+&lt;h2 id=&#34;what-do-the-components-mean&#34;&gt;What do the Components Mean?&lt;/h2&gt;
+&lt;p&gt;PCA is a very useful dimensionality reduction algorithm, because it has a very intuitive interpretation via eigenvectors. The input data is represented as a vector: If we reduce the dimensionality in the pixel space to (say) 6, we recover only a partial image.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from sklearn.datasets import load_digits
+digits = load_digits()
+X = digits.data
+y = digits.target
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;What PCA does is to choose optimal basis functions so that only a few are needed to get a reasonable approximation. The low-dimensional representation of our data is the coefficients of this series, and the approximate reconstruction is the result of the sum:&lt;/p&gt;
+&lt;h3 id=&#34;choosing-the-number-of-components&#34;&gt;Choosing the Number of Components&lt;/h3&gt;
+&lt;p&gt;But how much information have we thrown away? We can figure this out by looking at the explained variance as a function of the components:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;sns.set()
+pca = PCA().fit(X)
+plt.plot(np.cumsum(pca.explained_variance_ratio_))
+plt.xlabel(&#39;number of components&#39;)
+plt.ylabel(&#39;cumulative explained variance&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/pca-tutorial-using-scikit-learn-python-module/output_18_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Here we see that our two-dimensional projection loses a lot of information (as measured by the explained variance) and that we&amp;rsquo;d need about 20 components to retain 90% of the variance. Looking at this plot for a high-dimensional dataset can help you understand the level of redundancy present in multiple observations.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Simple nonlinear least squares curve fitting in Python</title>
+      <link>/post/python_nonlinear_least_squares/</link>
+      <pubDate>Sun, 01 May 2016 11:00:00 +0000</pubDate>
+      <guid>/post/python_nonlinear_least_squares/</guid>
+      <description>&lt;h2 id=&#34;the-problem&#34;&gt;The problem&lt;/h2&gt;
+&lt;p&gt;Today we are going to test a very simple example of nonlinear least squares curve fitting using the &lt;em&gt;scipy.optimize&lt;/em&gt; module.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;%matplotlib inline
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.optimize import curve_fit
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;create-data&#34;&gt;Create data&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s assume we have the following points &lt;em&gt;[xdata, ydata]&lt;/em&gt; and that we want to fit these data with the following model function using nonlinear least squares:&lt;/p&gt;
+&lt;p&gt;$F(p_1,p_2,x) = p_1\cos(p_2x) + p_2\sin(p_1x)$&lt;/p&gt;
+&lt;p&gt;For now, we are primarily interested in the following results:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;strong&gt;fit parameters&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Sum of squared &lt;strong&gt;residuals&lt;/strong&gt;&lt;!-- TEASER_END --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;xdata = np.array([-2,-1.64,-1.33,-0.7,0,0.45,1.2,1.64,2.32,2.9])
+ydata = np.array([0.699369,0.700462,0.695354,1.03905,1.97389,2.41143,1.91091,0.919576,-0.730975,-1.42001])
+
+# Show data points
+plt.plot(xdata,ydata,&#39;*&#39;)
+plt.xlabel(&#39;xdata&#39;)
+plt.ylabel(&#39;ydata&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/Python_nonlinear_least_squares/output_3_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;define-fit-function&#34;&gt;Define fit function&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def func(x, p1,p2):
+  return p1*np.cos(p2*x) + p2*np.sin(p1*x)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;calculate-and-show-fit-parameters&#34;&gt;Calculate and show fit parameters.&lt;/h2&gt;
+&lt;p&gt;Use a starting guess of $p_1=1$ and $p_2=0.2$&lt;/p&gt;
+&lt;p&gt;The outputs of the &lt;em&gt;curve_fit&lt;/em&gt; function are the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;popt&lt;/strong&gt; : array of &lt;em&gt;optimal values&lt;/em&gt; for the parameters so that the sum of the squared error of $f(xdata, *popt) - ydata$ is minimized&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;pcov&lt;/strong&gt; : 2d array of the estimated covariance of &lt;em&gt;popt&lt;/em&gt;. The diagonals provide the &lt;em&gt;variance of the parameter estimate&lt;/em&gt;. To compute one standard deviation errors on the parameters use $perr = np.sqrt(np.diag(pcov))$. If the Jacobian matrix at the solution doesn&amp;rsquo;t have a full rank, then &amp;lsquo;lm&amp;rsquo; method returns a matrix filled with &lt;code&gt;np.inf&lt;/code&gt;, on the other hand &amp;lsquo;trf&amp;rsquo;  and &amp;lsquo;dogbox&amp;rsquo; methods use Moore-Penrose pseudoinverse to compute the covariance matrix.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;popt, pcov = curve_fit(func, xdata, ydata,p0=(1.0,0.2))
+
+print(&amp;quot;Parameter estimation results:&amp;quot;)
+print(&amp;quot;p1 = &amp;quot;,popt[0],&amp;quot; | p2 = &amp;quot;,popt[1])
+print(&amp;quot;--------------------------&amp;quot;)
+print(&amp;quot;Covariance matrix of the estimate:&amp;quot;)
+print(pcov)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Parameter estimation results:
+p1 =  1.881850994  | p2 =  0.700229857403
+--------------------------
+Covariance matrix of the estimate:
+[[  7.52408290e-04   1.00812823e-04]
+ [  1.00812823e-04   8.37695698e-05]]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;sum-of-squares-of-residuals&#34;&gt;Sum of squares of residuals&lt;/h2&gt;
+&lt;p&gt;Since it&amp;rsquo;s not given by the &lt;em&gt;curve_fit&lt;/em&gt; function, we have to compute it &lt;em&gt;by hand&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;p1 = popt[0]
+p2 = popt[1]
+residuals = ydata - func(xdata,p1,p2)
+fres = sum(residuals**2)
+
+print(&amp;quot;Residuals sum of squares:&amp;quot;)
+print(fres)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Residuals sum of squared:
+0.0538126964188
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Plot fitted curve along with data&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;curvex=np.linspace(-2,3,100)
+curvey=func(curvex,p1,p2)
+plt.plot(xdata,ydata,&#39;*&#39;)
+plt.plot(curvex,curvey,&#39;r&#39;)
+plt.xlabel(&#39;xdata&#39;)
+plt.ylabel(&#39;ydata&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/Python_nonlinear_least_squares/output_11_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

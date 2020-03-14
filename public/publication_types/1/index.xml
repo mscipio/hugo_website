@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1 | MICHELE SCIPIONI</title>
+    <link>/publication_types/1/</link>
+      <atom:link href="/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
+    <description>1</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2020</copyright><lastBuildDate>Fri, 26 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/foto_bw.jpg</url>
+      <title>1</title>
+      <link>/publication_types/1/</link>
+    </image>
+    
+    <item>
+      <title>Direct 4D PET reconstruction with discrete tissue types</title>
+      <link>/publication/embc19_directclustering/</link>
+      <pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/embc19_directclustering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kinetic Compressive Sensing</title>
+      <link>/publication/kinetic-compressive-sensing/</link>
+      <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/kinetic-compressive-sensing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Influence of Noise in Dynamic PET Direct Reconstruction</title>
+      <link>/publication/medicon2016/</link>
+      <pubDate>Sat, 09 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/medicon2016/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

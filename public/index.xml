@@ -1,0 +1,2396 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MICHELE SCIPIONI</title>
+    <link>/</link>
+      <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <description>MICHELE SCIPIONI</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2020</copyright><lastBuildDate>Fri, 13 Mar 2020 22:04:30 -0400</lastBuildDate>
+    <image>
+      <url>/img/foto_bw.jpg</url>
+      <title>MICHELE SCIPIONI</title>
+      <link>/</link>
+    </image>
+    
+    <item>
+      <title>Introduction to Matlab </title>
+      <link>/talk/intro-to-matlab-whyehow/</link>
+      <pubDate>Fri, 13 Mar 2020 22:04:30 -0400</pubDate>
+      <guid>/talk/intro-to-matlab-whyehow/</guid>
+      <description>&lt;embed src=&#34;http://localhost:43859/data/teaching/2020_IntroMATLAB_why&amp;how.pdf&#34; width=&#34;100%&#34; height=&#34;440&#34;&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Negative binomial maximum likelihood expectation maximization (NB-MLEM) algorithm for reconstruction of pre-corrected PET data</title>
+      <link>/publication/nb-mlem/</link>
+      <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/nb-mlem/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Direct 4D PET reconstruction with discrete tissue types</title>
+      <link>/publication/embc19_directclustering/</link>
+      <pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/embc19_directclustering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Direct 4D PET reconstruction with discrete tissue types</title>
+      <link>/talk/embc2019/</link>
+      <pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>/talk/embc2019/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;../../data/conferences/EMBC2019/poster.png&#34; alt=&#34;Kinetic Compressive Sensing - EIEEE Nuclear Science Symposium and Medical Imaging Conference - 2017 - poster&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Dynamic positron emission tomography (dPET) is known for its ability to extract spatiotemporal information of a radio tracer in living tissue. In this paper, a novel direct reconstruction framework is presented, which include concurrent clustering as a potential aid in addressing high levels of noise typical of voxel-wise kinetic modeling. Core assumption is that the imaged volume is formed by a finite number of different functional regions, and that voxel-wise time courses are determined by the functional cluster they belong to. Probabilistic Graphical Modeling (PGM) theory is used to describe the problem, and to derive the inference strategy. The proposed iterative estimation scheme provides concurrent estimate of kinetic parameter maps, activity images, and segmented clusters. Simulation studies and exploratory application to real data are performed to validate the proposal.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Probabilistic Graphical Models for dynamic PET: a novel approach to direct parametric map estimation and image reconstruction</title>
+      <link>/publication/pgm-pet/</link>
+      <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/pgm-pet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Add comments to your Hugo-Academic blog in 10 minutes, using Utteranc.es</title>
+      <link>/post/utterances-comment-engine/</link>
+      <pubDate>Mon, 11 Feb 2019 16:00:00 +0100</pubDate>
+      <guid>/post/utterances-comment-engine/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://utteranc.es/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Utteranc.es&lt;/strong&gt;&lt;/a&gt; is a lightweigth comments widget, which allows you to use &lt;strong&gt;Github Issues&lt;/strong&gt; for blog comments. It&amp;rsquo;s open source, looks clean, comments are stored on Github, and even comes with a dark theme. Sure, you need to sign with Github, but that&amp;rsquo;s fine since most coders already have an account.&lt;/p&gt;
+&lt;h2 id=&#34;installation-steps&#34;&gt;Installation steps&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;You will, obviously, need to have your website hosted on 
+&lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;GitHub&lt;/strong&gt;&lt;/a&gt;, in a &lt;em&gt;&lt;strong&gt;public&lt;/strong&gt;&lt;/em&gt; repository, in order to &lt;em&gt;utterances&lt;/em&gt; to work as intended.&lt;/li&gt;
+&lt;li&gt;Install 
+&lt;a href=&#34;https://github.com/apps/utterances&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;utterances app&lt;/strong&gt;&lt;/a&gt; on that repo. You have a choice to install the app on every (current and future) repo, but I don&amp;rsquo;t think you will have any need for this. Usually you will have a (public) repo with a name like &lt;em&gt;&lt;strong&gt;&amp;lt;username&amp;gt;.github.io&lt;/strong&gt;&lt;/em&gt;: select this from the drop-down menu that will appear:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/utterances/app-setup.png&#34; alt=&#34;python-vs-matlab&#34; width=&#34;500&#34; vspace=&#34;150&#34;/&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Go to 
+&lt;a href=&#34;https://utteranc.es/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;utterances web-app&lt;/strong&gt;&lt;/a&gt; and fill the form as requested. It will generate (at the bottom of the page) a custom &lt;code&gt;html&lt;/code&gt; that you could &lt;em&gt;copy&amp;amp;paste&lt;/em&gt; in your blog template. you will require just a couple of information:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;name of the repository&lt;/strong&gt; : usually, it will be something like &lt;em&gt;&lt;strong&gt;&amp;lt;username&amp;gt;/&amp;lt;username&amp;gt;.github.io&lt;/strong&gt;&lt;/em&gt; (or more generally &lt;em&gt;&lt;strong&gt;owner/repo&lt;/strong&gt;&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;label&lt;/strong&gt;: as the comments will be managed via &lt;em&gt;GitHub&lt;/em&gt; Issue system, you will need to set-up a proper label to indentify those issues created by utterances (in case you have other &lt;em&gt;normal&lt;/em&gt; issues as well in you repo)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;theme&lt;/strong&gt;: your choice of a light or dark theme, according to the overall style of your current blog template&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Copy to your clipboard.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;[The following will apply only to &lt;strong&gt;Hugo&lt;/strong&gt; Academic template, but it you are a little bit tech-savy you will find a way to make it work with whatever template you are using, even a custom one] Go to the folder in which the Hugo surce of your blog is hosted, and navigate to &lt;em&gt;&lt;strong&gt;themes/academic/layouts/partials&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Open the source file &lt;em&gt;&lt;strong&gt;comments.html&lt;/strong&gt;&lt;/em&gt; and replace everything in it with &lt;em&gt;utterances&lt;/em&gt; script code:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;script src=&amp;quot;https://utteranc.es/client.js&amp;quot;
+  repo=&amp;quot;mscipio/mscipio.github.io&amp;quot;
+  issue-term=&amp;quot;pathname&amp;quot;
+  label=&amp;quot;Comment&amp;quot;
+  theme=&amp;quot;github-light&amp;quot;
+  crossorigin=&amp;quot;anonymous&amp;quot;
+  async&amp;gt;
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;That&amp;rsquo;s it! Now, check that everything is set-up correctly in the post template file, which can be found at &lt;em&gt;&lt;strong&gt;themes/academic/layouts/_defaults/single.html&lt;/strong&gt;&lt;/em&gt;. Towards the end you should find something similar to this:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;div class=&amp;quot;article-container&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+{{ partial &amp;quot;comments.html&amp;quot; . }}
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;8&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Just in case you wanted to activate comments also for the &lt;em&gt;&lt;strong&gt;Publications&lt;/strong&gt;&lt;/em&gt; section provided by the Academic template, just copy the code snippet above and past it in &lt;em&gt;&lt;strong&gt;themes/academic/layouts/publications/single.html&lt;/strong&gt;&lt;/em&gt;, towards the end, just before the &lt;code&gt;&amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;&lt;/code&gt; tag.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Save and deploy, as you normally would.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Voila! Check it out below! 👇&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
+    <item>
+      <title>Calling Matlab (custom) functions from Python</title>
+      <link>/post/matlab-from-python/</link>
+      <pubDate>Tue, 05 Feb 2019 10:26:46 +0100</pubDate>
+      <guid>/post/matlab-from-python/</guid>
+      <description>&lt;p&gt;Nowadays &lt;em&gt;the ability to write codes&lt;/em&gt; has become an essential skill in technical and scientific disciplines. Either you like it or not, during your studies you will find yourself doing assignments, solving equations or bigger &amp;lsquo;problems&amp;rsquo; of your projects with some sort of coding. And, if you think of going for higher studies and doing some extensive research, then &lt;em&gt;writing codes&lt;/em&gt; is a must know skill for you.&lt;/p&gt;
+&lt;p&gt;Quite often, students will become familiar with &lt;em&gt;scientific programming&lt;/em&gt; (note that I am not specifically refferring to CS students, focused on general purpose coding and programming) through &lt;strong&gt;MATLAB&lt;/strong&gt;. The simple reason for that is that MATLAB has been there for scientific computing for a long while, and it has become a legacy language or tool for the scientific community. Engineers and Scientists always needed a programming language that expresses matrix and array mathematics directly, and then MATLAB (matrix laboratory) came into existence. MATLAB is a math and matrix oriented language comes with different types of specialized toolboxes (you have to pay for toolbox) for several purposes e.g. modelling economic data, image analysis or driving a robot. These toolboxes are professionally developed, rigorously tested and well documented for scientific and engineering applications. And that’s why you pay the price for it.&lt;/p&gt;
+&lt;p&gt;MATLAB has a solid amount of functions amd an extraordinarily good documentation to start learning, and a large scientific community who have either answered the questions that are going to be asked or will be answered by someone as you post them in the MATLAB Central. There are 365,000 contributors, 120 questions are answered and 25,000 sample scripts or codes are downloaded per day. It has toolboxes for computational biology, computational finances, control systems, data science, image processing and computer vision, machine learning, physical modelling and simulation, robotics, signal processing and communications and IOT.&lt;/p&gt;
+&lt;p&gt;On the other side, we have &lt;strong&gt;Python&lt;/strong&gt;, whcih is a much younger programming language, whose history of scientific computing packages, e.g. &lt;code&gt;SciPy&lt;/code&gt;, &lt;code&gt;NumPy&lt;/code&gt;, have not been antiquated. Moreover, in Python you often have to rely on &lt;em&gt;community-authored&lt;/em&gt; packages for scientific and engineering usages. Calling Python as an alternative to MATLAB is technically incorrect. It is a &lt;em&gt;general purpose programming language&lt;/em&gt;, which you to develop fully fledged apps and software tools, and to create applications using any of the major GUI libraries (e.g. Qt), use OpenGL, drive your USB port, etc.&lt;/p&gt;
+&lt;p&gt;Being a free, cross-platform, general-purpose and high-level programming language, lots of people are now adopting Python. IDES like pycharm, ipython notebook, jupyter notebook an distributions like anaconda has made python far more usable for researchers. As a result of this popularity, plenty of Python scientific packages have become available with extensive documentation for data visualization, machine learning, natural language processing, complex data analysis and more. For example, scikit-learn includes start-of-the-art ‘Machine Learning’ approaches with very good documentation and tutorials.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/matlab-from-python/python-matlab1.png&#34; alt=&#34;python-vs-matlab&#34; width=&#34;500&#34; vspace=&#34;150&#34;/&gt;&lt;/p&gt;
+&lt;p&gt;Sometimes, choosing between MATLAB and Python is a personal matter, or it could be task-specific. Other times, you may be forced to opt for Python.
+Personally, there are some fundamental issues that made me search for an alternative to MATLAB. I think the most fundamental problem with Matlab is its commercial nature, and this is the basis for several issues:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The algorithms are &lt;strong&gt;proprietary&lt;/strong&gt;, which means you (most of the times) can not see the code of the algorithms you are using and have to trust that Matlab implemented it right.&lt;/li&gt;
+&lt;li&gt;Obviously, Matlab is &lt;strong&gt;expensive&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;It makes &lt;strong&gt;portability more difficult&lt;/strong&gt;. The portability solution (the Matlab Component Runtime (MCR)) works fine, but Matlab had to take great care that one cannot use it to do generic &lt;em&gt;Matlabing&lt;/em&gt; with it. Maybe this is the reason that the application must be exactly the same version as the installed MCR, which can be a nuisance considering that Matlab releases a new version every 6 months.&lt;/li&gt;
+&lt;li&gt;The proprietary nature also makes it &lt;strong&gt;hard&lt;/strong&gt;, if not impossible, for 3th parties &lt;strong&gt;to extend&lt;/strong&gt; or create tools for Matlab.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Of course, Matlab has its advantages too:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It has a &lt;strong&gt;solid amount of functions&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;It mights also be &lt;strong&gt;easier to use for beginners&lt;/strong&gt;, because the package includes all, while in Python you need to install extra packages and an IDE.&lt;/li&gt;
+&lt;li&gt;It has a &lt;strong&gt;large scientific community&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;It is used on many universities (but few companies have the money to buy a license).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Last point is even more important if you consider the possibility of you working in academic research. It is not so unlikely that your colleagues are more familiar using MATLAB than Python, or that code examples ot functions released alongside published research articles will be written in MATLAB. Moreover, MATLAB supports writing complex (and computationally expensive) function in C/C++ source files, which are later compiled in a proprietary binary format called &lt;em&gt;&lt;strong&gt;MEX&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Long story short:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;you are a hardcore Python user and supported but find yourself dealing with MATLAB-friendly colleagues;&lt;/li&gt;
+&lt;li&gt;you need to use a function which is shipped as a compiled binary MEX file (meaning that even if you wanted, you cannot read and translate the source to Python, or recompile the C/C++ source in such a way it is possible to call it from Python);&lt;/li&gt;
+&lt;li&gt;or simply you like really much how a tool has been implemented in MATLAB (e.g. functions of the Statistical Toolbox, or the Optimization Toolbox, which are really well developed and documented) and you want to directly use them, instead of looking for native Python alternative.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you recognize yourself into one of the previous categories, in the remainder of this post we are going to see a couple of strategies you can use to call MATLAB functions from you Python code, in such a way that they will behave like native Python code, accepting inputs and providing outputs directly into Python current workspace.&lt;/p&gt;
+&lt;h2 id=&#34;matlab-api-for-python&#34;&gt;MATLAB API for Python&lt;/h2&gt;
+&lt;p&gt;To the MATLAB® Engine API for Python® you will need to have a copy of MATLAB installed in you system. There is no workaround for this, as far as I know, and this is a consequence of MATLAB being a proprietary software.
+This API supports almost every version of Python, and requires &lt;strong&gt;CPython&lt;/strong&gt; to be installed on your system, in order to use the referencing of inputs and outputs required to exchange arguments between the two worlds.&lt;/p&gt;
+&lt;p&gt;If you satisfies this requirements, the installation of the API is very simple, and it is done as you would do for every Python source code library.
+On Linux it sounds like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd &amp;quot;matlabroot/extern/engines/python&amp;quot;
+python setup.py install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;where matlabroot is the path where you installed MATLAB on your system.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s it!&lt;/p&gt;
+&lt;p&gt;The API provides a Python package named &lt;code&gt;matlab&lt;/code&gt; that enables you to call MATLAB functions from Python. You install the package once, and then you can call the engine in your current or future Python sessions. You can import this newly installed package by importing it into your current Python session:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import matlab.engine
+eng = matlab.engine.start_matlab()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;IF you want to keep things separated, and you need to have different sessions/workspaces for MATLAB, within you workflor, you can simply start multiple engines, which won&amp;rsquo;t communicate with each other:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;eng1 = matlab.engine.start_matlab()
+eng2 = matlab.engine.start_matlab()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To stop a matlab engine you can either quit your current Python session, or explicitly arrest the engine itself:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;eng1.exit
+eng2.quit()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;call-matlab-built-in-functions-from-python&#34;&gt;Call MATLAB (built-in) functions from Python&lt;/h2&gt;
+&lt;p&gt;You can call &lt;strong&gt;any MATLAB function&lt;/strong&gt; directly and return the results to Python. This holds as long as the function can be found in MATLAB&amp;rsquo;s path (we will come beck to this shortly).&lt;/p&gt;
+&lt;p&gt;For example, to determine &lt;em&gt;if a number is prime&lt;/em&gt;, use the engine to call the &lt;code&gt;isprime&lt;/code&gt; function.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;tf = eng.isprime(37)
+print(tf)
+print(type(tf))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;True
+&amp;lt;type &#39;bool&#39;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This was a simple one: the MATALB function we call produced only one output, and it was a &amp;lsquo;scalar&amp;rsquo; (actually boolean) output, not an array of some type.&lt;/p&gt;
+&lt;p&gt;When you call a function with the engine, &lt;strong&gt;by default the engine returns a single output argument&lt;/strong&gt;. If you know that the function can return multiple arguments, you will need to use the &lt;code&gt;nargout&lt;/code&gt; argument to specify the number of output arguments.&lt;/p&gt;
+&lt;p&gt;As an example, to determine the &lt;em&gt;greatest common denominator of two numbers&lt;/em&gt;, use the &lt;code&gt;gcd&lt;/code&gt; function, by setting &lt;code&gt;nargout&lt;/code&gt; to return the three output arguments from &lt;code&gt;gcd&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;t = eng.gcd(100.0,80.0,nargout=3)
+print(t)
+print(type(t))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;(20.0, 1.0, -1.0)
+&amp;lt;type &#39;tuple&#39;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;transfering-variables-from-python-to-matlab-workspace&#34;&gt;Transfering variables from Python to MATLAB workspace&lt;/h2&gt;
+&lt;p&gt;When you start the engine, it provides an interface to a collection of all MATLAB variables. This collection, named &lt;strong&gt;workspace&lt;/strong&gt;, is implemented as a &lt;strong&gt;Python dictionary&lt;/strong&gt; that is attached to the engine:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The name of each MATLAB variable becomes a key in the workspace dictionary.&lt;/li&gt;
+&lt;li&gt;The keys in workspace must be valid MATLAB identifiers (e.g., you cannot use numbers as keys).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can add variables to the engine workspace in Python, and then you can use the variables in MATLAB functions:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# variable x in Python workspace
+x = 4.0
+# a new variable called y is added to MATLAB workspace, and is value is set to be equal to Python&#39;s x
+eng.workspace[&#39;y&#39;] = x
+# we can use variable y while calling MATLAB functions, ad MATLAB is aware of all the variable availabe in its workspace
+a = eng.eval(&#39;sqrt(y)&#39;)
+print(a)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;2.0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In this example, x exists only as a Python variable. Its value is assigned to a new entry in the engine workspace, called y, creating a MATLAB variable. You can then call the MATLAB &lt;code&gt;eval&lt;/code&gt; function to execute the &lt;code&gt;sqrt(y)&lt;/code&gt; statement in MATLAB and return the output value, 2.0, to Python.&lt;/p&gt;
+&lt;h2 id=&#34;use-matlab-arrays-in-python&#34;&gt;Use MATLAB Arrays in Python&lt;/h2&gt;
+&lt;p&gt;Usually, while working with MATLAB, we are interested in performing complex operations on arrays. The &lt;code&gt;matlab&lt;/code&gt; package provides constructors to create MATLAB arrays in Python. The MATLAB Engine API for Python can pass such arrays as input arguments to MATLAB functions, and can return such arrays as output arguments to Python.&lt;/p&gt;
+&lt;p&gt;You can create arrays of any MATLAB numeric or logical type from Python sequence types, as follows:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;a = matlab.double([1,4,9,16,25])
+b = eng.sqrt(a)
+print(b)
+print(type(b))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;[[1.0,2.0,3.0,4.0,5.0]]
+&amp;lt;class &#39;matlab.mlarray.double&#39;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The engine returns b, which is a 1-by-5 &lt;code&gt;matlab.double&lt;/code&gt; array.&lt;/p&gt;
+&lt;p&gt;The same applies if we want to create a &lt;strong&gt;multidimensional array&lt;/strong&gt;. The &lt;code&gt;magic&lt;/code&gt; function returns a 2-D matlab.double array to Python.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;a = eng.magic(6)
+for x in a: 
+    print(x)
+print(type(a))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;[35.0,1.0,6.0,26.0,19.0,24.0]
+[3.0,32.0,7.0,21.0,23.0,25.0]
+[31.0,9.0,2.0,22.0,27.0,20.0]
+[8.0,28.0,33.0,17.0,10.0,15.0]
+[30.0,5.0,34.0,12.0,14.0,16.0]
+[4.0,36.0,29.0,13.0,18.0,11.0]
+&amp;lt;class &#39;matlab.mlarray.double&#39;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Unfortunately, &lt;code&gt;matlab&lt;/code&gt; package seems to work only with &lt;em&gt;&lt;strong&gt;pure Python&lt;/strong&gt;&lt;/em&gt; data structures, meaning that we will need to use some tricks if we are interested in working with, e.g., &lt;code&gt;numpy&lt;/code&gt; arrays.
+This is important, as usually if we need to call a MATALB function to work on arrays, it is because in Python we were working with arrays and this is usually done via &lt;code&gt;numpy&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s see what happens:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import numpy as np
+
+a = np.array([1,2,3,4]).reshape([1,4])
+b = a**2
+print(type(a))
+print(type(b))
+print(b)
+print(b.shape)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;type &#39;numpy.ndarray&#39;&amp;gt;
+&amp;lt;type &#39;numpy.ndarray&#39;&amp;gt;
+[[ 1  4  9 16]]
+(1, 4)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We created a &lt;code&gt;numpy&lt;/code&gt; array &lt;em&gt;a&lt;/em&gt;, and then we compute the square of each of its values, yelding another &lt;code&gt;numpy&lt;/code&gt; array.&lt;/p&gt;
+&lt;p&gt;If we try to reproduce this operation using &lt;code&gt;matlab&lt;/code&gt; package we will be stuck in an error as soon as we try to cast the &lt;code&gt;numpy&lt;/code&gt; array &lt;em&gt;a&lt;/em&gt; as a matlab.double array:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;a_m = matlab.double(a)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;---------------------------------------------------------------------------
+
+ValueError                                Traceback (most recent call last)
+
+&amp;lt;ipython-input-10-1757930e4e37&amp;gt; in &amp;lt;module&amp;gt;()
+----&amp;gt; 1 a_m = matlab.double(a)
+
+
+/media/DATA/miniconda3/envs/tomolab2/lib/python2.7/site-packages/matlab/mlarray.pyc in __init__(self, initializer, size, is_complex)
+     49             super(double, self).__init__(&#39;d&#39;, initializer, size, is_complex)
+     50         except Exception as ex:
+---&amp;gt; 51             raise ex
+     52 
+     53 
+
+
+ValueError: initializer must be a rectangular nested sequence
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This happens because &lt;em&gt;matlab.double&lt;/em&gt; function is expecting a list or a tuple as input, and it is unable to understand the &lt;em&gt;numpy.ndarray&lt;/em&gt; datatype.&lt;/p&gt;
+&lt;p&gt;A workaraound is to go back to the list format:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;a_m = matlab.double(a.tolist()) # casting a as list
+b_m = eng.power(a_m,2.0)
+print((b_m))
+print(type(b_m))
+print(b_m.size)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;[[1.0,4.0,9.0,16.0]]
+&amp;lt;class &#39;matlab.mlarray.double&#39;&amp;gt;
+(1, 4)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;There are additional problems that we need to face here: the output produced by the call to a MATLAB function is alway os type &lt;em&gt;matlab.mlarray&lt;/em&gt;. This is usefull if it is the endpoint of our computation, but if we need to perform other operations (in Python) on the output of the MATLAB function, this format if of little to no use, for us.&lt;/p&gt;
+&lt;p&gt;If we want to be correct, &lt;em&gt;matlab.mlarray&lt;/em&gt; is seen almost as a &lt;em&gt;list&lt;/em&gt; in Python. Basic operations are supported, but even &lt;em&gt;transpose&lt;/em&gt; or &lt;em&gt;reshape&lt;/em&gt; throw errors. To overcome this limitation we can &lt;strong&gt;recast the output as nupmy array&lt;/strong&gt;*.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;b_n = np.asarray(b_m)
+print(b_n)
+print(type(b_n))
+print(b_n.shape)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;[[ 1.  4.  9. 16.]]
+&amp;lt;type &#39;numpy.ndarray&#39;&amp;gt;
+(1, 4)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This can be done also in one line of code:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;a_m = matlab.double(a.tolist()) # casting a as list
+b_m = np.asarray(eng.power(a_m,2.0))
+print((b_m))
+print(type(b_m))
+print(b_m.shape)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;[[ 1.  4.  9. 16.]]
+&amp;lt;type &#39;numpy.ndarray&#39;&amp;gt;
+(1, 4)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;calling-custom-matlab-user-scripts-and-functions-from-python&#34;&gt;Calling custom MATLAB user scripts and functions from Python&lt;/h2&gt;
+&lt;p&gt;So far we have seen how we can use &lt;code&gt;matlab.engine&lt;/code&gt; to call built-in MATLAB functions to perform some computation on data, and strategies to passa data from Python session to MATLAB workspace.&lt;/p&gt;
+&lt;p&gt;This is rearely something we are interested in.
+Often times, we will be looking for ways to run custom MATLAB code, which can be of different types:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;scripts (*.m)&lt;/li&gt;
+&lt;li&gt;function (*.m)&lt;/li&gt;
+&lt;li&gt;MEX function (*.mexa64)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Let&amp;rsquo;s start with a very basic example, and let&amp;rsquo;s assume that, again we want to compute the power of an array.&lt;/p&gt;
+&lt;p&gt;We can use the following MATLAB code:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;b = [1,2,3,4];
+e = 2;
+r = b.^e
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In your current folder, copy this MATLAB code in a file named &lt;em&gt;pow_script.m&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;After you save the file, we can call it from within Python like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;eng.pow_script(nargout=0)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;r =
+
+     1     4     9    16
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;eng.workspace[&#39;r&#39;]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;matlab.double([[1.0,4.0,9.0,16.0]])
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Specifying &lt;code&gt;nargout=0&lt;/code&gt; is &lt;strong&gt;required&lt;/strong&gt;. Although the script prints output, it returns no output arguments to Python.&lt;/p&gt;
+&lt;p&gt;Alternatively (and in my opinion more interestingly) we can convert the script to a function and call the function from the engine.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;function r = pow_fun(b,e)
+    r = b.^e;
+end
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;All the considerations previously made are still valid for a custom user function:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;base = np.asarray([1.0,2.0,3.0,4.0])
+exp = 2.0
+ret = eng.pow_fun(matlab.double(base.tolist()),exp)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(ret)
+print(type(ret))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;[[1.0,4.0,9.0,16.0]]
+&amp;lt;class &#39;matlab.mlarray.double&#39;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And obviously this would allow us also to use complex MEX function within Python, passing Python arrays as input and receiving the output directly as Python variables (or &lt;code&gt;numpy&lt;/code&gt; arrays).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Kinetic Compressive Sensing</title>
+      <link>/publication/kinetic-compressive-sensing/</link>
+      <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/kinetic-compressive-sensing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Concurrent Respiratory Motion Correction of Abdominal PET and Dynamic Contrast-Enhanced–MRI Using a Compressed Sensing Approach</title>
+      <link>/publication/concurrent-moco-fuin/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/concurrent-moco-fuin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>(preprint) Probabilistic Graphical Modeling approach to dynamic PET direct parametric map estimation and image reconstruction</title>
+      <link>/publication/pgm-pet_preprint/</link>
+      <pubDate>Fri, 24 Aug 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/pgm-pet_preprint/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Comparison of the clinical performance of upper abdominal PET/DCE-MRI with and without concurrent respiratory motion correction (MoCo)</title>
+      <link>/publication/comparison-moco-catalano/</link>
+      <pubDate>Wed, 11 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/comparison-moco-catalano/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Direct parametric maps estimation from dynamic PET data: an iterated conditional modes approach</title>
+      <link>/publication/icm-em/</link>
+      <pubDate>Sun, 08 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/icm-em/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Accelerated PET kinetic maps estimation by analytic fitting method</title>
+      <link>/publication/fast-kinetic-modeling/</link>
+      <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/fast-kinetic-modeling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exending MATLAB&#39;s tools for Negative Binomial distributions: nbin*_mu.m</title>
+      <link>/post/matlab_toolbox_nbin_mu/</link>
+      <pubDate>Thu, 16 Nov 2017 10:00:00 +0000</pubDate>
+      <guid>/post/matlab_toolbox_nbin_mu/</guid>
+      <description>&lt;hr&gt;
+&lt;p&gt;Introducing a new set of functions able to deal with the common µ-k parametrization of the Negative Binomial distribution for count data.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/mscipio/MATLABtools___nbin_mu&#34; style=&#34;color:red&#34;&gt;&lt;b&gt;[GitHub SOURCE CODE]&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;negative-binomial-distribution&#34;&gt;Negative Binomial Distribution&lt;/h2&gt;
+&lt;p&gt;Negative binomial regression is for modeling count variables, usually for over-dispersed count outcome variables.&lt;/p&gt;
+&lt;h4 id=&#34;negative-binomial-regression&#34;&gt;Negative binomial regression&lt;/h4&gt;
+&lt;p&gt;Negative binomial regression can be used for over-dispersed count data, that is when the conditional variance exceeds the conditional mean. It can be considered as a generalization of Poisson regression since it has the same mean structure as Poisson regression and it has an extra parameter to model the over-dispersion. If the conditional distribution of the outcome variable is over-dispersed, the confidence intervals for the Negative binomial regression are likely to be narrower as compared to those from a Poisson regression model.&lt;/p&gt;
+&lt;h4 id=&#34;poisson-regression&#34;&gt;Poisson regression&lt;/h4&gt;
+&lt;p&gt;Poisson regression is often used for modeling count data. Poisson regression has a number of extensions useful for count models.&lt;/p&gt;
+&lt;h4 id=&#34;zero-inflated-regression-model&#34;&gt;Zero-inflated regression model&lt;/h4&gt;
+&lt;p&gt;Zero-inflated models attempt to account for excess zeros. In other words, two kinds of zeros are thought to exist in the data, “true zeros” and “excess zeros”. Zero-inflated models estimate two equations simultaneously, one for the count model and one for the excess zeros.&lt;/p&gt;
+&lt;h4 id=&#34;ols-regression&#34;&gt;OLS regression&lt;/h4&gt;
+&lt;p&gt;Count outcome variables are sometimes log-transformed and analyzed using OLS regression. Many issues arise with this approach, including loss of data due to undefined values generated by taking the log of zero (which is undefined), as well as the lack of capacity to model the dispersion.&lt;/p&gt;
+&lt;p&gt;Matlab provides some functions to experiments with Negative Binomial Distribution.&lt;/p&gt;
+&lt;p&gt;Problem is that, for this parcticular family of distribution, you can find different kind of parametrization. According to the problem you are trying to solve or reproduce, one parametrization can me better than another.&lt;/p&gt;
+&lt;p&gt;For a general idea of what I mean by &lt;em&gt;&lt;strong&gt;different parametrization&lt;/strong&gt;&lt;/em&gt;, you can have a look at the Wikipedia page related to NB distribution, at &lt;a href=&#34;https://en.m.wikipedia.org/wiki/Negative_binomial_distribution#Alternative_formulations&#34;&gt;https://en.m.wikipedia.org/wiki/Negative_binomial_distribution#Alternative_formulations&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;matlab-choice-of-parametrization-r-p&#34;&gt;Matlab choice of parametrization: r-p&lt;/h2&gt;
+&lt;p&gt;In its simplest form (when r is an integer), the negative binomial distribution models the number of failures x before a specified number of successes is reached in a series of independent, identical trials. Its parameters are the probability of success in a single trial, p, and the number of successes, r. A special case of the negative binomial distribution, when r = 1, is the geometric distribution, which models the number of failures before the first success.&lt;/p&gt;
+&lt;p&gt;More generally, r can take on non-integer values. This form of the negative binomial distribution has no interpretation in terms of repeated trials, but, like the Poisson distribution, it is useful in modeling count data. The negative binomial distribution is more general than the Poisson distribution because it has a variance that is greater than its mean, making it suitable for count data that do not meet the assumptions of the Poisson distribution. In the limit, as r increases to infinity, the negative binomial distribution approaches the Poisson distribution.&lt;/p&gt;
+&lt;p&gt;To deal with this version of negative binomial distribution, the &lt;strong&gt;Statistics and Machine Learning Toolbox&lt;/strong&gt; provide the following set of functions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;nbinrnd.m&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;nbinlike.m&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;nbinfit.m&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;nbinpdf.m&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;ecological-parameterization-of-the-negative-binomial-µ-k&#34;&gt;&amp;ldquo;Ecological&amp;rdquo; parameterization of the negative binomial: µ-k&lt;/h2&gt;
+&lt;p&gt;The “ecological” parameterization of the negative binomial replaces the parameters &lt;strong&gt;p&lt;/strong&gt; (probability of success per trial) and &lt;strong&gt;n&lt;/strong&gt; (number of successes before you stop counting failures) with &lt;em&gt;&lt;strong&gt;µ = n(1−p)/p&lt;/strong&gt;&lt;/em&gt;, the mean number of failures expected (or of counts in a sample), and &lt;strong&gt;k&lt;/strong&gt;, which is typically called an &lt;strong&gt;overdispersion&lt;/strong&gt; parameter.&lt;/p&gt;
+&lt;p&gt;Confusingly, &lt;strong&gt;k&lt;/strong&gt; is sometimes called &lt;em&gt;size&lt;/em&gt;, because it is mathematically equivalent to &lt;strong&gt;n&lt;/strong&gt; in the failure-process parameterization.&lt;/p&gt;
+&lt;p&gt;The overdispersion parameter measures the amount of clustering, or aggregation, or heterogeneity, in the data: a smaller &lt;strong&gt;k&lt;/strong&gt; means more heterogeneity. The variance of the negative binomial distribution is &lt;em&gt;&lt;strong&gt;µ+µ^2/k&lt;/strong&gt;&lt;/em&gt;, and so as &lt;strong&gt;k&lt;/strong&gt; becomes large the variance approaches the mean and the distribution approaches the Poisson distribution. For &lt;em&gt;k &amp;gt; 10&lt;/em&gt;, the negative binomial is hard to tell from a Poisson distribution, but &lt;strong&gt;k&lt;/strong&gt; is often less than 1.&lt;/p&gt;
+&lt;p&gt;Specifically, you can get a negative binomial distribution as the result of a Poisson sampling process where the rate **λ **itself varies. If the distribution of &lt;strong&gt;λ&lt;/strong&gt; is a gamma distribution with shape parameter &lt;strong&gt;k&lt;/strong&gt; and mean &lt;strong&gt;µ&lt;/strong&gt;, and &lt;strong&gt;x&lt;/strong&gt; is Poisson-distributed with mean &lt;strong&gt;λ&lt;/strong&gt;, then the distribution of &lt;strong&gt;x&lt;/strong&gt; be a negative binomial distribution with mean &lt;strong&gt;µ&lt;/strong&gt; and overdispersion parameter &lt;strong&gt;k&lt;/strong&gt; (May, 1978; Hilborn and Mangel, 1997). In this case, the negative binomial reflects unmeasured (“random”) variability in the population.&lt;/p&gt;
+&lt;p&gt;While available in R, this kind of parametrization is not provided by Matlab most standard libraries, so this repo is about adding them so that you can have a choice of the best version of NB distribution you want to use.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;In detail, the new versions of the Matlab files you can find here are the following&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;nbinrnd_mu.m&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;nbinlike_mu.m&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;nbinfit_mu.m&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;nbinpdf_mu.m&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MATLAB toolbox: nbin*_mu</title>
+      <link>/project/matlab_nbin_mu/</link>
+      <pubDate>Thu, 16 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>/project/matlab_nbin_mu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Changelog for KMtoolbox repository - November 14, 2017</title>
+      <link>/post/update_kmtool_repo_14november17/</link>
+      <pubDate>Wed, 15 Nov 2017 11:00:00 +0100</pubDate>
+      <guid>/post/update_kmtool_repo_14november17/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed some issues on code duplication&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Created a setup file to add all the needed source files to Matlab&amp;rsquo;s path
+&lt;img src=&#34;../../img/KMtool_project_page/setup_script.png&#34; alt=&#34;new setup script&#34; title=&#34;new setup script&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added some new colormap and a multiple choice of how to set up colorbar limit to improve the quality of image visualization
+&lt;img src=&#34;../../img/KMtool_project_page/new_colormaps.png&#34; alt=&#34;new colormap choices&#34; title=&#34;new colormap choices&#34;&gt;
+&lt;img src=&#34;../../img/KMtool_project_page/new_clim.png&#34; alt=&#34;new clims controls&#34; title=&#34;new clims controls&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added a new example dataset with heart data
+&lt;img src=&#34;../../img/KMtool_project_page/heart_dataset.png&#34; alt=&#34;new example heart dataset&#34; title=&#34;new example heart dataset&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Creation of a GitHub repository for lectures material</title>
+      <link>/post/updated-lectures-repository/</link>
+      <pubDate>Tue, 14 Nov 2017 13:49:34 +0100</pubDate>
+      <guid>/post/updated-lectures-repository/</guid>
+      <description>&lt;h4 id=&#34;new-github-repository-with-material-from-given-lectures-update-nov-2017&#34;&gt;New GitHub repository with material from given lectures (Update Nov 2017)&lt;/h4&gt;
+&lt;p&gt;During my Ph.D. at the University of Pisa, I have had the chance to work as a Graduate Teaching Assistant for the following classes:&lt;/p&gt;
+&lt;h3 id=&#34;2017&#34;&gt;2017&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[Ing-Inf/06]&lt;/strong&gt;: &lt;span style=&#34;color:blue&#34;&gt;&lt;b&gt;Biomedical Imaging&lt;/b&gt;&lt;/span&gt; (&lt;em&gt;&lt;strong&gt;6 CFU&lt;/strong&gt;&lt;/em&gt;) &lt;span style=&#34;color:red&#34;&gt;&lt;b&gt;(ITA)&lt;/b&gt;&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/mscipio/Lectures/tree/master/2016/University%20of%20Pisa/Biomedical%20Imaging%20Course/Tracer%20Kinetic%20Modeling%20in%20PET%20dynamic%20imaging&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Iterative reconstruction techniques for emission tomography imaging: ML-EM, OS-EM, and MAP-OSL-EM&lt;/em&gt;&lt;/a&gt; 
+&lt;a href=&#34;https://github.com/mscipio/Lectures/blob/master/2017/University%20of%20Pisa/Biomedical%20Imaging%20Course/Iterative%20Reconstruction%20in%20Emission%20Tomography/Metodi_Iterativi_10_11_2017.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;[Download slides]**&lt;/strong&gt;&lt;/a&gt;
+&lt;a href=&#34;https://github.com/mscipio/Lectures/blob/master/2017/University%20of%20Pisa/Biomedical%20Imaging%20Course/Iterative%20Reconstruction%20in%20Emission%20Tomography/Ricostruzione_Iterativa_in_Tomografia_2017_2018.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;[Lecture notes]**&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2016&#34;&gt;2016&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[Ing-Inf/06]&lt;/strong&gt;: &lt;span style=&#34;color:blue&#34;&gt;&lt;b&gt;Biomedical Imaging&lt;/b&gt;&lt;/span&gt; (&lt;em&gt;&lt;strong&gt;6 CFU&lt;/strong&gt;&lt;/em&gt;) &lt;span style=&#34;color:red&#34;&gt;&lt;b&gt;(ITA)&lt;/b&gt;&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/mscipio/Lectures/tree/master/2016/University%20of%20Pisa/Biomedical%20Imaging%20Course/Tracer%20Kinetic%20Modeling%20in%20PET%20dynamic%20imaging&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Iterative reconstruction techniques for emission tomography imaging: ML-EM, OS-EM, and MAP-OSL-EM&lt;/em&gt;&lt;/a&gt; 
+&lt;a href=&#34;data/teaching/Iterative_reconstruction_of_tomographic_images_28_10_2016.pdf%22&#34;&gt;**[Download slides]**&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/mscipio/Lectures/tree/master/2016/University%20of%20Pisa/Biomedical%20Imaging%20Course/Iterative%20Reconstruction%20in%20Emission%20Tomography&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Introduction to kinetic modeling for emission tomography: focus on compartmental models (meaning, use, and interpratation)&lt;/em&gt;&lt;/a&gt; 
+&lt;a href=&#34;https://github.com/mscipio/Lectures/blob/master/2016/University%20of%20Pisa/Biomedical%20Imaging%20Course/Tracer%20Kinetic%20Modeling%20in%20PET%20dynamic%20imaging/Kinetic_Modeling_01_12_2016.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;[Part1]**&lt;/strong&gt;&lt;/a&gt; 
+&lt;a href=&#34;https://github.com/mscipio/Lectures/blob/master/2016/University%20of%20Pisa/Biomedical%20Imaging%20Course/Tracer%20Kinetic%20Modeling%20in%20PET%20dynamic%20imaging/Kinetic_Modeling_02_12_2016.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;[Part2]**&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Kinetic Compressive Sensing</title>
+      <link>/talk/ieee-nss-mic-2017/</link>
+      <pubDate>Thu, 26 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>/talk/ieee-nss-mic-2017/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;../../data/conferences/IEEE-NSS-MIC-2017/poster.png&#34; alt=&#34;Kinetic Compressive Sensing - EIEEE Nuclear Science Symposium and Medical Imaging Conference - 2017 - poster&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Parametric images provide insight into the spatial distribution of physiological parameters, but they are often extremely noisy, due to low SNR of tomographic data. Direct estimation from projections allows accurate noise modeling, improving the results of post-reconstruction fitting. We propose a method, which we name kinetic compressive sensing (KCS), based on a hierarchical Bayesian model and on a novel reconstruction algorithm, that encodes sparsity of kinetic parameters.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Methods&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The model has three key components: the model of the acquisition system; the kinetic model; and a Markov Random Field with an L1-norm cost function, defined in kinetic parameters domain. Parametric maps are reconstructed by maximizing the joint probability, with an Iterated Conditional Modes approach, alternating the optimization of activity time series (OSL-MAP-EM), and kinetic parameters (MAP-LM): a parallel GPU implementation allows synchronized update of all the voxels, computing the gradient of the log joint posterior at each iteration.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Experiments&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;100 noise realizations of a simulated dynamic geometric phantom were generated using a 2TC irreversible model. A bias/variance study confirmed how direct estimates can improve the quality of parametric maps over a post-reconstruction fitting, and showed how the novel sparsity prior can further reduce their variance, without affecting bias. Real FDG PET human brain data (Siemens mMR, 40min) images were also processed. Results enforced how the proposed KCS-regularized direct method can produce spatially coherent images and parametric maps, with lower spatial and better tissue contrast.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Combining sparse kinetic compressive sensing into a direct reconstruction framework can help generating high-quality images and parametric maps, both amenable for display and quantitatively more accurate than what a post-reconstruction fitting can achieve. A GPU-based open source implementation of the algorithm is provided.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>CUDA-GPU kinetic modeling</title>
+      <link>/project/gpu-lmfit/</link>
+      <pubDate>Mon, 26 Jun 2017 00:00:00 +0000</pubDate>
+      <guid>/project/gpu-lmfit/</guid>
+      <description>&lt;p&gt;The source code and detailed instruction about how to install and use this toolbox will be provided soon.
+Keep checking the website for future updates.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Occiput.io</title>
+      <link>/project/occiput/</link>
+      <pubDate>Mon, 26 Jun 2017 00:00:00 +0000</pubDate>
+      <guid>/project/occiput/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;http://tomographylab.scienceontheweb.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;&lt;strong&gt;OFFICIAL WEBSITE OF THE PROJECT&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Occiput.io&lt;/strong&gt; is an open source software for Tomographic reconstruction based on GPU computing and on Python.&lt;/p&gt;
+&lt;p&gt;The design of &lt;em&gt;occiput.io&lt;/em&gt; makes it extremely easy to reconstruct tomographic images starting from the raw data produced by imaging systems: PET, PET-MRI and SPECT. Occiput.io is designed for GPU computing, it’s &lt;em&gt;&lt;strong&gt;blazing fast&lt;/strong&gt;&lt;/em&gt;!&lt;/p&gt;
+&lt;p&gt;To date, &lt;strong&gt;Occiput&lt;/strong&gt; and the &lt;strong&gt;NiftyRec&lt;/strong&gt; ray-tracer (on which Occiput is based), have been downloaded more than 12000 times.&lt;/p&gt;
+&lt;p&gt;The design of occiput.io enables 2D, 3D (volumetric) and 4D (spatio-temporal) dynamic tomographic imaging, joint reconstruction of multiple parameters (e.g. &lt;em&gt;MLAA&lt;/em&gt;), motion-aware imaging and more.&lt;/p&gt;
+&lt;p&gt;Occiput enables the interactive tomographic reconstruction in the cloud, using &lt;em&gt;&lt;strong&gt;Jupyter&lt;/strong&gt;&lt;/em&gt; and &lt;em&gt;&lt;strong&gt;IPython&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;A Python package implementing the interface to the &lt;em&gt;&lt;strong&gt;Siemens Biograph mMR PET-MRI scanner&lt;/strong&gt;&lt;/em&gt; (including access to raw listmode data, sinograms, scatter data, physiological data) is available upon request (&lt;a href=&#34;mailto:occiput.reconstruction@gmail.com&#34;&gt;occiput.reconstruction@gmail.com&lt;/a&gt;). &lt;u&gt;Authorization from Siemens will be required&lt;/u&gt;.&lt;/p&gt;
+&lt;p&gt;To get started with Occiput, go to the 
+&lt;a href=&#34;https://github.com/TomographyLab/Occiput&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;project source code&lt;/a&gt;  and follow the installation instructions. The source code contains Jupyter notebooks with documentation and examples.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Kinetic compressive sensing: improving image reconstruction and parametric maps</title>
+      <link>/talk/martinosopenhouse17/</link>
+      <pubDate>Thu, 25 May 2017 00:00:00 +0000</pubDate>
+      <guid>/talk/martinosopenhouse17/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;../../data/conferences/MartinosOpenHouse2017/image_poster.png&#34; alt=&#34;Kinetic compressive sensing: improving image reconstruction and parametric maps - Athinoula A. Martinos Center Scientific Open House 2017 - poster&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Parametric images provide insight into the spatial distribution of physiological parameters, but they are often extremely noisy, due to low SNR of tomographic data. Direct estimation from projections allows accurate noise modeling, improving the results of post-reconstruction fitting. We propose a method, which we name kinetic compressive sensing (KCS), based on a hierarchical Bayesian model and on a novel reconstruction algorithm, that encodes sparsity of kinetic parameters.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Methods&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The model has three key components: the model of the acquisition system; the kinetic model; and a Markov Random Field with an L1-norm cost function, defined in kinetic parameters domain. Parametric maps are reconstructed by maximizing the joint probability, with an Iterated Conditional Modes approach, alternating the optimization of activity time series (OSL-MAP-EM), and kinetic parameters (MAP-LM): a parallel GPU implementation allows synchronized update of all the voxels, computing the gradient of the log joint posterior at each iteration.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Experiments&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;100 noise realizations of a simulated dynamic geometric phantom were generated using a 2TC irreversible model. A bias/variance study confirmed how direct estimates can improve the quality of parametric maps over a post-reconstruction fitting, and showed how the novel sparsity prior can further reduce their variance, without affecting bias. Real FDG PET human brain data (Siemens mMR, 40min) images were also processed. Results enforced how the proposed KCS-regularized direct method can produce spatially coherent images and parametric maps, with lower spatial and better tissue contrast.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Combining sparse kinetic compressive sensing into a direct reconstruction framework can help generating high-quality images and parametric maps, both amenable for display and quantitatively more accurate than what a post-reconstruction fitting can achieve. A GPU-based open source implementation of the algorithm is provided.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Keyword-&lt;/strong&gt; parametric images,PET,compartmental models,compressive sensing,hierarchical Bayesian model,sparsity,Markov Random Field,FDG,GPU&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New Imaging Frontiers in Cardiology: Fast and Quantitative Maps from Raw Data</title>
+      <link>/publication/newimagingfrontiers/</link>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/newimagingfrontiers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>KMtool: Kinetic Modeling Toolbox</title>
+      <link>/project/kmtool/</link>
+      <pubDate>Mon, 12 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>/project/kmtool/</guid>
+      <description>&lt;p&gt;Kinetic Modeling Toolbox designed to estimate kinetic parameters from 4D PET and DCE-MRI dataset at a ROI level&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/mscipio/KMtoolbox&#34; style=&#34;color:red&#34;&gt;&lt;b&gt;[GitHub SOURCE CODE]&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;updates&#34;&gt;Updates:&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;November 14, 2017&lt;/em&gt; &amp;ndash;&amp;gt; 
+&lt;a href=&#34;http://mscipio.github.io/post/update_kmtool_repo_14november17/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;[Check the related blog post]&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;&amp;gt; Fixed some issues on code duplication
+
+&amp;gt; Created a setup file to add all the needed source files to Matlab&#39;s path
+
+&amp;gt; Added some new colormap and a multiple choice of how to set up colorbar limit to improve the quality of image visualization 
+
+&amp;gt; Added a new example dataset with heart data
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;June, 2017&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;&amp;gt; First commit and publication of the toolbox on GitHub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;a-few-screenshots&#34;&gt;A few screenshots:&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Loading 4D volume:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/KMtool_project_page/import.png&#34; alt=&#34;alt text&#34; title=&#34;Logo Title Text 1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Select colormap and adjust visual scale:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/KMtool_project_page/colormap.png&#34; alt=&#34;alt text&#34; title=&#34;Logo Title Text 1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main window after loading 4D volume:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/KMtool_project_page/main.png&#34; alt=&#34;alt text&#34; title=&#34;Logo Title Text 1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Roi selection mode (example: selecting input function):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/KMtool_project_page/ROI.png&#34; alt=&#34;alt text&#34; title=&#34;Logo Title Text 1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fitting image-derived AIF with a theoretical model:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/KMtool_project_page/input.png&#34; alt=&#34;alt text&#34; title=&#34;Logo Title Text 1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;After selecting a tissue ROI, choose the suitable model:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/KMtool_project_page/tissue.png&#34; alt=&#34;alt text&#34; title=&#34;Logo Title Text 1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fitting result:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/KMtool_project_page/fitting.png&#34; alt=&#34;alt text&#34; title=&#34;Logo Title Text 1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Residuals:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/KMtool_project_page/residuals.png&#34; alt=&#34;alt text&#34; title=&#34;Logo Title Text 1&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Conway-Maxwell-Poisson (CMP) model to address data dispersion on positron emission tomography</title>
+      <link>/publication/com-poisson/</link>
+      <pubDate>Mon, 01 Aug 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/com-poisson/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blind Source Separation (BSS) with the Shogun Machine Learning Toolbox</title>
+      <link>/post/bss-shogun-python/</link>
+      <pubDate>Sun, 01 May 2016 11:00:00 +0000</pubDate>
+      <guid>/post/bss-shogun-python/</guid>
+      <description>&lt;h4 id=&#34;strongly-inspired-by-an-article-by-kevin-hughes-httpsgithubcomkevinhughes27tabrepositories&#34;&gt;Strongly inspired by an article by Kevin Hughes (&lt;em&gt;&lt;a href=&#34;https://github.com/kevinhughes27?tab=repositories&#34;&gt;https://github.com/kevinhughes27?tab=repositories&lt;/a&gt;&lt;/em&gt;)&lt;/h4&gt;
+&lt;p&gt;Today I am going to show you how we can do Blind Source Separation (BSS) using algorithms available in the Shogun Machine Learning Toolbox. What is &lt;strong&gt;Blind Source Separation&lt;/strong&gt;? &lt;em&gt;BSS&lt;/em&gt; is the separation of a set of source signals from a set of mixed signals.&lt;/p&gt;
+&lt;p&gt;My favorite example of this problem is known as the &lt;strong&gt;cocktail party problem&lt;/strong&gt; where a number of people are talking simultaneously and we want to separate each persons speech so we can listen to it separately. Now the caveat with this type of approach is that we need as many mixtures as we have source signals or in terms of the cocktail party problem &lt;em&gt;we need as many microphones as people talking in the room&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s get started. This example is going to be in Python and the first thing we are going to need to do is &lt;em&gt;load some audio files&lt;/em&gt;. To make things a bit easier further on in this example I&amp;rsquo;m going to wrap the basic scipy wav file reader and add some additional functionality. First I added a case to handle converting stereo wav files back into mono wav files and secondly this loader takes a desired sample rate and resamples the input to match. This is important because when we mix the two audio signals they need to have the same sample rate. &lt;!-- TEASER_END --&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from scipy.io import wavfile
+from scipy.signal import resample
+
+def load_wav(filename,samplerate=44100):
+
+    # load file
+    rate, data = wavfile.read(filename)
+
+    # convert stereo to mono
+    if len(data.shape) &amp;gt; 1:
+        data = data[:,0]/2 + data[:,1]/2
+
+    # re-interpolate samplerate    
+    ratio = float(samplerate) / float(rate)
+    data = resample(data, len(data) * ratio)
+
+    return samplerate, data.astype(np.int16)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next we&amp;rsquo;re going to need a way to play the audio files we&amp;rsquo;re working with (otherwise this wouldn&amp;rsquo;t be very exciting at all would it?). In the next bit of code I&amp;rsquo;ve defined a wavPlayer class that takes the signal and the sample rate and then creates a nice HTML5 webplayer right inline with the notebook.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#import StringIO
+import base64
+import struct  
+
+from IPython.core.display import HTML
+
+def wavPlayer(data, rate):
+    &amp;quot;&amp;quot;&amp;quot; will display html 5 player for compatible browser
+    The browser need to know how to play wav through html5.
+    there is no autoplay to prevent file playing when the browser opens
+    Adapted from SciPy.io. and
+    github.com/Carreau/posts/blob/master/07-the-sound-of-hydrogen.ipynb
+    &amp;quot;&amp;quot;&amp;quot;
+
+    buffer = six.moves.StringIO()
+    buffer.write(b&#39;RIFF&#39;)
+    buffer.write(b&#39;\x00\x00\x00\x00&#39;)
+    buffer.write(b&#39;WAVE&#39;)
+
+    buffer.write(b&#39;fmt &#39;)
+    if data.ndim == 1:
+        noc = 1
+    else:
+        noc = data.shape[1]
+    bits = data.dtype.itemsize * 8
+    sbytes = rate*(bits // 8)*noc
+    ba = noc * (bits // 8)
+    buffer.write(struct.pack(&#39;&amp;lt;ihHIIHH&#39;, 16, 1, noc, rate, sbytes, ba, bits))
+
+    # data chunk
+    buffer.write(b&#39;data&#39;)
+    buffer.write(struct.pack(&#39;&amp;lt;i&#39;, data.nbytes))
+
+    if data.dtype.byteorder == &#39;&amp;gt;&#39; or (data.dtype.byteorder == &#39;=&#39; and sys.byteorder == &#39;big&#39;):
+        data = data.byteswap()
+
+    buffer.write(data.tostring())
+    # return buffer.getvalue()
+    # Determine file size and place it in correct
+    # position at start of the file.
+    size = buffer.tell()
+    buffer.seek(4)
+    buffer.write(struct.pack(&#39;&amp;lt;i&#39;, size-8))
+
+    val = buffer.getvalue()
+
+    src = &amp;quot;&amp;quot;&amp;quot;
+    &amp;lt;head&amp;gt;
+    &amp;lt;meta http-equiv=&amp;quot;Content-Type&amp;quot; content=&amp;quot;text/html; charset=utf-8&amp;quot;&amp;gt;
+    &amp;lt;title&amp;gt;Simple Test&amp;lt;/title&amp;gt;
+    &amp;lt;/head&amp;gt;
+
+    &amp;lt;body&amp;gt;
+    &amp;lt;audio controls=&amp;quot;controls&amp;quot; style=&amp;quot;width:600px&amp;quot; &amp;gt;
+      &amp;lt;source controls src=&amp;quot;data:audio/wav;base64,{base64}&amp;quot; type=&amp;quot;audio/wav&amp;quot; /&amp;gt;
+      Your browser does not support the audio element.
+    &amp;lt;/audio&amp;gt;
+    &amp;lt;/body&amp;gt;
+    &amp;quot;&amp;quot;&amp;quot;.format(base64=base64.encodestring(val))
+    display(HTML(src))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now that we can load and play wav files we actually need some wav files! I found the sounds from Starcraft to be a great source of wav files because they&amp;rsquo;re short, interesting and remind me of my childhood. You can download Starcraft wav files here: &lt;a href=&#34;http://wavs.unclebubby.com/computer/starcraft/&#34;&gt;http://wavs.unclebubby.com/computer/starcraft/&lt;/a&gt; among other places on the web or from your Starcraft install directory (come on I know it&amp;rsquo;s still there).&lt;/p&gt;
+&lt;p&gt;Another good source of data (although lets be honest less cool) is ICA central and various other more academic data sets: &lt;a href=&#34;http://perso.telecom-paristech.fr/~cardoso/icacentral/base_multi.html&#34;&gt;http://perso.telecom-paristech.fr/~cardoso/icacentral/base_multi.html&lt;/a&gt;. Note that for lots of these data sets the data will be mixed already so you&amp;rsquo;ll be able to skip the next few steps.&lt;/p&gt;
+&lt;p&gt;Okay lets load up an audio file. I chose the Terran Battlecruiser saying &amp;ldquo;Good Day Commander&amp;rdquo;. In addition to the creating a wavPlayer I also plotted the data using Matplotlib (and tried my best to have the graph length match the HTML player length). Have a listen!&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# change to the shogun-data directoy
+import os
+os.chdir(&#39;../files&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;%pylab inline
+import pylab as pl
+import numpy as np
+
+# load
+fs1,s1 = load_wav(&#39;audio1.wav&#39;) # Terran Marine - &amp;quot;You want a piece of me, boy?&amp;quot;
+
+# plot
+pl.figure(figsize=(7,2))
+pl.plot(s1)
+pl.title(&#39;Signal 1&#39;)
+pl.show()
+
+# player
+wavPlayer(s1, fs1)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/bss-shogun-python/output_8_2.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;div ID=&#34;div-2&#34; style=&#34;display: table; margin: 0 auto;&#34;&gt;
+&lt;audio controls=&#34;controls&#34; &gt;
+  &lt;source type=&#34;audio/wav&#34; src=&#34;../../data/posts/audio1.wav&#34;&gt;&lt;/source&gt;
+&lt;/audio&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Now let&amp;rsquo;s load a second audio clip:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# load
+fs2,s2 = load_wav(&#39;audio2.wav&#39;) # Terran Battlecruiser - &amp;quot;Good day, commander.&amp;quot;
+
+# plot
+pl.figure(figsize=(6.75,2))
+pl.plot(s2)
+pl.title(&#39;Signal 2&#39;)
+pl.show()
+
+# player
+wavPlayer(s2, fs2)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/bss-shogun-python/output_10_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;div ID=&#34;div-2&#34; style=&#34;display: table; margin: 0 auto;&#34;&gt;
+&lt;audio controls=&#34;controls&#34; &gt;
+  &lt;source type=&#34;audio/wav&#34; src=&#34;../../data/posts/audio2.wav&#34;&gt;&lt;/source&gt;
+&lt;/audio&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;and a third audio clip:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# load
+fs3,s3 = load_wav(&#39;audio3.wav&#39;) # Protoss Zealot - &amp;quot;My life for Aiur!&amp;quot;
+
+# plot
+pl.figure(figsize=(6.75,2))
+pl.plot(s3)
+pl.title(&#39;Signal 3&#39;)
+pl.show()
+
+# player
+wavPlayer(s3, fs3)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/bss-shogun-python/output_12_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;div ID=&#34;div-2&#34; style=&#34;display: table; margin: 0 auto;&#34;&gt;
+&lt;audio controls=&#34;controls&#34; &gt;
+  &lt;source type=&#34;audio/wav&#34; src=&#34;../../data/posts/audio3.wav&#34;&gt;&lt;/source&gt;
+&lt;/audio&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Now we&amp;rsquo;ve got our audio files loaded up into our example program. The next thing we need to do is mix them together!&lt;/p&gt;
+&lt;p&gt;First another nuance - what if the audio clips aren&amp;rsquo;t the same lenth? The solution I came up with for this was to simply resize them all to the length of the longest signal, the extra length will just be filled with zeros so it won&amp;rsquo;t affect the sound.&lt;/p&gt;
+&lt;p&gt;The signals are mixed by creating a mixing matrix $A$ and taking the dot product of $A$ with the signals $S$.&lt;/p&gt;
+&lt;p&gt;Afterwards I plot the mixed signals and create the wavPlayers, have a listen!&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# Adjust for different clip lengths
+fs = fs1
+length = max([len(s1), len(s2), len(s3)])
+
+s1.resize((length,1), refcheck=False)
+s2.resize((length,1), refcheck=False)
+s3.resize((length,1), refcheck=False)
+
+&amp;quot;&amp;quot;&amp;quot;
+The function numpy.c_ concatenates the numpy arrays given as input.
+The method numpy_array.T is the transpose operation that allow us
+to prepare an input source matrix of the right size (3, length),
+according to the chosen mixing matrix (3,3).
+&amp;quot;&amp;quot;&amp;quot;
+S = (np.c_[s1, s2, s3]).T
+
+# Mixing Matrix
+#A = np.random.uniform(size=(3,3))
+#A = A / A.sum(axis=0)
+A = np.array([[1, 0.5, 0.5],
+              [0.5, 1, 0.5],
+              [0.5, 0.5, 1]])
+print &#39;Mixing Matrix:&#39;
+print A.round(2)
+
+# Mixed Signals
+X = np.dot(A,S)
+
+# Exploring Mixed Signals
+for i in range(X.shape[0]):
+    pl.figure(figsize=(6.75,2))
+    pl.plot((X[i]).astype(np.int16))
+    pl.title(&#39;Mixed Signal %d&#39; % (i+1))
+    pl.show()
+    wavPlayer((X[i]).astype(np.int16), fs)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Mixing Matrix:
+[[ 1.   0.5  0.5]
+ [ 0.5  1.   0.5]
+ [ 0.5  0.5  1. ]]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/bss-shogun-python/output_14_1.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;div ID=&#34;div-2&#34; style=&#34;display: table; margin: 0 auto;&#34;&gt;
+&lt;audio controls=&#34;controls&#34; &gt;
+  &lt;source type=&#34;audio/wav&#34; src=&#34;../../data/posts/mixaudio1.wav&#34;&gt;&lt;/source&gt;
+&lt;/audio&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/bss-shogun-python/output_14_3.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;div ID=&#34;div-2&#34; style=&#34;display: table; margin: 0 auto;&#34;&gt;
+&lt;audio controls=&#34;controls&#34; &gt;
+  &lt;source type=&#34;audio/wav&#34; src=&#34;../../data/posts/mixaudio2.wav&#34;&gt;&lt;/source&gt;
+&lt;/audio&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/bss-shogun-python/output_14_5.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;div ID=&#34;div-2&#34; style=&#34;display: table; margin: 0 auto;&#34;&gt;
+&lt;audio controls=&#34;controls&#34; &gt;
+  &lt;source type=&#34;audio/wav&#34; src=&#34;../../data/posts/mixaudio3.wav&#34;&gt;&lt;/source&gt;
+&lt;/audio&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Now before we can work on separating these signals we need to get the data ready for Shogun.
+Thankfully this is pretty easy!&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from shogun.Features  import RealFeatures
+
+# Convert to features for shogun
+mixed_signals = RealFeatures((X).astype(np.float64))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now lets &lt;strong&gt;unmix&lt;/strong&gt; those signals!&lt;/p&gt;
+&lt;p&gt;In this example I&amp;rsquo;m going to use an &lt;strong&gt;Independent Component Analysis (ICA)&lt;/strong&gt; algorithm called &lt;em&gt;JADE&lt;/em&gt;. JADE is one of the ICA algorithms available in Shogun and it works by performing &lt;em&gt;&lt;strong&gt;Approximate Joint Diagonalization&lt;/strong&gt;&lt;/em&gt; (AJD) on a 4th order cumulant tensor. I&amp;rsquo;m not going to go into a lot of detail on how JADE works behind the scenes but here is the reference for the original paper:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Cardoso, J. F., &amp;amp; Souloumiac, A. (1993). Blind beamforming for non-Gaussian signals. In IEEE Proceedings F (Radar and Signal Processing) (Vol. 140, No. 6, pp. 362-370). IET Digital Library.&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Shogun also has several other ICA algorithms including the Second Order Blind Identification (SOBI) algorithm, FFSep, JediSep, UWedgeSep and FastICA. All of the algorithms inherit from the ICAConverter base class and share some common methods for setting an intial guess for the mixing matrix, retrieving the final mixing matrix and getting/setting the number of iterations to run and the desired convergence tolerance. Some of the algorithms have additional getters for intermediate calculations, for example Jade has a method for returning the 4th order cumulant tensor while the &amp;ldquo;Sep&amp;rdquo; algorithms have a getter for the time lagged covariance matrices. Check out the source code on GitHub or the Shogun docs for more details!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from shogun.Converter import Jade
+
+# Separating with JADE
+jade = Jade()
+signals = jade.apply(mixed_signals)
+
+S_ = signals.get_feature_matrix()
+
+A_ = jade.get_mixing_matrix()
+A_ = A_ / A_.sum(axis=0)
+
+print &#39;Estimated Mixing Matrix:&#39;
+print A_
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Estimated Mixing Matrix:
+[[ 0.25098835  0.49907993  0.24442146]
+ [ 0.26235007  0.25543257  0.53186567]
+ [ 0.48666158  0.2454875   0.22371287]]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Thats all there is to it!&lt;/p&gt;
+&lt;p&gt;Check out how nicely those signals have been separated and have a listen!&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# Show separation results
+
+# Separated Signal i
+gain = 4000
+for i in range(S_.shape[0]):
+    pl.figure(figsize=(6.75,2))
+    pl.plot((gain*S_[i]).astype(np.int16))
+    pl.title(&#39;Separated Signal %d&#39; % (i+1))
+    pl.show()
+    wavPlayer((gain*S_[i]).astype(np.int16), fs)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/bss-shogun-python/output_20_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;div ID=&#34;div-2&#34; style=&#34;display: table; margin: 0 auto;&#34;&gt;
+&lt;audio controls=&#34;controls&#34; &gt;
+  &lt;source type=&#34;audio/wav&#34; src=&#34;../../data/posts/unmixaudio1.wav&#34;&gt;&lt;/source&gt;
+&lt;/audio&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/bss-shogun-python/output_20_2.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;div ID=&#34;div-2&#34; style=&#34;display: table; margin: 0 auto;&#34;&gt;
+&lt;audio controls=&#34;controls&#34; &gt;
+  &lt;source type=&#34;audio/wav&#34; src=&#34;../../data/posts/unmixaudio2.wav&#34;&gt;&lt;/source&gt;
+&lt;/audio&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/bss-shogun-python/output_20_4.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;div ID=&#34;div-2&#34; style=&#34;display: table; margin: 0 auto;&#34;&gt;
+&lt;audio controls=&#34;controls&#34; &gt;
+  &lt;source type=&#34;audio/wav&#34; src=&#34;../../data/posts/unmixaudio3.wav&#34;&gt;&lt;/source&gt;
+&lt;/audio&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;BSS isn&amp;rsquo;t only useful for working with Audio, it is also useful for image processing and pre-processing other forms of high dimensional data.
+Have a google for ICA and machine learning if you want to learn more, but we will sure come back in the future on this topic!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Calculating the posterior probability distribution of parameters with emcee python module</title>
+      <link>/post/posterior-distribution-of-parameter-estimate/</link>
+      <pubDate>Sun, 01 May 2016 11:00:00 +0000</pubDate>
+      <guid>/post/posterior-distribution-of-parameter-estimate/</guid>
+      <description>&lt;h2 id=&#34;the-emcee-python-module&#34;&gt;The &lt;strong&gt;emcee()&lt;/strong&gt; python module&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;emcee&lt;/strong&gt; can be used to obtain the posterior probability distribution of parameters, given a set of experimental data. An example problem is a double exponential decay. A small amount of Gaussian noise is also added.&lt;!-- TEASER_END --&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;%matplotlib inline
+import numpy as np
+import lmfit
+from matplotlib import pyplot as plt
+import corner
+import emcee
+from pylab import *
+ion()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;x = np.linspace(1, 10, 250)
+np.random.seed(0)
+y = 3.0 * np.exp(-x / 2) - 5.0 * np.exp(-(x - 0.1) / 10.) + 0.1 * np.random.randn(len(x))
+
+plt.plot(x, y)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;[&amp;lt;matplotlib.lines.Line2D at 0x7fbabac52310&amp;gt;]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/posterior-distribution-of-parameter-estimate/output_3_1.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;initializing-our-example-creating-a-parameter-set-for-the-initial-guesses&#34;&gt;Initializing our example creating a parameter set for the initial guesses:&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;p = lmfit.Parameters()
+p.add_many((&#39;a1&#39;, 4.), (&#39;a2&#39;, 4.), (&#39;t1&#39;, 3.), (&#39;t2&#39;, 3., True))
+
+def residual(p):
+    v = p.valuesdict()
+    return v[&#39;a1&#39;] * np.exp(-x / v[&#39;t1&#39;]) + v[&#39;a2&#39;] * np.exp(-(x - 0.1) / v[&#39;t2&#39;]) - y
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;solving-with-minimize-gives-the-maximum-likelihood-solution&#34;&gt;Solving with minimize() gives the Maximum Likelihood solution.:&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;mi = lmfit.minimize(residual, p, method=&#39;Nelder&#39;)
+#mi = lmfit.minimize(residual, p)
+lmfit.printfuncs.report_fit(mi.params, min_correl=0.5)
+
+plt.plot(x, y)
+plt.plot(x, residual(mi.params) + y, &#39;r&#39;)
+plt.show()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;[[Variables]]
+    a1:   2.98623688 (init= 4)
+    a2:  -4.33525596 (init= 4)
+    t1:   1.30993185 (init= 3)
+    t2:   11.8240752 (init= 3)
+[[Correlations]] (unreported correlations are &amp;lt;  0.500)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/posterior-distribution-of-parameter-estimate/output_7_1.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;However, &lt;strong&gt;this doesn’t give a probability distribution&lt;/strong&gt; for the parameters. Furthermore, we wish to deal with the data uncertainty. This is called marginalisation of a nuisance parameter. &lt;strong&gt;emcee&lt;/strong&gt; requires a function that returns the log-posterior probability.&lt;/p&gt;
+&lt;h3 id=&#34;posterior-distribution-estimation&#34;&gt;Posterior distribution estimation&lt;/h3&gt;
+&lt;p&gt;The log-posterior probability is a &lt;strong&gt;sum of the log-prior probability and log-likelihood functions&lt;/strong&gt;. The log-prior probability is assumed to be zero if all the parameters are within their bounds and -np.inf if any of the parameters are outside their bounds.:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# add a noise parameter
+mi.params.add(&#39;f&#39;, value=1, min=0.001, max=2)
+
+# This is the log-likelihood probability for the sampling. We&#39;re going to estimate the
+# size of the uncertainties on the data as well.
+def lnprob(p):
+    resid = residual(p)
+    s = p[&#39;f&#39;]
+    resid *= 1 / s
+    resid *= resid
+    resid += np.log(2 * np.pi * s**2)
+    return -0.5 * np.sum(resid)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Lets have a look at those posterior distributions for the parameters.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;mini = lmfit.Minimizer(lnprob, mi.params)
+res = mini.emcee(burn=300, steps=600, thin=3, params=mi.params)
+corner.corner(res.flatchain, labels=res.var_names, truths=list(res.params.valuesdict().values()))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/posterior-distribution-of-parameter-estimate/output_11_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The values reported in the MinimizerResult are the medians of the probability distributions and a 1 sigma quantile&lt;/strong&gt;, estimated as half the difference between the 15.8 and 84.2 percentiles.&lt;/p&gt;
+&lt;p&gt;The median value is not necessarily the same as the Maximum Likelihood Estimate. We’ll get that as well. You can see that we recovered the right uncertainty level on the data:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;lmfit.report_fit(mi.params)
+print(&#39;---------------------------------------------&#39;)
+print(&amp;quot;median of posterior probability distribution&amp;quot;)
+print(&#39;---------------------------------------------&#39;)
+lmfit.report_fit(res.params)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;[[Variables]]
+    a1:   2.98623688 (init= 4)
+    a2:  -4.33525596 (init= 4)
+    t1:   1.30993185 (init= 3)
+    t2:   11.8240752 (init= 3)
+    f:    1          (init= 1)
+[[Correlations]] (unreported correlations are &amp;lt;  0.100)
+---------------------------------------------
+median of posterior probability distribution
+---------------------------------------------
+[[Variables]]
+    a1:   2.99754553 +/- 0.151322 (5.05%) (init= 2.986237)
+    a2:  -4.33867001 +/- 0.117687 (2.71%) (init=-4.335256)
+    t1:   1.31237613 +/- 0.132677 (10.11%) (init= 1.309932)
+    t2:   11.8062444 +/- 0.457356 (3.87%) (init= 11.82408)
+    f:    0.09810770 +/- 0.004350 (4.43%) (init= 1)
+[[Correlations]] (unreported correlations are &amp;lt;  0.100)
+    C(a2, t2)                    =  0.980
+    C(a2, t1)                    = -0.926
+    C(t1, t2)                    = -0.873
+    C(a1, t1)                    = -0.541
+    C(a1, a2)                    =  0.224
+    C(a1, t2)                    =  0.171
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;lets-find-the-maximum-likelihood-solution&#34;&gt;Let&amp;rsquo;s find the maximum likelihood solution&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;highest_prob = np.argmax(res.lnprob)
+hp_loc = np.unravel_index(highest_prob, res.lnprob.shape)
+mle_soln = res.chain[hp_loc]
+for i, par in enumerate(p):
+    p[par].value = mle_soln[i]
+
+print(&amp;quot;\nMaximum likelihood Estimation&amp;quot;)
+print(&#39;-----------------------------&#39;)
+print(p)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Maximum likelihood Estimation
+-----------------------------
+Parameters([(&#39;a1&#39;, &amp;lt;Parameter &#39;a1&#39;, 2.9874185587879265, bounds=[-inf:inf]&amp;gt;), (&#39;a2&#39;, &amp;lt;Parameter &#39;a2&#39;, -4.3357546840836836, bounds=[-inf:inf]&amp;gt;), (&#39;t1&#39;, &amp;lt;Parameter &#39;t1&#39;, 1.3090319527167826, bounds=[-inf:inf]&amp;gt;), (&#39;t2&#39;, &amp;lt;Parameter &#39;t2&#39;, 11.823518108067935, bounds=[-inf:inf]&amp;gt;)])
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;finally-lets-work-out-a-1-and-2-sigma-error-estimate-for-t1&#34;&gt;Finally lets work out a 1 and 2-sigma error estimate for &amp;lsquo;t1&amp;rsquo;&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;quantiles = np.percentile(res.flatchain[&#39;t1&#39;], [2.28, 15.9, 50, 84.2, 97.7])
+print(&amp;quot;2 sigma spread&amp;quot;, 0.5 * (quantiles[-1] - quantiles[0]))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;(&#39;2 sigma spread&#39;, 0.2826990333440581)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fitting theoretical model to data in python</title>
+      <link>/post/fitting-functions-to-data/</link>
+      <pubDate>Sun, 01 May 2016 11:00:00 +0000</pubDate>
+      <guid>/post/fitting-functions-to-data/</guid>
+      <description>&lt;p&gt;There are several data fitting utilities available. We will focus on two:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;scipy.optimize&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;lmfit.minimize&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Using both those modules, you can fit any arbitrary function that you define and it is, also, possible to constrain given parameters during the fit. Another important aspect is that both packages come with useful
+diagnostic tools.&lt;/p&gt;
+&lt;h2 id=&#34;fitting-basics&#34;&gt;Fitting Basics&lt;/h2&gt;
+&lt;p&gt;The &lt;em&gt;fitting&lt;/em&gt; we discuss here is an iterative process.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;First, we define our &lt;strong&gt;desired function&lt;/strong&gt;, and calculate values given certain parameters&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Then we &lt;strong&gt;calculate the difference&lt;/strong&gt; between the initial and the new values&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The final aim is to minimize this difference (specifically, we generally minimize the sum of the squares of these differences).&lt;!-- TEASER_END --&gt;&lt;/p&gt;
+&lt;p&gt;Several examples can be found at &lt;a href=&#34;http://www.scipy.org/Cookbook/FittingData&#34;&gt;http://www.scipy.org/Cookbook/FittingData&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Minimization is usually done by the method of &lt;strong&gt;least squares fitting&lt;/strong&gt;. There are several algorithms available for this minimization.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The most common is the &lt;strong&gt;Levenberg-Marquardt&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Susceptible to finding &lt;em&gt;local minima&lt;/em&gt; instead of &lt;em&gt;global&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Fast&lt;/li&gt;
+&lt;li&gt;Usually well-behaved for most functions&lt;/li&gt;
+&lt;li&gt;By far the &lt;em&gt;most tested of methods&lt;/em&gt;, with many accompanying statistics implemented&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Other methods include the &lt;strong&gt;Nelder-Mead&lt;/strong&gt;, &lt;strong&gt;L-BFGS-B&lt;/strong&gt;, and &lt;strong&gt;Simulated Annealing&lt;/strong&gt; algorithms&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;goodness-of-fit-gof&#34;&gt;Goodness-of-Fit (GoF)&lt;/h2&gt;
+&lt;p&gt;There are several statistics that can help you determine the goodness-of-fit. Most commonly used are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;reduced chi-squared&lt;/li&gt;
+&lt;li&gt;Standard error&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can get these and other tools for free with &lt;strong&gt;lmfit.minimize&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;example-1-fit-a-quadratic-curve-with-no-constraints&#34;&gt;Example 1: Fit a quadratic curve with no constraints&lt;/h2&gt;
+&lt;p&gt;First, let&amp;rsquo;s try fitting a simple quadratic to some fake data:&lt;/p&gt;
+&lt;p&gt;$$ y = ax^2 + bx + c $$&lt;/p&gt;
+&lt;p&gt;What we will do:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Generate some data for the example&lt;/li&gt;
+&lt;li&gt;Define the function we wish to fit&lt;/li&gt;
+&lt;li&gt;Use &lt;strong&gt;scipy.optimize&lt;/strong&gt; to do the actual optimization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Let&amp;rsquo;s assume the following:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The x-data is an array from -3 to 10&lt;/li&gt;
+&lt;li&gt;The y-data is $x^2$, with some random noise added.&lt;/li&gt;
+&lt;li&gt;Let&amp;rsquo;s put our initial guesses for the coefficients a,b,c into a list called p0 (for fit parameters)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import numpy as np
+
+#Generate the arrays
+xarray1=np.arange(-3,10,.2)
+yarray1=xarray1**2
+
+#Adding noise
+yarray1+=np.random.randn(yarray1.shape[0])*2
+p0=[2,2,2] #Our initial guesses for our fit parameters
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Since we are dealing with a &lt;strong&gt;quadratic fit&lt;/strong&gt; we can use a &lt;em&gt;cheap &amp;amp; easy&lt;/em&gt; method &lt;em&gt;&lt;strong&gt;for polynomials (only)&lt;/strong&gt;&lt;/em&gt;: &lt;em&gt;scipy.polyfit()&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This method involves the least amount of setup while it simply outputs an array of the coefficients that best fit the data to the specified polynomial order.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;%matplotlib inline
+from scipy import polyfit
+from scipy.optimize import leastsq as lsq
+import matplotlib.pyplot as plt
+
+# polyfit(x, y, deg)
+fitcoeffs=polyfit(xarray1,yarray1,2)
+
+print &amp;quot;Parameter fitted using polyfit&amp;quot;
+print fitcoeffs
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Parameter fitted using polyfit
+[ 1.00811611 -0.21729382  0.6272779 ]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Define the function you want to fit, remembering that &lt;strong&gt;p&lt;/strong&gt; will be our array of initial guesses to the fit parameters, the coefficients &lt;strong&gt;a, b, c&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def quadratic(p,x):
+    y_out=p[0]*(x**2)+p[1]*x+p[2]
+    return y_out
+
+#Is the same as
+#quadratic = lambda p,x: p[0]*(x**2)+p[1]*x+p[2]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then we define a function that &lt;strong&gt;returns the difference&lt;/strong&gt; between the fit iteration value and the initial data:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;quadraticerr = lambda p,x,y: quadratic(p,x)-y
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This difference or residual is the quantity that we will minimize with &lt;em&gt;scipy.optimize&lt;/em&gt;. To do so, we call the least-squares optimization routine with &lt;strong&gt;scipy.optimize.leastsq()&lt;/strong&gt; that stores the parameters you fit &lt;em&gt;in the zeroth element&lt;/em&gt; of the output:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;fitout=lsq(quadraticerr,p0[:],args=(xarray1,yarray1))
+paramsout=fitout[0] #These are the fitted coefficients
+covar=fitout[1] #This is the covariance matrix output
+
+print(&#39;Fitted Parameters using scipy\&#39;s leastsq():\na = %.2f , b = %.2f , c = %.2f&#39;
+% (paramsout[0],paramsout[1],paramsout[2]))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Fitted Parameters using scipy&#39;s leastsq():
+a = 1.01 , b = -0.22 , c = 0.63
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now to get an array values for the results, just call your function definition with the fitted parameters, while the residuals, of course, will just be their difference from the original data:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;fitarray1=quadratic(paramsout,xarray1)
+residualarray1=fitarray1-yarray1
+
+plt.rc(&#39;font&#39;,family=&#39;serif&#39;)
+fig1=plt.figure(1)
+frame1=fig1.add_axes((.1,.3,.8,.6))
+    #xstart, ystart, xwidth, yheight --&amp;gt; units are fraction of the image from bottom left
+
+xsmooth=np.linspace(xarray1[0],xarray1[-1])
+plt.plot(xarray1,yarray1,&#39;.&#39;)
+plt.plot(xsmooth,quadratic(paramsout,xsmooth))
+frame1.set_xticklabels([]) #We will plot the residuals below, so no x-ticks on this plot
+plt.title(&#39;Quadratic Fit Example&#39;)
+plt.ylabel(&#39;y-data&#39;)
+plt.grid(True)
+frame1.annotate(&#39;$y$ = %.2f$\cdot x^2$+%.2f$\cdot x$+%.2f&#39;%(paramsout[0],paramsout[1],paramsout[2]), \
+                xy=(.05,.95),xycoords=&#39;axes fraction&#39;,ha=&amp;quot;left&amp;quot;,va=&amp;quot;top&amp;quot;,bbox=dict(boxstyle=&amp;quot;round&amp;quot;, fc=&#39;1&#39;))
+
+from matplotlib.ticker import MaxNLocator
+plt.gca().yaxis.set_major_locator(MaxNLocator(prune=&#39;lower&#39;)) #Removes lowest ytick label
+
+frame2=fig1.add_axes((.1,.1,.8,.2))
+
+plt.plot(xarray1,quadratic(paramsout,xarray1)-yarray1)
+plt.ylabel(&#39;Residuals&#39;)
+plt.grid(True)
+
+plt.show()
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/fitting-functions-to-data/output_11_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;example-2-more-complex-functions-with-constraints&#34;&gt;Example 2: More complex functions, with constraints&lt;/h2&gt;
+&lt;p&gt;Often we want to set limits on the values that our fitted parameters can have, for example, to be sure that one of the parameters can&amp;rsquo;t be negative, etc.&lt;/p&gt;
+&lt;p&gt;To do this, we can use &lt;em&gt;scipy.optimize.minimize()&lt;/em&gt; or another useful package could be &lt;em&gt;lmfit.minimize()&lt;/em&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;We create an &lt;strong&gt;lmfit.Parameters()&lt;/strong&gt; object&lt;/li&gt;
+&lt;li&gt;We can set limits for the parameters to be fit&lt;/li&gt;
+&lt;li&gt;We can even tell some params not to vary at all&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The &lt;strong&gt;Parameters()&lt;/strong&gt; object is then updated with every iteration.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s use more real data for a typical real-world application: fitting a profile to spectral data.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;The data&lt;/strong&gt;: stacked velocity-amplitude spectra from a VLA observation&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The functions&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;A modified Gaussian to include Hermite polynomials (approximations to skew and kurtosis)&lt;/li&gt;
+&lt;li&gt;A double gaussian (gaus1 + gaus2 = gausTot)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The data have been downloaded from &lt;a href=&#34;https://science.nrao.edu/science/surveys/littlethings/data/wlm.html&#34;&gt;https://science.nrao.edu/science/surveys/littlethings/data/wlm.html&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import pyfits
+
+cube=pyfits.getdata(&#39;WLM_NA_ICL001.FITS&#39;)[0,:,:,:]
+cubehdr=pyfits.getheader(&#39;WLM_NA_ICL001.FITS&#39;)
+
+cdelt3=cubehdr[&#39;CDELT3&#39;]/1000.; crval3=cubehdr[&#39;CRVAL3&#39;]/1000.; crpix3=cubehdr[&#39;CRPIX3&#39;];
+minvel=crval3+(-crpix3+1)*cdelt3; maxvel=crval3+(cube.shape[0]-crpix3)*cdelt3
+chanwidth=abs(cdelt3)
+
+stackspec=np.sum(np.sum(cube,axis=2),axis=1)
+vels=np.arange(minvel,maxvel+int(cdelt3),cdelt3)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The velocity array in the cube goes from positive to negative, so let’s reverse it to make the fitting go smoother.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;vels=vels[::-1]
+stackspec=stackspec[::-1]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We are going to use the default &lt;em&gt;Marquardt-Levenberg algorithm&lt;/em&gt;.  Note that fitting results will depend quite a bit on what you give as initial guesses – ML finds LOCAL extrema quite well, but it doesn’t necessarily find the global extrema.  In short, &lt;strong&gt;do your best to provide a good first guess&lt;/strong&gt; to the fit parameters.&lt;/p&gt;
+&lt;p&gt;I said that we want to fit this dataset with a more complex model. Let me explain it a bit before to proced.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Standard Gaussian&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$ f(x) = A e^{\frac{-g^2}{2}} $&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$ g = \frac{x-x_c}{\sigma} $&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Multiple Gaussians&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$ F(x) = \sum_i f_i(x) = A_1e^{\frac{-g_1^2}{2}} + A_2e^{\frac{-g_2^2}{2}} + \dots $&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Gauss-Hermite Polynomial&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$f(x) = Ae^{\frac{-g^2}{2}} [ 1+h_3(-\sqrt{3}g+\frac{2}{\sqrt{3}}g^3 ) + h_4 (\frac{\sqrt{6}}{4}-\sqrt{6}g^2+\frac{\sqrt{6}}{3}g^4)] $&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;H_3 → (Fisher) Skew: asymmetric component&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$\xi_1 \sim 4\sqrt{3}h_3$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;H_4 → (Fisher) Kurtosis: how &amp;lsquo;fat&amp;rsquo; the tails are&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$xi_2 \sim 3+8\sqrt{6}h_4$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$\xi_f = \xi_2-3$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$\xi_f \sim 8\sqrt{6}h_4$$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Set up the &lt;strong&gt;lmfit.Parameters()&lt;/strong&gt; and define the &lt;em&gt;Gauss-Hermite function&lt;/em&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from lmfit import minimize, Parameters
+
+p_gh=Parameters()
+p_gh.add(&#39;amp&#39;,value=np.max(stackspec),vary=True);
+p_gh.add(&#39;center&#39;,value=vels[50],min=np.min(vels),max=np.max(vels));
+p_gh.add(&#39;sig&#39;,value=3*chanwidth,min=chanwidth,max=abs(maxvel-minvel));
+p_gh.add(&#39;skew&#39;,value=0,vary=True,min=None,max=None);
+p_gh.add(&#39;kurt&#39;,value=0,vary=True,min=None,max=None);
+
+def gaussfunc_gh(paramsin,x):
+    amp=paramsin[&#39;amp&#39;].value
+    center=paramsin[&#39;center&#39;].value
+    sig=paramsin[&#39;sig&#39;].value
+    c1=-np.sqrt(3);
+    c2=-np.sqrt(6)
+    c3=2/np.sqrt(3);
+    c4=np.sqrt(6)/3;
+    c5=np.sqrt(6)/4
+    skew=paramsin[&#39;skew&#39;].value
+    kurt=paramsin[&#39;kurt&#39;].value
+    g=(x-center)/sig
+    gaustot_gh=amp*np.exp(-.5*g**2)*(1+skew*(c1*g+c3*g**3)+ kurt*(c5+c2*g**2+c4*(g**4)))
+
+    return gaustot_gh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now do the same for the &lt;strong&gt;double gaussian&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Bounds&lt;/strong&gt;
+amp : 10% of max to max&lt;br&gt;
+center : velocity range&lt;br&gt;
+disp : channel width to velocity range&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# Double Gaussian   (labeled below as ..._2g)
+p_2g=Parameters()
+p_2g.add(&#39;amp1&#39;,value=np.max(stackspec)/2.,min=.1*np.max(stackspec),max=np.max(stackspec));
+p_2g.add(&#39;center1&#39;,value=vels[50+10],min=np.min(vels),max=np.max(vels));
+p_2g.add(&#39;sig1&#39;,value=2*chanwidth,min=chanwidth,max=abs(maxvel-minvel));
+p_2g.add(&#39;amp2&#39;,value=np.max(stackspec)/2.,min=.1*np.max(stackspec),max=np.max(stackspec));
+p_2g.add(&#39;center2&#39;,value=vels[50-10],min=np.min(vels),max=np.max(vels));
+p_2g.add(&#39;sig2&#39;,value=3*chanwidth,min=chanwidth,max=abs(maxvel-minvel));
+
+def gaussfunc_2g(paramsin,x):
+    amp1=paramsin[&#39;amp1&#39;].value;
+    amp2=paramsin[&#39;amp2&#39;].value;
+    center1=paramsin[&#39;center1&#39;].value;
+    center2=paramsin[&#39;center2&#39;].value;
+    sig1=paramsin[&#39;sig1&#39;].value;
+    sig2=paramsin[&#39;sig2&#39;].value;
+    g1=(x-center1)/sig1
+    g2=(x-center2)/sig2
+
+    gaus1=amp1*np.exp(-.5*g1**2)
+    gaus2=amp2*np.exp(-.5*g2**2)
+    gaustot_2g=(gaus1+gaus2)
+    return gaustot_2g
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And now the functions that compute the difference between the fit iteration and data. In addition, define a function for a simple single gaussian.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;gausserr_gh = lambda p,x,y: gaussfunc_gh(p,x)-y
+gausserr_2g = lambda p,x,y: gaussfunc_2g(p,x)-y
+gausssingle = lambda a,c,sig,x: a*np.exp(-.5*((x-c)/sig)**2)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We will minimize with &lt;em&gt;lmfit&lt;/em&gt;, in order to &lt;strong&gt;keep limits&lt;/strong&gt; on parameters:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;fitout_gh=minimize(gausserr_gh,p_gh,args=(vels,stackspec))
+fitout_2g=minimize(gausserr_2g,p_2g,args=(vels,stackspec))
+
+fitted_p_gh = fitout_gh.params
+fitted_p_2g = fitout_2g.params
+
+pars_gh=[fitout_gh.params[&#39;amp&#39;].value,
+         fitout_gh.params[&#39;center&#39;].value,
+         fitout_gh.params[&#39;sig&#39;].value,
+         fitout_gh.params[&#39;skew&#39;].value,
+         fitout_gh.params[&#39;kurt&#39;].value]
+pars_2g=[fitted_p_2g[&#39;amp1&#39;].value,
+         fitted_p_2g[&#39;center1&#39;].value,
+         fitted_p_2g[&#39;sig1&#39;].value,
+         fitted_p_2g[&#39;amp2&#39;].value,
+         fitted_p_2g[&#39;center2&#39;].value,
+         fitted_p_2g[&#39;sig2&#39;].value]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Finally, if you want to create arrays and residuals of the final fit values:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;fit_gh=gaussfunc_gh(fitted_p_gh,vels)
+fit_2g=gaussfunc_2g(fitted_p_2g,vels)
+
+resid_gh=fit_gh-stackspec
+resid_2g=fit_2g-stackspec
+
+print(&#39;Fitted Parameters (Gaus+Hermite):\nAmp = %.2f , Center = %.2f , Disp = %.2f\nSkew = %.2f , Kurt = %.2f&#39; \
+%(pars_gh[0],pars_gh[1],pars_gh[2],pars_gh[3],pars_gh[4]))
+
+print(&#39;Fitted Parameters (Double Gaussian):\nAmp1 = %.2f , Center1 = %.2f , Sig1 = %.2f\nAmp2 = %.2f , Center2 = %.2f , Sig2 = %.2f&#39; \
+%(pars_2g[0],pars_2g[1],pars_2g[2],pars_2g[3],pars_2g[4],pars_2g[5]))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Fitted Parameters (Gaus+Hermite):
+Amp = 178.66 , Center = -119.13 , Disp = 20.68
+Skew = -0.12 , Kurt = -0.03
+Fitted Parameters (Double Gaussian):
+Amp1 = 189.58 , Center1 = -112.89 , Sig1 = 14.55
+Amp2 = 91.58 , Center2 = -146.19 , Sig2 = 10.26
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;fig3=plt.figure(3,figsize=(15,10))
+f1=fig3.add_axes((.1,.3,.8,.6))
+
+plt.plot(vels,stackspec,&#39;k.&#39;)
+pgh,=plt.plot(vels,fit_gh,&#39;b&#39;)
+p2g,=plt.plot(vels,fit_2g,&#39;r&#39;)
+p2ga,=plt.plot(vels,gausssingle(pars_2g[0],pars_2g[1],pars_2g[2],vels),&#39;-.&#39;,color=&#39;orange&#39;)
+p2gb,=plt.plot(vels,gausssingle(pars_2g[3],pars_2g[4],pars_2g[5],vels),&#39;-.&#39;,color=&#39;green&#39;)
+f1.set_xticklabels([]) #We will plot the residuals below, so no x-ticks on this plot
+plt.title(&#39;Multiple Gaussian Fit Example&#39;)
+plt.ylabel(&#39;Amplitude (Some Units)&#39;)
+f1.legend([pgh,p2g,p2ga,p2gb],[&#39;Gaus-Hermite&#39;,&#39;2-Gaus&#39;,&#39;Comp. 1&#39;,&#39;Comp2&#39;],prop={&#39;size&#39;:10},loc=&#39;center left&#39;)
+
+from matplotlib.ticker import MaxNLocator
+plt.gca().yaxis.set_major_locator(MaxNLocator(prune=&#39;lower&#39;)) #Removes lowest ytick label
+
+f1.annotate(&#39;Gauss-Hermite:\nAmp = %.2f\nCenter = %.2f\n$\sigma$ = %.2f\nH3 = %.2f\nH4 = %.2f&#39; \
+    %(pars_gh[0],pars_gh[1],pars_gh[2],pars_gh[3],pars_gh[4]),xy=(.05,.95), \
+    xycoords=&#39;axes fraction&#39;,ha=&amp;quot;left&amp;quot;, va=&amp;quot;top&amp;quot;, \
+bbox=dict(boxstyle=&amp;quot;round&amp;quot;, fc=&#39;1&#39;),fontsize=10)
+f1.annotate(&#39;Double Gaussian:\nAmp$_1$ = %.2f\nAmp$_2$ = %.2f\nCenter$_1$ = %.2f\nCenter$_2$ = %.2f\n$\sigma_1$ = %.2f\n$\sigma_2$ = %.2f&#39; \
+    %(pars_2g[0],pars_2g[3],pars_2g[1],pars_2g[4],pars_2g[2],pars_2g[5]),xy=(.95,.95), \
+    xycoords=&#39;axes fraction&#39;,ha=&amp;quot;right&amp;quot;, va=&amp;quot;top&amp;quot;, \
+    bbox=dict(boxstyle=&amp;quot;round&amp;quot;, fc=&#39;1&#39;),fontsize=10)
+
+f2=fig3.add_axes((.1,.1,.8,.2))
+
+resgh,res2g,=plt.plot(vels,resid_gh,&#39;k--&#39;,vels,resid_2g,&#39;k&#39;)
+
+plt.ylabel(&#39;Residuals&#39;)
+plt.xlabel(&#39;Velocity (km s$^{-1}$)&#39;)
+f2.legend([resgh,res2g],[&#39;Gaus-Hermite&#39;,&#39;2-Gaus&#39;],numpoints=4,prop={&#39;size&#39;:9},loc=&#39;upper left&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/fitting-functions-to-data/output_26_1.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to read DICOM files into Python</title>
+      <link>/post/read_dicom_files_in_python/</link>
+      <pubDate>Sun, 01 May 2016 11:00:00 +0000</pubDate>
+      <guid>/post/read_dicom_files_in_python/</guid>
+      <description>&lt;h2 id=&#34;dataset&#34;&gt;&lt;strong&gt;Dataset&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Dataset is the main object you will work with directly. Dataset is derived from python’s &lt;strong&gt;dict&lt;/strong&gt;, so it inherits (and overrides some of) the methods of dict. In other words it is a collection of key:value pairs, where the key value is the DICOM (group,element) tag (as a Tag object, described below), and the value is a DataElement instance (also described below).&lt;/p&gt;
+&lt;p&gt;A dataset could be created directly, but you will usually get one by reading an existing DICOM file (it could be a .dcm or a .img file):&lt;!-- TEASER_END --&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import dicom
+ds = dicom.read_file(&amp;quot;1111.img&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can display the entire dataset by simply printing its string (str or repr) value:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;ds
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;(0008, 0000) Group Length             UL: 482
+(0008, 0005) Specific Character Set   CS: &#39;ISO_IR 100&#39;
+(0008, 0008) Image Type               CS: [&#39;ORIGINAL&#39;, &#39;PRIMARY&#39;]
+(0008, 0012) Instance Creation Date   DA: &#39;20150710&#39;
+(0008, 0013) Instance Creation Time   TM: &#39;152456&#39;
+(0008, 0014) Instance Creator UID     UI: 1.2.840.113619.1.131
+(0008, 0016) SOP Class UID            UI: Positron Emission Tomography Image Storage
+(0008, 0018) SOP Instance UID         UI: 1.2.840.113619.2.131.1611270158.1436534696
+(0008, 0020) Study Date               DA: &#39;20150702&#39;
+(0008, 0021) Series Date              DA: &#39;20150702&#39;
+(0008, 0022) Acquisition Date         DA: &#39;20150702&#39;
+(0008, 0023) Content Date             DA: &#39;20150710&#39;
+(0008, 0030) Study Time               TM: &#39;090706&#39;
+(0008, 0031) Series Time              TM: &#39;091216&#39;
+(0008, 0032) Acquisition Time         TM: &#39;094216&#39;
+(0008, 0033) Content Time             TM: &#39;152456&#39;
+(0008, 0050) Accession Number         SH: &#39;120.116962&#39;
+(0008, 0060) Modality                 CS: &#39;PT&#39;
+(0008, 0070) Manufacturer             LO: &#39;GE MEDICAL SYSTEMS&#39;
+(0008, 0080) Institution Name         LO: &#39;FTGM&#39;
+(0008, 0090) Referring Physician Name PN: &#39;&#39;
+(0008, 1010) Station Name             SH: &#39;pet94ct&#39;
+(0008, 1030) Study Description        LO: &#39;&#39;
+(0008, 103e) Series Description       LO: &#39;e+1 NEUROTOTEM&#39;
+    ...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;access-header-data-elements&#34;&gt;&lt;strong&gt;Access header data elements&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;You can access specific data elements by name (DICOM ‘keyword’) or by DICOM tag number:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;ds.ManufacturerModelName
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;&#39;Discovery RX&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;ds[0x0008,0x1090].value
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;&#39;Discovery RX&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In the latter case (using the tag number directly) a DataElement instance is returned, so the .value must be used to get the value.&lt;/p&gt;
+&lt;p&gt;You can also set values by name (DICOM keyword) or tag number:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;ds.PatientID = &amp;quot;12345&amp;quot;
+ds.SeriesNumber = 5
+ds[0x10,0x10].value = &#39;Test&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The use of names is possible because PyDicom intercepts requests for member variables, and checks if they are in the DICOM dictionary. It translates the keyword to a (group,element) number and returns the corresponding value for that key if it exists.&lt;/p&gt;
+&lt;p&gt;If you don’t remember or know the exact tag name, Dataset provides a handy dir() method, useful during interactive sessions at the python prompt:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;ds.dir(&amp;quot;pat&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;[&#39;AdditionalPatientHistory&#39;,
+ &#39;ImageOrientationPatient&#39;,
+ &#39;ImagePositionPatient&#39;,
+ &#39;PatientAge&#39;,
+ &#39;PatientBirthDate&#39;,
+ &#39;PatientGantryRelationshipCodeSequence&#39;,
+ &#39;PatientID&#39;,
+ &#39;PatientName&#39;,
+ &#39;PatientOrientationCodeSequence&#39;,
+ &#39;PatientOrientationModifierCodeSequence&#39;,
+ &#39;PatientPosition&#39;,
+ &#39;PatientSex&#39;,
+ &#39;PatientSize&#39;,
+ &#39;PatientWeight&#39;]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;dir will return any DICOM tag names in the dataset that have the specified string anywhere in the name (case insensitive).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt;
+Calling dir with no string will list all tag names available in the dataset.
+You can also see all the names that pydicom knows about by viewing the _dicom_dict.py file. You could &amp;gt;modify that file to add tags that pydicom doesn’t already know about.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Under the hood, Dataset stores a DataElement object for each item, but when accessed by name (e.g. ds.PatientName) only the value of that DataElement is returned. If you need the whole DataElement (see the DataElement class discussion), you can use Dataset’s data_element() method or access the item using the tag number:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;data_element = ds.data_element(&amp;quot;PatientsName&amp;quot;)  # or data_element = ds[0x10,0x10]
+data_element.VR, data_element.value
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;(&#39;PN&#39;, &#39;Test&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;dataelement&#34;&gt;&lt;em&gt;&lt;strong&gt;DataElement&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;The DataElement class is not usually used directly in user code, but is used extensively by Dataset. DataElement is a simple object which stores the following things:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;tag&lt;/strong&gt; – a DICOM tag (as a Tag object)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;VR&lt;/strong&gt; – DICOM value representation – various number and string formats, etc&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;VM&lt;/strong&gt; – value multiplicity. This is 1 for most DICOM tags, but can be multiple, e.g. for coordinates. You do not have to specify this, the DataElement class keeps track of it based on value.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;value&lt;/strong&gt; – the actual value. A regular value like a number or string (or list of them), or a Sequence.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To check for the existence of a particular tag before using it, use the in keyword:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;quot;PatientName&amp;quot; in ds
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;True
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To remove a data element from the dataset, use del:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;del ds.SoftwareVersions   # or del ds[0x0018, 0x1020]
+&amp;quot;SoftwareVersions&amp;quot; in ds
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;False
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;tag&#34;&gt;&lt;strong&gt;TAG&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Using DICOM keywords is the recommended way to access data elements, but you can also use the tag numbers directly. The Tag class is derived from python’s &lt;em&gt;int&lt;/em&gt;, so in effect, it is just a number with some extra behaviour:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tag enforces that the DICOM tag fits in the expected 4-byte (group,element)&lt;/li&gt;
+&lt;li&gt;A Tag instance can be created from an int or from a tuple containing the (group,element) separately&lt;/li&gt;
+&lt;li&gt;Tag has properties group and element (or elem) to return the group and element portions&lt;/li&gt;
+&lt;li&gt;The is_private property checks whether the tag represents a private tag (i.e. if group number is odd).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from dicom.tag import Tag
+t1=Tag(0x00100010) # all of these are equivalent
+t2=Tag(0x10,0x10)
+t3=Tag((0x10, 0x10))
+print t1
+
+t1==t2, t1==t3
+(True, True)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;(0010, 0010)
+
+(True, True)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;access-image-data&#34;&gt;&lt;strong&gt;Access image data&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;DICOM Sequences are turned into python lists or strings. Items in the sequence are referenced by number, beginning at index 0 as per python convention. &amp;ldquo;Sequence&amp;rdquo; data type is derived from python’s &lt;em&gt;list&lt;/em&gt;. The only added functionality is to &lt;strong&gt;make string representations prettier&lt;/strong&gt;. Otherwise all the usual methods of list like item selection, append, etc. are available. To work with pixel data, the raw bytes are available through the usual tag:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;image_data = ds.PixelData
+print type(image_data)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;type &#39;str&#39;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We then calculate the total dimensions of the NumPy array which are equal to (Number of pixel rows in a slice) x (Number of pixel columns in a slice) x (Number of slices) along the x, y, and z cartesian axes. In this example we are dealing with just a single slice DICOM file, so z=1.&lt;/p&gt;
+&lt;p&gt;Lastly, we use the PixelSpacing and SliceThickness attributes to calculate the spacing between pixels in the three axes. We store the array dimensions in ConstPixelDims and the spacing in ConstPixelSpacing.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import numpy as np
+
+ConstPixelDims = (int(ds.Rows), int(ds.Columns))
+ConstPixelSpacing = (float(ds.PixelSpacing[0]), float(ds.PixelSpacing[1]), float(ds.SliceThickness))
+
+print ConstPixelDims
+print ConstPixelSpacing
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;(128, 128)
+(3.125, 3.125, 3.27)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here, we simply use numpy.arange, ConstPixelDims, and ConstPixelSpacing to calculate axes for this array:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;x = np.arange(0.0, (ConstPixelDims[0]+1)*ConstPixelSpacing[0], ConstPixelSpacing[0])
+y = np.arange(0.0, (ConstPixelDims[1]+1)*ConstPixelSpacing[1], ConstPixelSpacing[1])
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next, comes the last pydicom part:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# The array is sized based on &#39;ConstPixelDims&#39;
+ArrayDicom = np.zeros(ConstPixelDims, dtype=ds.pixel_array.dtype)
+ArrayDicom[:,:] = ds.pixel_array
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;%matplotlib inline
+from matplotlib import pyplot, cm
+
+pyplot.figure(dpi=300)
+pyplot.axes().set_aspect(&#39;equal&#39;)
+pyplot.set_cmap(pyplot.gray())
+pyplot.pcolormesh(x, y, np.flipud(ArrayDicom[:, :]))
+pyplot.show()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/read_dicom_files_in_python/output_27_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PCA tutorial using scikit-learn python module</title>
+      <link>/post/pca-tutorial-using-scikit-learn-python-module/</link>
+      <pubDate>Sun, 01 May 2016 11:00:00 +0000</pubDate>
+      <guid>/post/pca-tutorial-using-scikit-learn-python-module/</guid>
+      <description>&lt;h2 id=&#34;dimensionality-reduction-principal-component-analysis-in-depth&#34;&gt;Dimensionality Reduction: Principal Component Analysis in-depth&lt;/h2&gt;
+&lt;p&gt;Here we&amp;rsquo;ll explore Principal Component Analysis, which is an extremely useful linear dimensionality reduction technique.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ll start with our standard set of initial imports:&lt;!-- TEASER_END --&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from __future__ import print_function, division
+
+%matplotlib inline
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy import stats
+
+# use seaborn plotting style defaults
+import seaborn as sns; sns.set()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;introducing-principal-component-analysis&#34;&gt;Introducing Principal Component Analysis&lt;/h2&gt;
+&lt;p&gt;Principal Component Analysis is a very powerful unsupervised method for dimensionality reduction in data. It&amp;rsquo;s easiest to visualize by looking at a two-dimensional dataset:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;np.random.seed(1)
+X = np.dot(np.random.random(size=(2, 2)), np.random.normal(size=(2, 200))).T
+plt.plot(X[:, 0], X[:, 1], &#39;o&#39;)
+plt.axis(&#39;equal&#39;)
+print(X.shape)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;(200, 2)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/pca-tutorial-using-scikit-learn-python-module/output_4_1.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;We can see that there is a definite trend in the data. What PCA seeks to do is to find the Principal Axes in the data, and explain how important those axes are in describing the data distribution:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from sklearn.decomposition import PCA
+pca = PCA(n_components=2)
+pca.fit(X)
+print(pca.explained_variance_)
+print(pca.components_)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;[ 0.75871884  0.01838551]
+[[ 0.94446029  0.32862557]
+ [ 0.32862557 -0.94446029]]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To see what these numbers mean, let&amp;rsquo;s view them as vectors plotted on top of the data:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;plt.plot(X[:, 0], X[:, 1], &#39;o&#39;, alpha=0.5)
+for length, vector in zip(pca.explained_variance_, pca.components_):
+    v = vector * 3 * np.sqrt(length)
+    plt.plot([0, v[0]], [0, v[1]], &#39;-k&#39;, lw=3)
+plt.axis(&#39;equal&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;output_8_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Notice that one vector is longer than the other. In a sense, this tells us that that direction in the data is somehow more &amp;ldquo;important&amp;rdquo; than the other direction. The explained variance quantifies this measure of &amp;ldquo;importance&amp;rdquo; in direction.&lt;/p&gt;
+&lt;p&gt;Another way to think of it is that the second principal component could be completely ignored without much loss of information! Let&amp;rsquo;s see what our data look like if we only keep 95% of the variance:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;clf = PCA(0.95) # keep 95% of variance
+X_trans = clf.fit_transform(X)
+print(X.shape)
+print(X_trans.shape)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;(200, 2)
+(200, 1)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;By specifying that we want to throw away 5% of the variance, the data is now compressed by a factor of 50%! Let&amp;rsquo;s see what the data look like after this compression:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;X_new = clf.inverse_transform(X_trans)
+x_plot = plt.plot(X[:, 0], X[:, 1], &#39;o&#39;, alpha=0.4, label=&#39;X&#39;)
+xnew_plot = plt.plot(X_new[:, 0], X_new[:, 1], &#39;ob&#39;, alpha=0.8, label=&#39;X_new&#39;)
+plt.axis(&#39;equal&#39;)
+plt.legend()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;matplotlib.legend.Legend at 0x7ff9f16f7f50&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/pca-tutorial-using-scikit-learn-python-module/output_12_1.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The light points are the original data, while the dark points are the projected version. We see that after truncating 5% of the variance of this dataset and then reprojecting it, the &amp;ldquo;most important&amp;rdquo; features of the data are maintained, and we&amp;rsquo;ve compressed the data by 50%!&lt;/p&gt;
+&lt;p&gt;This is the sense in which &amp;ldquo;dimensionality reduction&amp;rdquo; works: if you can approximate a data set in a lower dimension, you can often have an easier time visualizing it or fitting complicated models to the data.&lt;/p&gt;
+&lt;h2 id=&#34;what-do-the-components-mean&#34;&gt;What do the Components Mean?&lt;/h2&gt;
+&lt;p&gt;PCA is a very useful dimensionality reduction algorithm, because it has a very intuitive interpretation via eigenvectors. The input data is represented as a vector: If we reduce the dimensionality in the pixel space to (say) 6, we recover only a partial image.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from sklearn.datasets import load_digits
+digits = load_digits()
+X = digits.data
+y = digits.target
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;What PCA does is to choose optimal basis functions so that only a few are needed to get a reasonable approximation. The low-dimensional representation of our data is the coefficients of this series, and the approximate reconstruction is the result of the sum:&lt;/p&gt;
+&lt;h3 id=&#34;choosing-the-number-of-components&#34;&gt;Choosing the Number of Components&lt;/h3&gt;
+&lt;p&gt;But how much information have we thrown away? We can figure this out by looking at the explained variance as a function of the components:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;sns.set()
+pca = PCA().fit(X)
+plt.plot(np.cumsum(pca.explained_variance_ratio_))
+plt.xlabel(&#39;number of components&#39;)
+plt.ylabel(&#39;cumulative explained variance&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/pca-tutorial-using-scikit-learn-python-module/output_18_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Here we see that our two-dimensional projection loses a lot of information (as measured by the explained variance) and that we&amp;rsquo;d need about 20 components to retain 90% of the variance. Looking at this plot for a high-dimensional dataset can help you understand the level of redundancy present in multiple observations.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Simple nonlinear least squares curve fitting in Python</title>
+      <link>/post/python_nonlinear_least_squares/</link>
+      <pubDate>Sun, 01 May 2016 11:00:00 +0000</pubDate>
+      <guid>/post/python_nonlinear_least_squares/</guid>
+      <description>&lt;h2 id=&#34;the-problem&#34;&gt;The problem&lt;/h2&gt;
+&lt;p&gt;Today we are going to test a very simple example of nonlinear least squares curve fitting using the &lt;em&gt;scipy.optimize&lt;/em&gt; module.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;%matplotlib inline
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.optimize import curve_fit
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;create-data&#34;&gt;Create data&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s assume we have the following points &lt;em&gt;[xdata, ydata]&lt;/em&gt; and that we want to fit these data with the following model function using nonlinear least squares:&lt;/p&gt;
+&lt;p&gt;$F(p_1,p_2,x) = p_1\cos(p_2x) + p_2\sin(p_1x)$&lt;/p&gt;
+&lt;p&gt;For now, we are primarily interested in the following results:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;strong&gt;fit parameters&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Sum of squared &lt;strong&gt;residuals&lt;/strong&gt;&lt;!-- TEASER_END --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;xdata = np.array([-2,-1.64,-1.33,-0.7,0,0.45,1.2,1.64,2.32,2.9])
+ydata = np.array([0.699369,0.700462,0.695354,1.03905,1.97389,2.41143,1.91091,0.919576,-0.730975,-1.42001])
+
+# Show data points
+plt.plot(xdata,ydata,&#39;*&#39;)
+plt.xlabel(&#39;xdata&#39;)
+plt.ylabel(&#39;ydata&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/Python_nonlinear_least_squares/output_3_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;define-fit-function&#34;&gt;Define fit function&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def func(x, p1,p2):
+  return p1*np.cos(p2*x) + p2*np.sin(p1*x)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;calculate-and-show-fit-parameters&#34;&gt;Calculate and show fit parameters.&lt;/h2&gt;
+&lt;p&gt;Use a starting guess of $p_1=1$ and $p_2=0.2$&lt;/p&gt;
+&lt;p&gt;The outputs of the &lt;em&gt;curve_fit&lt;/em&gt; function are the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;popt&lt;/strong&gt; : array of &lt;em&gt;optimal values&lt;/em&gt; for the parameters so that the sum of the squared error of $f(xdata, *popt) - ydata$ is minimized&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;pcov&lt;/strong&gt; : 2d array of the estimated covariance of &lt;em&gt;popt&lt;/em&gt;. The diagonals provide the &lt;em&gt;variance of the parameter estimate&lt;/em&gt;. To compute one standard deviation errors on the parameters use $perr = np.sqrt(np.diag(pcov))$. If the Jacobian matrix at the solution doesn&amp;rsquo;t have a full rank, then &amp;lsquo;lm&amp;rsquo; method returns a matrix filled with &lt;code&gt;np.inf&lt;/code&gt;, on the other hand &amp;lsquo;trf&amp;rsquo;  and &amp;lsquo;dogbox&amp;rsquo; methods use Moore-Penrose pseudoinverse to compute the covariance matrix.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;popt, pcov = curve_fit(func, xdata, ydata,p0=(1.0,0.2))
+
+print(&amp;quot;Parameter estimation results:&amp;quot;)
+print(&amp;quot;p1 = &amp;quot;,popt[0],&amp;quot; | p2 = &amp;quot;,popt[1])
+print(&amp;quot;--------------------------&amp;quot;)
+print(&amp;quot;Covariance matrix of the estimate:&amp;quot;)
+print(pcov)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Parameter estimation results:
+p1 =  1.881850994  | p2 =  0.700229857403
+--------------------------
+Covariance matrix of the estimate:
+[[  7.52408290e-04   1.00812823e-04]
+ [  1.00812823e-04   8.37695698e-05]]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;sum-of-squares-of-residuals&#34;&gt;Sum of squares of residuals&lt;/h2&gt;
+&lt;p&gt;Since it&amp;rsquo;s not given by the &lt;em&gt;curve_fit&lt;/em&gt; function, we have to compute it &lt;em&gt;by hand&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;p1 = popt[0]
+p2 = popt[1]
+residuals = ydata - func(xdata,p1,p2)
+fres = sum(residuals**2)
+
+print(&amp;quot;Residuals sum of squares:&amp;quot;)
+print(fres)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Residuals sum of squared:
+0.0538126964188
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Plot fitted curve along with data&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;curvex=np.linspace(-2,3,100)
+curvey=func(curvex,p1,p2)
+plt.plot(xdata,ydata,&#39;*&#39;)
+plt.plot(curvex,curvey,&#39;r&#39;)
+plt.xlabel(&#39;xdata&#39;)
+plt.ylabel(&#39;ydata&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/Python_nonlinear_least_squares/output_11_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Getting started with the Academic framework for Hugo</title>
+      <link>/post/getting-started/</link>
+      <pubDate>Wed, 20 Apr 2016 12:00:00 +0000</pubDate>
+      <guid>/post/getting-started/</guid>
+      <description>&lt;p&gt;The Academic framework enables you to easily create a beautifully simple personal or academic website using the 
+&lt;a href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo&lt;/a&gt; static site generator.&lt;/p&gt;
+&lt;p&gt;Key features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Easily manage your homepage, blog posts, publications, talks, and projects&lt;/li&gt;
+&lt;li&gt;Configurable widgets available for Biography, Publications, Projects, News/Blog, Talks, and Contact&lt;/li&gt;
+&lt;li&gt;Need a different section? Just use the Custom widget!&lt;/li&gt;
+&lt;li&gt;Write in 
+&lt;a href=&#34;/post/writing-markdown-latex/&#34;&gt;Markdown&lt;/a&gt; for easy formatting and code highlighting, with 
+&lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LaTeX&lt;/a&gt; for mathematical expressions&lt;/li&gt;
+&lt;li&gt;Social/academic network linking, 
+&lt;a href=&#34;https://analytics.google.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Analytics&lt;/a&gt;, and 
+&lt;a href=&#34;https://disqus.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Disqus&lt;/a&gt; comments&lt;/li&gt;
+&lt;li&gt;Responsive and mobile friendly&lt;/li&gt;
+&lt;li&gt;Simple and refreshing one page design&lt;/li&gt;
+&lt;li&gt;Easy to customize&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://georgecushen.com/create-your-website-with-hugo/#installing-hugo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Install Hugo&lt;/a&gt; and create a new website by typing the following commands in your &lt;em&gt;Terminal&lt;/em&gt; or &lt;em&gt;Command Prompt&lt;/em&gt; app:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; hugo new site my_website
+ cd my_website
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install Academic with 
+&lt;a href=&#34;https://help.github.com/articles/set-up-git/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;git&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; git clone https://github.com/gcushen/hugo-academic.git themes/academic
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or alternatively, 
+&lt;a href=&#34;https://github.com/gcushen/hugo-academic/archive/master.zip&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;download Academic&lt;/a&gt; and extract it into a &lt;code&gt;themes/academic&lt;/code&gt; folder within your Hugo website.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you are creating a new website, copy the contents of the &lt;code&gt;exampleSite&lt;/code&gt; folder to your website root folder, overwriting existing files if necessary. The &lt;code&gt;exampleSite&lt;/code&gt; folder contains an example config file and content to help you get started.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; cp -av themes/academic/exampleSite/* .
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Start the Hugo server from your website root folder:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; hugo server --watch
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now you can go to 
+&lt;a href=&#34;http://localhost:1313&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;localhost:1313&lt;/a&gt; and your new Academic powered website should appear.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Customize your website - refer to the &lt;em&gt;Getting Started&lt;/em&gt; section below&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Build your site by running the &lt;code&gt;hugo&lt;/code&gt; command. Then 
+&lt;a href=&#34;https://georgecushen.com/create-your-website-with-hugo/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;host it for free using Github Pages&lt;/a&gt;. Or alternatively, copy the generated &lt;code&gt;public/&lt;/code&gt; directory (by FTP, Rsync, etc.) to your production web server (such as your university&amp;rsquo;s hosting service).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h2&gt;
+&lt;p&gt;Assuming you created a new website with the example content following the installation steps above, this section explores just a few more steps in order to customize it.&lt;/p&gt;
+&lt;h3 id=&#34;core-parameters&#34;&gt;Core parameters&lt;/h3&gt;
+&lt;p&gt;The core parameters for the website can be edited in the &lt;code&gt;config.toml&lt;/code&gt; configuration file:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Set &lt;code&gt;baseurl&lt;/code&gt; to your website URL (we recommend 
+&lt;a href=&#34;https://georgecushen.com/create-your-website-with-hugo/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Pages&lt;/a&gt; for free hosting)&lt;/li&gt;
+&lt;li&gt;Set &lt;code&gt;title&lt;/code&gt; to your desired website title such as your name&lt;/li&gt;
+&lt;li&gt;The example Disqus commenting variable should be cleared (e.g. &lt;code&gt;disqusShortname = &amp;quot;&amp;quot;&lt;/code&gt;) or set to your own 
+&lt;a href=&#34;https://disqus.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Disqus&lt;/a&gt; shortname to enable commenting&lt;/li&gt;
+&lt;li&gt;Edit your details under &lt;code&gt;[params]&lt;/code&gt;; these will be displayed mainly in the homepage &lt;em&gt;about&lt;/em&gt; and &lt;em&gt;contact&lt;/em&gt; widgets (if used). To disable a contact field, simply clear the value to &lt;code&gt;&amp;quot;&amp;quot;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Place a square cropped portrait photo named &lt;code&gt;portrait.jpg&lt;/code&gt; into the &lt;code&gt;static/img/&lt;/code&gt; folder, overwriting any defaults. Alternatively, you can edit the &lt;code&gt;avatar&lt;/code&gt; filepath to point to a different image name or clear the value to disable the avatar feature.&lt;/li&gt;
+&lt;li&gt;To enable LaTeX math for your site, set &lt;code&gt;math = true&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Social/academic networking links are defined as multiples of &lt;code&gt;[[params.social]]&lt;/code&gt;. They can be created or deleted as necessary.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;introduce-yourself&#34;&gt;Introduce yourself&lt;/h3&gt;
+&lt;p&gt;Edit your biography in the &lt;em&gt;about&lt;/em&gt; widget &lt;code&gt;content/home/about.md&lt;/code&gt; that you copied across from the &lt;code&gt;themes/academic/exampleSite/&lt;/code&gt; folder. The research interests and qualifications are stored as &lt;code&gt;interests&lt;/code&gt; and &lt;code&gt;education&lt;/code&gt; variables. The academic qualifications are defined as multiples of &lt;code&gt;[[education.courses]]&lt;/code&gt; and can be created or deleted as necessary. It&amp;rsquo;s possible to completely hide the interests and education lists by deleting their respective variables.&lt;/p&gt;
+&lt;h3 id=&#34;customize-the-homepage&#34;&gt;Customize the homepage&lt;/h3&gt;
+&lt;p&gt;Refer to our guide on using 
+&lt;a href=&#34;/post/widgets/&#34;&gt;widgets&lt;/a&gt; to customize your homepage.&lt;/p&gt;
+&lt;h3 id=&#34;add-your-content&#34;&gt;Add your content&lt;/h3&gt;
+&lt;p&gt;Refer to our guide on 
+&lt;a href=&#34;/post/managing-content/&#34;&gt;managing content&lt;/a&gt; to create your own publications, blog posts, talks, and projects.&lt;/p&gt;
+&lt;h3 id=&#34;remove-unused-widgets-and-pages&#34;&gt;Remove unused widgets and pages&lt;/h3&gt;
+&lt;p&gt;
+&lt;a href=&#34;/post/managing-content/#removing-content&#34;&gt;How to remove unused widgets and content pages&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;customization--upgrading&#34;&gt;Customization &amp;amp; Upgrading&lt;/h3&gt;
+&lt;p&gt;Continue reading below for advanced customization tips and instructions for keeping the framework up-to-date with any improvements that become available.&lt;/p&gt;
+&lt;h2 id=&#34;advanced-customization&#34;&gt;Advanced customization&lt;/h2&gt;
+&lt;p&gt;It is possible to carry out many customizations without touching any files in &lt;code&gt;themes/academic&lt;/code&gt;, making it easier to upgrade the framework in the future.&lt;/p&gt;
+&lt;h3 id=&#34;navigation-menu&#34;&gt;Navigation menu&lt;/h3&gt;
+&lt;p&gt;The &lt;code&gt;[[menu.main]]&lt;/code&gt; entries towards the bottom of &lt;code&gt;config.toml&lt;/code&gt; define the navigation links at the top of the website. They can be added or removed as desired.&lt;/p&gt;
+&lt;p&gt;To create a dropdown sub-menu, add &lt;code&gt;identifier = &amp;quot;something&amp;quot;&lt;/code&gt; to the parent item and &lt;code&gt;parent = &amp;quot;something&amp;quot;&lt;/code&gt; to the child item.&lt;/p&gt;
+&lt;h3 id=&#34;website-icon&#34;&gt;Website icon&lt;/h3&gt;
+&lt;p&gt;Save your main icon and mobile icon as square PNG images named &lt;code&gt;icon.png&lt;/code&gt; and &lt;code&gt;apple-touch-icon.png&lt;/code&gt;, respectively. Place them in your root &lt;code&gt;static/img/&lt;/code&gt; folder.&lt;/p&gt;
+&lt;h3 id=&#34;theme-color-css&#34;&gt;Theme color (CSS)&lt;/h3&gt;
+&lt;p&gt;You can link custom CSS assets (relative to your root &lt;code&gt;static/css&lt;/code&gt;) from your &lt;code&gt;config.toml&lt;/code&gt; using &lt;code&gt;custom_css = [&amp;quot;custom.css&amp;quot;]&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;For example, lets make a green theme. First, define &lt;code&gt;custom_css = [&amp;quot;green.css&amp;quot;]&lt;/code&gt; in &lt;code&gt;config.toml&lt;/code&gt;. Then we can download the example 
+&lt;a href=&#34;https://gist.github.com/gcushen/d5525a4506b9ccf83f2bce592a895495&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;green theme&lt;/a&gt; and save it as &lt;code&gt;static/css/green.css&lt;/code&gt;, relative to your website root (i.e. &lt;strong&gt;not&lt;/strong&gt; in the &lt;code&gt;themes&lt;/code&gt; directory).&lt;/p&gt;
+&lt;h3 id=&#34;analytics&#34;&gt;Analytics&lt;/h3&gt;
+&lt;p&gt;To enable 
+&lt;a href=&#34;http://www.google.com/analytics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Analytics&lt;/a&gt;, add your tracking code in &lt;code&gt;config.toml&lt;/code&gt; similarly to &lt;code&gt;googleAnalytics = &amp;quot;UA-12345678-9&amp;quot;&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;third-party-and-local-scripts-js&#34;&gt;Third party and local scripts (JS)&lt;/h3&gt;
+&lt;p&gt;To add a third party script, create a file named &lt;code&gt;head_custom.html&lt;/code&gt; in a &lt;code&gt;layouts/partials/&lt;/code&gt; folder at the root of your website (not in the &lt;code&gt;themes&lt;/code&gt; folder). Any HTML code added to this file will be included within your website&amp;rsquo;s &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;. Therefore, it&amp;rsquo;s suitable for adding custom metadata or third party scripts specified with the &lt;em&gt;async&lt;/em&gt; attribute.&lt;/p&gt;
+&lt;p&gt;Whereas for your own local scripts, you can link your local JS assets (relative to your root &lt;code&gt;static/js&lt;/code&gt;) from your &lt;code&gt;config.toml&lt;/code&gt; using &lt;code&gt;custom_js  = [&amp;quot;custom.js&amp;quot;]&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;language-and-translation&#34;&gt;Language and translation&lt;/h3&gt;
+&lt;p&gt;The interface text (e.g. buttons) is stored in language files which are collected from Academic&amp;rsquo;s &lt;code&gt;themes/academic/i18n/&lt;/code&gt; folder, as well as an &lt;code&gt;i18n/&lt;/code&gt; folder at the root of your project.&lt;/p&gt;
+&lt;p&gt;To edit the interface text, copy &lt;code&gt;themes/academic/i18n/en.yaml&lt;/code&gt; to &lt;code&gt;i18n/en.yaml&lt;/code&gt; (relative to the root of your website). Open the new file and make any desired changes to the text appearing after &lt;code&gt;translation:&lt;/code&gt;. Note that the language files are formatted in YAML syntax.&lt;/p&gt;
+&lt;p&gt;To translate the interface text to another language, follow the above instructions, but name the new file in the form &lt;code&gt;i18n/X.yaml&lt;/code&gt; where &lt;code&gt;X&lt;/code&gt; is the appropriate 
+&lt;a href=&#34;http://www.w3schools.com/tags/ref_language_codes.asp&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ISO/RFC5646 language identifier&lt;/a&gt; for the translation. Then follow the brief instructions in the &lt;em&gt;Language&lt;/em&gt; section at the bottom of your &lt;code&gt;config.toml&lt;/code&gt;. To change the default language used by Academic, set &lt;code&gt;defaultContentLanguage&lt;/code&gt; to the desired language identifier in your configuration file.&lt;/p&gt;
+&lt;p&gt;To translate the navigation bar, you can edit the default &lt;code&gt;[[menu.main]]&lt;/code&gt; instances in &lt;code&gt;config.toml&lt;/code&gt;. However, for a multilingual site, you will need to duplicate all of the &lt;code&gt;[[menu.main]]&lt;/code&gt; instances and rename the new instances from &lt;code&gt;[[menu.main]]&lt;/code&gt; to &lt;code&gt;[[languages.X.menu.main]]&lt;/code&gt;, where &lt;code&gt;X&lt;/code&gt; is the language identifier (e.g. &lt;code&gt;[[languages.zh.menu.main]]&lt;/code&gt; for Simplified Chinese). Thus, the navigation bar can be displayed in multiple languages.&lt;/p&gt;
+&lt;p&gt;To translate a content file in your &lt;code&gt;content/&lt;/code&gt; folder into another language, copy the file to &lt;code&gt;filename.X.md&lt;/code&gt; where &lt;code&gt;filename&lt;/code&gt; is your existing filename and &lt;code&gt;X&lt;/code&gt; is the appropriate 
+&lt;a href=&#34;http://www.w3schools.com/tags/ref_language_codes.asp&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ISO/RFC5646 language identifier&lt;/a&gt; for the translation. Then translate the content in the new file to the specified language.&lt;/p&gt;
+&lt;p&gt;For further details on Hugo&amp;rsquo;s internationalization and multilingual features, refer to the 
+&lt;a href=&#34;https://gohugo.io/content/multilingual/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;associated Hugo documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;permalinks&#34;&gt;Permalinks&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Permalinks&lt;/em&gt;, or &lt;em&gt;permanent links&lt;/em&gt;, are URLs to individual pages and posts on your website. They are permanent web addresses which can be used to link to your content. Using Hugo&amp;rsquo;s &lt;em&gt;permalinks&lt;/em&gt; option these can be easily customized. For example, the blog post URL can be changed to the form &lt;em&gt;yourURL/2016/05/01/my-post-slug&lt;/em&gt; by adding the following near the top of your &lt;code&gt;config.toml&lt;/code&gt; (before &lt;code&gt;[params]&lt;/code&gt; settings):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[permalinks]
+    post = &amp;quot;/:year/:month/:day/:slug&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Where &lt;code&gt;:slug&lt;/code&gt; defaults to the filename of the post, excluding the file extension. However, slug may be overridden on a per post basis if desired, simply by setting &lt;code&gt;slug = &amp;quot;my-short-post-title&amp;quot;&lt;/code&gt; in your post preamble.&lt;/p&gt;
+&lt;h2 id=&#34;upgrading&#34;&gt;Upgrading&lt;/h2&gt;
+&lt;p&gt;Feel free to &lt;em&gt;star&lt;/em&gt; the project on 
+&lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt; and monitor the 
+&lt;a href=&#34;https://github.com/gcushen/hugo-academic/commits/master&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;commits&lt;/a&gt; for updates.&lt;/p&gt;
+&lt;p&gt;Before upgrading the framework, it is recommended to make a backup of your entire website directory, or at least your &lt;code&gt;themes/academic&lt;/code&gt; directory. You can also read about the 
+&lt;a href=&#34;https://github.com/gcushen/hugo-academic/releases&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;most recent milestones&lt;/a&gt; (but this doesn&amp;rsquo;t necessarily reflect the latest &lt;em&gt;master&lt;/em&gt; release).&lt;/p&gt;
+&lt;p&gt;Before upgrading for the first time, the remote &lt;em&gt;origin&lt;/em&gt; repository should be renamed to &lt;em&gt;upstream&lt;/em&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cd themes/academic
+$ git remote rename origin upstream
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To list available updates:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cd themes/academic
+$ git fetch upstream
+$ git log --pretty=oneline --abbrev-commit --decorate HEAD..upstream/master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then, upgrade by running:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ git pull upstream
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you have modified files in &lt;code&gt;themes/academic&lt;/code&gt;, git will attempt to auto-merge changes. If conflicts are reported, you will need to manually edit the files with conflicts and add them back (&lt;code&gt;git add &amp;lt;filename&amp;gt;&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;If there are any issues after upgrading, you may wish to compare your site with the latest 
+&lt;a href=&#34;https://github.com/gcushen/hugo-academic/tree/master/exampleSite&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;example site&lt;/a&gt; to check if any settings changed.&lt;/p&gt;
+&lt;h2 id=&#34;feedback--contributing&#34;&gt;Feedback &amp;amp; Contributing&lt;/h2&gt;
+&lt;p&gt;Please use the 
+&lt;a href=&#34;https://github.com/gcushen/hugo-academic/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;issue tracker&lt;/a&gt; to let me know about any bugs or feature requests, or alternatively make a pull request.&lt;/p&gt;
+&lt;p&gt;For general questions about Hugo, there is a 
+&lt;a href=&#34;http://discuss.gohugo.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo discussion forum&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
+&lt;p&gt;Copyright 2016 
+&lt;a href=&#34;https://georgecushen.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Released under the 
+&lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Customizing the homepage with widgets</title>
+      <link>/post/widgets/</link>
+      <pubDate>Wed, 20 Apr 2016 11:00:00 +0000</pubDate>
+      <guid>/post/widgets/</guid>
+      <description>&lt;p&gt;Homepage widgets display as sections on the homepage. They can be enabled/disabled and configured as desired. Academic has the following widgets available to use:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;About/biography&lt;/li&gt;
+&lt;li&gt;Selected publications&lt;/li&gt;
+&lt;li&gt;Recent publications&lt;/li&gt;
+&lt;li&gt;Recent news/blog posts&lt;/li&gt;
+&lt;li&gt;Projects&lt;/li&gt;
+&lt;li&gt;Selected talks&lt;/li&gt;
+&lt;li&gt;Recent talks&lt;/li&gt;
+&lt;li&gt;Contact&lt;/li&gt;
+&lt;li&gt;Custom widget (demonstrated with the &lt;em&gt;teaching&lt;/em&gt; example)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The example site that you copied to create your site uses all the different types of widget (except talks), so you can generally just delete the widgets you don&amp;rsquo;t need and customize the parameters of the widgets you wish to keep.&lt;/p&gt;
+&lt;p&gt;The parameters for each widget vary. They can be found in the preamble/frontmatter (between the pair of &lt;code&gt;+++&lt;/code&gt;) for each widget installed in the &lt;code&gt;content/home/&lt;/code&gt; folder.&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    By default, publications will be displayed in a simple list. If you prefer a more detailed list with abstract and image, you can enable the detailed publication list on the homepage by setting &lt;code&gt;detailed_list = true&lt;/code&gt; in &lt;code&gt;content/home/publications.md&lt;/code&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;add-a-widget-to-the-homepage&#34;&gt;Add a widget to the homepage&lt;/h2&gt;
+&lt;p&gt;To add a widget manually, copy the relevant widget from &lt;code&gt;themes/academic/exampleSite/content/home/&lt;/code&gt; to your &lt;code&gt;content/home/&lt;/code&gt; folder.&lt;/p&gt;
+&lt;p&gt;Widget identifiers are set to their respective filenames, so a &lt;code&gt;content/home/about.md&lt;/code&gt; widget can be linked from the navigation bar by setting the relevant URL as &lt;code&gt;&amp;quot;#about&amp;quot;&lt;/code&gt; in &lt;code&gt;config.toml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;This means that if you want to use multiple instances of a widget, each widget will be assigned a unique ID based on the filename that you set. You can then use that ID for linking, like in the above example.&lt;/p&gt;
+&lt;h2 id=&#34;using-the-custom-widget&#34;&gt;Using the custom widget&lt;/h2&gt;
+&lt;p&gt;You can use the custom widget to create your own home page sections.&lt;/p&gt;
+&lt;p&gt;Simply duplicate (copy/paste) and rename the example &lt;em&gt;teaching&lt;/em&gt; file at &lt;code&gt;content/home/teaching.md&lt;/code&gt;. Then edit the section title, weight (refer to &lt;em&gt;Ordering sections&lt;/em&gt; below), and content as desired.&lt;/p&gt;
+&lt;p&gt;You may also wish to add a navigation link to the top of the page that points to the new section. This can be achieved by adding something similar to the following lines to your &lt;code&gt;config.toml&lt;/code&gt;, where the URL will consist of the first title word in lowercase:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[[menu.main]]
+    name = &amp;quot;Research&amp;quot;
+    url = &amp;quot;#research&amp;quot;
+    weight = 10
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;remove-a-widget-from-the-homepage&#34;&gt;Remove a widget from the homepage&lt;/h2&gt;
+&lt;p&gt;If you do not require a particular widget, you can simply delete any associated files from the &lt;code&gt;content/home/&lt;/code&gt; folder.&lt;/p&gt;
+&lt;p&gt;To remove a navigation link from the top of the page, remove the associated &lt;code&gt;[[menu.main]]&lt;/code&gt; entry in &lt;code&gt;config.toml&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;ordering-widgets&#34;&gt;Ordering widgets&lt;/h2&gt;
+&lt;p&gt;The order that the homepage widgets are displayed in is defined by the &lt;code&gt;weight&lt;/code&gt; parameter in each of the files in the &lt;code&gt;content/home/&lt;/code&gt; directory. The widgets are displayed in ascending order of their &lt;code&gt;weight&lt;/code&gt;, so you can simply edit the &lt;code&gt;weight&lt;/code&gt; parameters as desired.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Managing content</title>
+      <link>/post/managing-content/</link>
+      <pubDate>Wed, 20 Apr 2016 11:00:00 +0000</pubDate>
+      <guid>/post/managing-content/</guid>
+      <description>&lt;p&gt;This is a brief guide to managing content with the Academic framework. Content can include publications, projects, talks, and news/blog articles. After you have read this guide about creating and managing content, you may also be interested to learn about 
+&lt;a href=&#34;/post/writing-markdown-latex/&#34;&gt;writing content with Markdown, LaTeX, and Shortcodes&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To enable LaTeX math rendering for a page, you should include &lt;code&gt;math = true&lt;/code&gt; in the page&amp;rsquo;s &lt;code&gt;+++&lt;/code&gt; preamble, as demonstrated in the included example site. Otherwise, to enable math on the homepage or for all pages, you must globally set &lt;code&gt;math = true&lt;/code&gt; in &lt;code&gt;config.toml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To disable source code highlighting by default for all pages, set &lt;code&gt;highlight = false&lt;/code&gt; in &lt;code&gt;config.toml&lt;/code&gt;. You can then enable source code highlighting only on pages that need it by setting &lt;code&gt;highlight = true&lt;/code&gt; in that page&amp;rsquo;s preamble. See the 
+&lt;a href=&#34;/post/writing-markdown-latex/#code-highlighting&#34;&gt;code-highlighting docs&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;To display a featured image in content page headers, the parameters below can be inserted towards the end of a page&amp;rsquo;s &lt;code&gt;+++&lt;/code&gt; preamble. It is assumed that the image is located in your &lt;code&gt;static/img/&lt;/code&gt; folder, so the full path in the example below will be &lt;code&gt;static/img/headers/getting-started.png&lt;/code&gt;. The &lt;code&gt;caption&lt;/code&gt; parameter can be used to write an image caption or credit.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[header]
+image = &amp;quot;headers/getting-started.png&amp;quot;
+caption = &amp;quot;Image credit: [**Academic**](https://github.com/gcushen/hugo-academic/)&amp;quot;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    If you wish to prevent a featured image automatically being used for a post&amp;rsquo;s thumbnail on the homepage, the &lt;code&gt;preview = false&lt;/code&gt; parameter can be added to &lt;code&gt;[header]&lt;/code&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;create-a-publication&#34;&gt;Create a publication&lt;/h2&gt;
+&lt;p&gt;To create a new publication:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hugo new publication/my-paper-name.md
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then edit the default variables at the top of &lt;code&gt;content/publication/my-paper-name.md&lt;/code&gt; to include the details of your publication. The &lt;code&gt;url_&lt;/code&gt; variables are used to generate links associated with your publication, such as for viewing PDFs of papers. Here is an example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;+++
+abstract = &amp;quot;An abstract...&amp;quot;
+authors = [&amp;quot;First author&#39;s name&amp;quot;, &amp;quot;Second author&#39;s name&amp;quot;]
+date = &amp;quot;2013-07-01&amp;quot;
+image = &amp;quot;&amp;quot;
+image_preview = &amp;quot;&amp;quot;
+math = false
+publication = &amp;quot;The publishing part of the citation goes here. You may use *Markdown* for italics etc.&amp;quot;
+title = &amp;quot;A publication title, such as title of a paper&amp;quot;
+url_code = &amp;quot;&amp;quot;
+url_dataset = &amp;quot;&amp;quot;
+url_pdf = &amp;quot;pdf/my-paper-name.pdf&amp;quot;
+url_project = &amp;quot;&amp;quot;
+url_slides = &amp;quot;&amp;quot;
+url_video = &amp;quot;&amp;quot;
++++
+
+Further details on your publication can be written here using *Markdown* for formatting. This text will be displayed on the Publication Detail page.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;code&gt;url_&lt;/code&gt; links can either point to local or web content. Associated local publication content, such as PDFs, may be copied to a &lt;code&gt;static/pdf/&lt;/code&gt; folder and referenced like &lt;code&gt;url_pdf = &amp;quot;pdf/my-paper-name.pdf&amp;quot;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You can also associate custom link buttons with the publication by adding the following block(s) within the variable preamble above, which is denoted by &lt;code&gt;+++&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[[url_custom]]
+    name = &amp;quot;Custom Link&amp;quot;
+    url = &amp;quot;http://www.example.org&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you enabled &lt;code&gt;detailed_list&lt;/code&gt; for publications in &lt;code&gt;config.toml&lt;/code&gt;, then there are a few more optional variables that you can include in the publication page preamble. You may use &lt;code&gt;abstract_short = &amp;quot;friendly summary of abstract&amp;quot;&lt;/code&gt; and &lt;code&gt;publication_short = &amp;quot;abbreviated publication details&amp;quot;&lt;/code&gt; to display a friendly summary of the abstract and abbreviate the publication details, respectively. Furthermore, there is the option to display a different image on the homepage to the publication detail page by setting &lt;code&gt;image_preview = &amp;quot;my-image.jpg&amp;quot;&lt;/code&gt;. This can be useful if you wish to scale down the image for the homepage or simply if you just wish to show a different image for the preview.&lt;/p&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    Any double quotes (&lt;code&gt;&amp;quot;&lt;/code&gt;) or backslashes (e.g. LaTeX &lt;code&gt;\times&lt;/code&gt;) occurring within the value of any frontmatter parameter (such as the &lt;em&gt;abstract&lt;/em&gt;) should be escaped with a backslash (&lt;code&gt;\&lt;/code&gt;). For example, the symbol &lt;code&gt;&amp;quot;&lt;/code&gt; and LaTeX text &lt;code&gt;\times&lt;/code&gt; become &lt;code&gt;\&amp;quot;&lt;/code&gt; and &lt;code&gt;\\times&lt;/code&gt;, respectively. Refer to the &lt;a href=&#34;https://github.com/toml-lang/toml#user-content-string&#34;&gt;TOML documentation&lt;/a&gt; for more info.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;post-an-article&#34;&gt;Post an article&lt;/h2&gt;
+&lt;p&gt;To create a blog/news article:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hugo new post/my-article-name.md
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then edit the newly created file &lt;code&gt;content/post/my-article-name.md&lt;/code&gt; with your full title and content.&lt;/p&gt;
+&lt;p&gt;Hugo will automatically generate summaries of posts that appear on the homepage. If you are dissatisfied with an automated summary, you can either limit the summary length by appropriately placing &lt;code&gt;&amp;lt;!--more--&amp;gt;&lt;/code&gt; in the article body, or completely override the automated summary by adding a &lt;code&gt;summary&lt;/code&gt; parameter to the &lt;code&gt;+++&lt;/code&gt; preamble such that:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;summary = &amp;quot;Summary of my post.&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To disable commenting for a specific post, you can add &lt;code&gt;disable_comments = true&lt;/code&gt; to the post &lt;code&gt;+++&lt;/code&gt; preamble. Or to disable commenting for all posts, you can either set &lt;code&gt;disqusShortname = &amp;quot;&amp;quot;&lt;/code&gt; or &lt;code&gt;disable_comments = true&lt;/code&gt; in &lt;code&gt;config.toml&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;create-a-project&#34;&gt;Create a project&lt;/h2&gt;
+&lt;p&gt;To create a project:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hugo new project/my-project-name.md
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then edit the newly created file &lt;code&gt;content/project/my-project-name.md&lt;/code&gt;. Either you can link the project to an external project website by setting the &lt;code&gt;external_link = &amp;quot;http://external-project.com&amp;quot;&lt;/code&gt; variable at the top of the file, or you can add content (below the final &lt;code&gt;+++&lt;/code&gt;) in order to render a project page on your website.&lt;/p&gt;
+&lt;h2 id=&#34;create-a-talk&#34;&gt;Create a talk&lt;/h2&gt;
+&lt;p&gt;To create a talk:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hugo new talk/my-talk-name.md
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then edit the newly created file &lt;code&gt;content/talk/my-talk-name.md&lt;/code&gt; with your full talk title and details. Note that many of the talk parameters are similar to the publication parameters.&lt;/p&gt;
+&lt;h2 id=&#34;manage-node-index-pages&#34;&gt;Manage node index pages&lt;/h2&gt;
+&lt;p&gt;The node index pages (e.g. &lt;code&gt;/post/&lt;/code&gt;) are the special pages which list all of your content. They can exist for blog posts, publications, and talks. The homepage widgets will automatically link to the node index pages when you have more items of content than can be displayed in the widget. Therefore, if you don&amp;rsquo;t have much content, you may not see the automatic links yet - but you can also manually link to them using a normal Markdown formatted link in your content.&lt;/p&gt;
+&lt;p&gt;You can edit the title and add your own content, such as an introduction, by creating and editing the following content files for the node indexes:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hugo new post/_index.md
+hugo new publication/_index.md
+hugo new talk/_index.md
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then remove all parameters except for &lt;code&gt;title&lt;/code&gt;, &lt;code&gt;math&lt;/code&gt;, &lt;code&gt;highlight&lt;/code&gt;, and &lt;code&gt;date&lt;/code&gt;. Edit the &lt;code&gt;title&lt;/code&gt; parameter as desired and add any content after the &lt;code&gt;+++&lt;/code&gt; preamble/frontmatter ends. For example, you should have something similar to:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;+++
+title = &amp;quot;List of my posts&amp;quot;
+date = &amp;quot;2017-01-01T00:00:00Z&amp;quot;
+math = false
+highlight = false
++++
+
+Below is an automatically generated list of all my blog posts!
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;removing-content&#34;&gt;Removing content&lt;/h2&gt;
+&lt;p&gt;Generally, to remove content, simply delete the relevant file from your &lt;code&gt;content/post&lt;/code&gt;, &lt;code&gt;content/publication&lt;/code&gt;, &lt;code&gt;content/project&lt;/code&gt;, or &lt;code&gt;content/talk&lt;/code&gt; folder.&lt;/p&gt;
+&lt;h2 id=&#34;view-your-updated-site&#34;&gt;View your updated site&lt;/h2&gt;
+&lt;p&gt;After you have made changes to your site, you can view it by running the &lt;code&gt;hugo server --watch&lt;/code&gt; command and then opening 
+&lt;a href=&#34;http://localhost:1313&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;localhost:1313&lt;/a&gt; in your web browser.&lt;/p&gt;
+&lt;h2 id=&#34;deploy-your-site&#34;&gt;Deploy your site&lt;/h2&gt;
+&lt;p&gt;Finally, you can build the static website to a &lt;code&gt;public/&lt;/code&gt; folder ready for deployment using the &lt;code&gt;hugo&lt;/code&gt; command.&lt;/p&gt;
+&lt;p&gt;You may then deploy your site by copying the &lt;code&gt;public/&lt;/code&gt; directory (by FTP, SFTP, WebDAV, Rsync, git push, etc.) to your production web server.&lt;/p&gt;
+&lt;p&gt;Note that running &lt;code&gt;hugo&lt;/code&gt; does not remove any previously generated files before building. Therefore, it&amp;rsquo;s best practice to delete your &lt;code&gt;public/&lt;/code&gt; directory prior to running &lt;code&gt;hugo&lt;/code&gt; to ensure no old or interim files are deployed to your server.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Writing content with Markdown, LaTeX, and Shortcodes</title>
+      <link>/post/writing-markdown-latex/</link>
+      <pubDate>Wed, 20 Apr 2016 10:00:00 +0000</pubDate>
+      <guid>/post/writing-markdown-latex/</guid>
+      <description>&lt;p&gt;Content can be written using 
+&lt;a href=&#34;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Markdown&lt;/a&gt;, 
+&lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LaTeX math&lt;/a&gt;, and 
+&lt;a href=&#34;http://gohugo.io/extras/shortcodes/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Shortcodes&lt;/a&gt;. Additionally, HTML may be used for advanced formatting.&lt;/p&gt;
+&lt;p&gt;This article gives an overview of the most common formatting options.&lt;/p&gt;
+&lt;h2 id=&#34;sub-headings&#34;&gt;Sub-headings&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;emphasis&#34;&gt;Emphasis&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;Italics with *asterisks* or _underscores_.
+
+Bold with **asterisks** or __underscores__.
+
+Combined emphasis with **asterisks and _underscores_**.
+
+Strikethrough with ~~two tildes~~.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;ordered-lists&#34;&gt;Ordered lists&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;1. First item
+2. Another item
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;unordered-lists&#34;&gt;Unordered lists&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;* First item
+* Another item
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;images&#34;&gt;Images&lt;/h2&gt;
+&lt;p&gt;Images may be added to a page by placing them in your &lt;code&gt;static/img/&lt;/code&gt; folder and referencing them using one of the following two notations:&lt;/p&gt;
+&lt;p&gt;A general image:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;![alternative text for search engines](/img/screenshot.png)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;A numbered figure with caption:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{&amp;lt; figure src=&amp;quot;/img/screenshot.png&amp;quot; title=&amp;quot;Figure Caption&amp;quot; &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;[I&#39;m a link](https://www.google.com)
+[A post]({{&amp;lt; ref &amp;quot;post/hi.md&amp;quot; &amp;gt;}})
+[A publication]({{&amp;lt; ref &amp;quot;publication/hi.md&amp;quot; &amp;gt;}})
+[A project]({{&amp;lt; ref &amp;quot;project/hi.md&amp;quot; &amp;gt;}})
+[Another section]({{&amp;lt; relref &amp;quot;hi.md#who&amp;quot; &amp;gt;}})
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;emojis&#34;&gt;Emojis&lt;/h2&gt;
+&lt;p&gt;See the 
+&lt;a href=&#34;http://www.webpagefx.com/tools/emoji-cheat-sheet/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Emoji cheat sheet&lt;/a&gt; for available emoticons. The following serves as an example, but you should remove the spaces between each emoji name and pair of semicolons:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;I : heart : Academic : smile :
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I ❤ Academic 😄&lt;/p&gt;
+&lt;h2 id=&#34;blockquote&#34;&gt;Blockquote&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; This is a blockquote.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is a blockquote.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;footnotes&#34;&gt;Footnotes&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;I have more [^1] to say.
+
+[^1]: Footnote example.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I have more &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; to say.&lt;/p&gt;
+&lt;h2 id=&#34;code-highlighting&#34;&gt;Code highlighting&lt;/h2&gt;
+&lt;p&gt;Pass the &lt;em&gt;language&lt;/em&gt; of the code, such as &lt;code&gt;python&lt;/code&gt;, as a parameter after three backticks:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```python
+# Example of code highlighting
+input_string_var = input(&amp;quot;Enter some data: &amp;quot;)
+print(&amp;quot;You entered: {}&amp;quot;.format(input_string_var))
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Result:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# Example of code highlighting
+input_string_var = input(&amp;quot;Enter some data: &amp;quot;)
+print(&amp;quot;You entered: {}&amp;quot;.format(input_string_var))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;highlighting-options&#34;&gt;Highlighting options&lt;/h3&gt;
+&lt;p&gt;The Academic theme uses 
+&lt;a href=&#34;https://highlightjs.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;highlight.js&lt;/a&gt; for source code highlighting, and highlighting is enabled by default for all pages. However, several configuration options are supported that allow finer-grained control over highlight.js.&lt;/p&gt;
+&lt;p&gt;The following table lists the supported options for configuring highlight.js, along with their expected type and a short description. A &amp;ldquo;yes&amp;rdquo; in the &lt;strong&gt;config.toml&lt;/strong&gt; column means the value can be set globally in &lt;code&gt;config.toml&lt;/code&gt;, and a &amp;ldquo;yes&amp;rdquo; in the &lt;strong&gt;preamble&lt;/strong&gt; column means that the value can be set locally in a particular page&amp;rsquo;s preamble.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;option&lt;/th&gt;
+&lt;th&gt;type&lt;/th&gt;
+&lt;th&gt;description&lt;/th&gt;
+&lt;th&gt;config.toml&lt;/th&gt;
+&lt;th&gt;preamble&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;highlight&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;boolean&lt;/td&gt;
+&lt;td&gt;enable/disable highlighting&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;highlight_languages&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;slice&lt;/td&gt;
+&lt;td&gt;choose additional languages&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;highlight_style&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;string&lt;/td&gt;
+&lt;td&gt;choose a highlighting style&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;no&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;highlight_version&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;string&lt;/td&gt;
+&lt;td&gt;choose the highlight.js version&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;no&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;option-highlight&#34;&gt;Option &lt;code&gt;highlight&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;The &lt;code&gt;highlight&lt;/code&gt; option allows enabling or disabling the inclusion of highlight.js, either globally or for a particular page. If the option is unset, it has the same effect as if you had specified &lt;code&gt;highlight = true&lt;/code&gt;. That is, the highlight.js javascript and css files will be included in every page. If you&amp;rsquo;d like to only include highlight.js files on pages that actually require source code highlighting, you can set &lt;code&gt;highlight = false&lt;/code&gt; in &lt;code&gt;config.toml&lt;/code&gt;, and then override it by setting &lt;code&gt;highlight = true&lt;/code&gt; in the preamble of any pages that require source code highlighting. Conversely, you could enable highlighting globally, and disable it locally for pages that do not require it. Here is a table that shows whether highlighting will be enabled for a page, based on the values of &lt;code&gt;highlight&lt;/code&gt; set in &lt;code&gt;config.toml&lt;/code&gt; and/or the page&amp;rsquo;s preamble.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;config.toml&lt;/th&gt;
+&lt;th&gt;page preamble&lt;/th&gt;
+&lt;th&gt;highlighting enabled for page?&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;unset or true&lt;/td&gt;
+&lt;td&gt;unset or true&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;unset or true&lt;/td&gt;
+&lt;td&gt;false&lt;/td&gt;
+&lt;td&gt;no&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;false&lt;/td&gt;
+&lt;td&gt;unset or false&lt;/td&gt;
+&lt;td&gt;no&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;false&lt;/td&gt;
+&lt;td&gt;true&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;option-highlight_languages&#34;&gt;Option &lt;code&gt;highlight_languages&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;The &lt;code&gt;highlight_languages&lt;/code&gt; option allows you to specify additional languages that are supported by highlight.js, but are not considered &amp;ldquo;common&amp;rdquo; and therefore are not supported by default. For example, if you want source code highlighting for Go and clojure in all pages, set &lt;code&gt;highlight_languages = [&amp;quot;go&amp;quot;, &amp;quot;clojure&amp;quot;]&lt;/code&gt; in &lt;code&gt;config.toml&lt;/code&gt;. If, on the other hand, you want to enable a language only for a specific page, you can set &lt;code&gt;highlight_languages&lt;/code&gt; in that page&amp;rsquo;s preamble.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;highlight_languages&lt;/code&gt; options specified in &lt;code&gt;config.toml&lt;/code&gt; and in a page&amp;rsquo;s preamble are additive. That is, if &lt;code&gt;config.toml&lt;/code&gt; contains, &lt;code&gt;highlight_languages = [&amp;quot;go&amp;quot;]&lt;/code&gt; and the page&amp;rsquo;s preamble contains &lt;code&gt;highlight_languages = [&amp;quot;ocaml&amp;quot;]&lt;/code&gt;, then javascript files for &lt;em&gt;both&lt;/em&gt; go and ocaml will be included for that page.&lt;/p&gt;
+&lt;p&gt;If the &lt;code&gt;highlight_languages&lt;/code&gt; option is set, then the corresponding javascript files will be served from the 
+&lt;a href=&#34;https://cdnjs.com/libraries/highlight.js/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cdnjs server&lt;/a&gt;. To see a list of available languages, visit the 
+&lt;a href=&#34;https://cdnjs.com/libraries/highlight.js/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cdnjs page&lt;/a&gt; and search for links with the word &amp;ldquo;languages&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;highlight_languages&lt;/code&gt; option provides an easy and convenient way to include support for additional languages to be severed from a CDN. If serving unmodified files from cdnjs doesn&amp;rsquo;t meet your needs, you can include javascript files for additional language support via one of the methods described in the 
+&lt;a href=&#34;/post/getting-started/#third-party-and-local-scripts-js&#34;&gt;getting started guide&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;option-highlight_style&#34;&gt;Option &lt;code&gt;highlight_style&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;The &lt;code&gt;highlight_style&lt;/code&gt; option allows you to select an alternate css style for highlighted code. For example, if you wanted to use the solarized-dark style, you could set &lt;code&gt;highlight_style = &amp;quot;solarized-dark&amp;quot;&lt;/code&gt; in &lt;code&gt;config.toml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;If the &lt;code&gt;highlight_style&lt;/code&gt; option is unset, the default is to use the file &lt;code&gt;/css/highlight.min.css&lt;/code&gt;, either the one provided by the Academic theme, or else the one in your local &lt;code&gt;static&lt;/code&gt; directory.  The &lt;code&gt;/css/highlight.min.css&lt;/code&gt; file provided by Academic is equivalent to the &lt;code&gt;github&lt;/code&gt; style from highlight.js.&lt;/p&gt;
+&lt;p&gt;If the &lt;code&gt;highlight_style&lt;/code&gt; option &lt;em&gt;is&lt;/em&gt; set, then &lt;code&gt;/css/highlight.min.css&lt;/code&gt; is ignored, and the corresponding css file will be served from the 
+&lt;a href=&#34;https://cdnjs.com/libraries/highlight.js/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cdnjs server&lt;/a&gt;. To see a list of available styles, visit the 
+&lt;a href=&#34;https://cdnjs.com/libraries/highlight.js/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cdnjs page&lt;/a&gt; and search for links with the word &amp;ldquo;styles&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;See the 
+&lt;a href=&#34;https://highlightjs.org/static/demo/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;highlight.js demo page&lt;/a&gt; for examples of available styles.&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Not all styles listed on the &lt;a href=&#34;https://highlightjs.org/static/demo/&#34;&gt;highlight.js demo page&lt;/a&gt; are available from the &lt;a href=&#34;https://cdnjs.com/libraries/highlight.js/&#34;&gt;cdnjs server&lt;/a&gt;. If you want to use a style that is not served by cdnjs, just leave &lt;code&gt;highlight_style&lt;/code&gt; unset, and place the corresponding css file in &lt;code&gt;/static/css/highlight.min.css&lt;/code&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    If you don&amp;rsquo;t want to change the default style that ships with Academic but you do want the style file served from the &lt;a href=&#34;https://cdnjs.com/libraries/highlight.js/&#34;&gt;cdnjs server&lt;/a&gt;, set &lt;code&gt;highlight_style = &amp;quot;github&amp;quot;&lt;/code&gt; in &lt;code&gt;config.toml&lt;/code&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;The &lt;code&gt;highlight_style&lt;/code&gt; option is only recognized when set in &lt;code&gt;config.toml&lt;/code&gt;. Setting &lt;code&gt;highlight_style&lt;/code&gt; in your page&amp;rsquo;s preamble has no effect.&lt;/p&gt;
+&lt;h4 id=&#34;option-highlight_version&#34;&gt;Option &lt;code&gt;highlight_version&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;The &lt;code&gt;highlight_version&lt;/code&gt; option, as the name implies, allows you to select the version of highlight.js you want to use. The default value is &amp;ldquo;9.9.0&amp;rdquo;. The &lt;code&gt;highlight_version&lt;/code&gt; option is only recognized when set in &lt;code&gt;config.toml&lt;/code&gt;. Setting &lt;code&gt;highlight_version&lt;/code&gt; in your page&amp;rsquo;s preamble has no effect.&lt;/p&gt;
+&lt;h2 id=&#34;twitter-tweet&#34;&gt;Twitter tweet&lt;/h2&gt;
+&lt;p&gt;To include a single tweet, pass the tweet’s ID from the tweet&amp;rsquo;s URL as parameter to the shortcode:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{&amp;lt; tweet 666616452582129664 &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;youtube&#34;&gt;Youtube&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;{{&amp;lt; youtube w7Ft2ymGmfc &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;vimeo&#34;&gt;Vimeo&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;{{&amp;lt; vimeo 146022717 &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;github-gist&#34;&gt;GitHub gist&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;{{&amp;lt; gist USERNAME GIST-ID  &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;speaker-deck&#34;&gt;Speaker Deck&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;{{&amp;lt; speakerdeck 4e8126e72d853c0060001f97 &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;rm-latex-math&#34;&gt;$\rm \LaTeX$ math&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-TeX&#34;&gt;$$\left [ – \frac{\hbar^2}{2 m} \frac{\partial^2}{\partial x^2} + V \right ] \Psi = i \hbar \frac{\partial}{\partial t} \Psi$$
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;$$\left [ – \frac{\hbar^2}{2 m} \frac{\partial^2}{\partial x^2} + V \right ] \Psi = i \hbar \frac{\partial}{\partial t} \Psi$$&lt;/p&gt;
+&lt;p&gt;Alternatively, inline math can be written by wrapping the formula with only a single &lt;code&gt;$&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;This is inline: $\mathbf{y} = \mathbf{X}\boldsymbol\beta + \boldsymbol\varepsilon$
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is inline: $\mathbf{y} = \mathbf{X}\boldsymbol\beta + \boldsymbol\varepsilon$&lt;/p&gt;
+&lt;h2 id=&#34;table&#34;&gt;Table&lt;/h2&gt;
+&lt;p&gt;Code:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-Markdown&#34;&gt;| Command           | Description                    |
+| ------------------| ------------------------------ |
+| `hugo`            | Build your website.            |
+| `hugo serve -w`   | View your website.             |
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Result:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Command&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;hugo&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Build your website.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;hugo serve -w&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;View your website.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;alerts&#34;&gt;Alerts&lt;/h2&gt;
+&lt;p&gt;Alerts are a useful feature that add side content such as tips, notes, or warnings to your articles. They are especially handy when writing educational tutorial-style articles. Use the corresponding shortcodes to enable alerts inside your content:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{% alert note %}}
+Here&#39;s a tip or note...
+{{% /alert %}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will display the following &lt;em&gt;note&lt;/em&gt; block:&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Here&amp;rsquo;s a tip or note&amp;hellip;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;pre&gt;&lt;code&gt;{{% alert warning %}}
+Here&#39;s some important information...
+{{% /alert %}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will display the following &lt;em&gt;warning&lt;/em&gt; block:&lt;/p&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    Here&amp;rsquo;s some important information&amp;hellip;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Footnote example. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Influence of Noise in Dynamic PET Direct Reconstruction</title>
+      <link>/publication/medicon2016/</link>
+      <pubDate>Sat, 09 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/medicon2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Influence of Noise in Dynamic PET Direct Reconstruction</title>
+      <link>/talk/medicon16/</link>
+      <pubDate>Sat, 02 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/talk/medicon16/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In the present work a study is carried out in order to assess the efficiency of the direct reconstruction algorithms on noisy dynamic PET data. The study is performed via Monte Carlo simulations of a uniform cylindrical phantom whose emission values change in time according to a kinetic law. After generating the relevant projection data and properly adding the effects of different noise sources on them, the direct reconstruction and parametric estimation algorithm is applied. The resulting kinetic parameters and reconstructed images are then quantitatively evaluated with appropriate indexes. The simulation is repeated considering different sources of noise and different values of them. The results obtained allow us to affirm that the direct reconstruction algorithm tested maintains a good efficiency also in presence of noise.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Keywords&lt;/strong&gt;— dynamic positron emission tomography, direct reconstruction, kinetic analysis, compartmental model, noise&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pharmacokinetic analysis of dynamic PET data: comparison between direct parametric reconstruction and conventional indirect voxel-based estimation</title>
+      <link>/talk/emim16/</link>
+      <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
+      <guid>/talk/emim16/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;../../data/conferences/EMIM16/poster.png&#34; alt=&#34;Pharmacokinetic analysis of dynamic PET data: comparison between direct parametric reconstruction and conventional indirect voxel-based estimation - European Molecular Imaging Meeting - 2016 - poster&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Dynamic positron emission tomography (PET) studies allow to quantify tissue-specific biochemical properties. Conventional pharmacokinetic analysis requires the voxel-wise time activity curve fitting performed on a sequence of independently reconstructed PET images. Direct parametric reconstruction methods combine emission image reconstruction and kinetic modeling into a single formula, estimating parametric images directly from raw data. In the present work a comparison between the two pharmacokinetic analysis methods is performed on simulated and clinical brain 18F[FDG] PET data.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Methods&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Monte Carlo simulation includes 2D dynamic raw data generation of a brain phantom (gray and white matter) based on realistic kinetic parameter’s values. Attenuation and random counts effect are included. The Feng’s model is used to generate the input function. 20 realizations are analyzed, each including 24 time samples ranged from 10s to 600s.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Clinical&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;2D 18F[FDG] PET data relevant to the brain of a patient (24 time frames) are acquired by GE PET/CT DRX scanner. The same ROI-based input function (covering the carotid) is used for both methods.
+The conventional estimation consists of a full OSEM reconstruction and one step of voxel-wise non linear least square parametric fitting with a 2 compartments-3k kinetic model. The direct algorithm is based on optimization transfer framework and performs, at each iteration, an EM-like dynamic image update and a pixel-wise penalized likelihood kinetic fitting using the same model as in conventional kinetic analysis. On simulated data we assess the goodness of direct method with nRMSE, normalizing the error on direct estimate with the one relevant to conventional estimate. Linear regression is then performed for each of the kinetic constants on simulated and clinical data.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Results&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;nRMSE values for K1, k2, k3 and Ki parameters are 0.7722±0.0024, 0.7847±0.0077, 1.0003±5.16e-05, 0.9960±1.3e-04, respectively. Regression analysis on simulated data (fig.1) gives following angular coefficients (and R value) for each k-parameter: 1.03(0.99), 0.94(0.94), 0.88(0.91), 1.03(0.99). The same test on clinical data (fig.2) gives: 0.88(0.87), 0.70(0.77), 0.72(0.80), 0.91(0.95).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;nRMSE analysis on simulated data shows a smaller error for directly estimated parameters. This could be due to a slight overestimation of k-values in conventional approach, particularly evident on clinical data, as it results from regression analysis.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>emcee | MICHELE SCIPIONI</title>
+    <link>/tags/emcee/</link>
+      <atom:link href="/tags/emcee/index.xml" rel="self" type="application/rss+xml" />
+    <description>emcee</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2020</copyright><lastBuildDate>Sun, 01 May 2016 11:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/foto_bw.jpg</url>
+      <title>emcee</title>
+      <link>/tags/emcee/</link>
+    </image>
+    
+    <item>
+      <title>Calculating the posterior probability distribution of parameters with emcee python module</title>
+      <link>/post/posterior-distribution-of-parameter-estimate/</link>
+      <pubDate>Sun, 01 May 2016 11:00:00 +0000</pubDate>
+      <guid>/post/posterior-distribution-of-parameter-estimate/</guid>
+      <description>&lt;h2 id=&#34;the-emcee-python-module&#34;&gt;The &lt;strong&gt;emcee()&lt;/strong&gt; python module&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;emcee&lt;/strong&gt; can be used to obtain the posterior probability distribution of parameters, given a set of experimental data. An example problem is a double exponential decay. A small amount of Gaussian noise is also added.&lt;!-- TEASER_END --&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;%matplotlib inline
+import numpy as np
+import lmfit
+from matplotlib import pyplot as plt
+import corner
+import emcee
+from pylab import *
+ion()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;x = np.linspace(1, 10, 250)
+np.random.seed(0)
+y = 3.0 * np.exp(-x / 2) - 5.0 * np.exp(-(x - 0.1) / 10.) + 0.1 * np.random.randn(len(x))
+
+plt.plot(x, y)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;[&amp;lt;matplotlib.lines.Line2D at 0x7fbabac52310&amp;gt;]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/posterior-distribution-of-parameter-estimate/output_3_1.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;initializing-our-example-creating-a-parameter-set-for-the-initial-guesses&#34;&gt;Initializing our example creating a parameter set for the initial guesses:&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;p = lmfit.Parameters()
+p.add_many((&#39;a1&#39;, 4.), (&#39;a2&#39;, 4.), (&#39;t1&#39;, 3.), (&#39;t2&#39;, 3., True))
+
+def residual(p):
+    v = p.valuesdict()
+    return v[&#39;a1&#39;] * np.exp(-x / v[&#39;t1&#39;]) + v[&#39;a2&#39;] * np.exp(-(x - 0.1) / v[&#39;t2&#39;]) - y
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;solving-with-minimize-gives-the-maximum-likelihood-solution&#34;&gt;Solving with minimize() gives the Maximum Likelihood solution.:&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;mi = lmfit.minimize(residual, p, method=&#39;Nelder&#39;)
+#mi = lmfit.minimize(residual, p)
+lmfit.printfuncs.report_fit(mi.params, min_correl=0.5)
+
+plt.plot(x, y)
+plt.plot(x, residual(mi.params) + y, &#39;r&#39;)
+plt.show()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;[[Variables]]
+    a1:   2.98623688 (init= 4)
+    a2:  -4.33525596 (init= 4)
+    t1:   1.30993185 (init= 3)
+    t2:   11.8240752 (init= 3)
+[[Correlations]] (unreported correlations are &amp;lt;  0.500)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/posterior-distribution-of-parameter-estimate/output_7_1.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;However, &lt;strong&gt;this doesn’t give a probability distribution&lt;/strong&gt; for the parameters. Furthermore, we wish to deal with the data uncertainty. This is called marginalisation of a nuisance parameter. &lt;strong&gt;emcee&lt;/strong&gt; requires a function that returns the log-posterior probability.&lt;/p&gt;
+&lt;h3 id=&#34;posterior-distribution-estimation&#34;&gt;Posterior distribution estimation&lt;/h3&gt;
+&lt;p&gt;The log-posterior probability is a &lt;strong&gt;sum of the log-prior probability and log-likelihood functions&lt;/strong&gt;. The log-prior probability is assumed to be zero if all the parameters are within their bounds and -np.inf if any of the parameters are outside their bounds.:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# add a noise parameter
+mi.params.add(&#39;f&#39;, value=1, min=0.001, max=2)
+
+# This is the log-likelihood probability for the sampling. We&#39;re going to estimate the
+# size of the uncertainties on the data as well.
+def lnprob(p):
+    resid = residual(p)
+    s = p[&#39;f&#39;]
+    resid *= 1 / s
+    resid *= resid
+    resid += np.log(2 * np.pi * s**2)
+    return -0.5 * np.sum(resid)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Lets have a look at those posterior distributions for the parameters.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;mini = lmfit.Minimizer(lnprob, mi.params)
+res = mini.emcee(burn=300, steps=600, thin=3, params=mi.params)
+corner.corner(res.flatchain, labels=res.var_names, truths=list(res.params.valuesdict().values()))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/posterior-distribution-of-parameter-estimate/output_11_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The values reported in the MinimizerResult are the medians of the probability distributions and a 1 sigma quantile&lt;/strong&gt;, estimated as half the difference between the 15.8 and 84.2 percentiles.&lt;/p&gt;
+&lt;p&gt;The median value is not necessarily the same as the Maximum Likelihood Estimate. We’ll get that as well. You can see that we recovered the right uncertainty level on the data:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;lmfit.report_fit(mi.params)
+print(&#39;---------------------------------------------&#39;)
+print(&amp;quot;median of posterior probability distribution&amp;quot;)
+print(&#39;---------------------------------------------&#39;)
+lmfit.report_fit(res.params)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;[[Variables]]
+    a1:   2.98623688 (init= 4)
+    a2:  -4.33525596 (init= 4)
+    t1:   1.30993185 (init= 3)
+    t2:   11.8240752 (init= 3)
+    f:    1          (init= 1)
+[[Correlations]] (unreported correlations are &amp;lt;  0.100)
+---------------------------------------------
+median of posterior probability distribution
+---------------------------------------------
+[[Variables]]
+    a1:   2.99754553 +/- 0.151322 (5.05%) (init= 2.986237)
+    a2:  -4.33867001 +/- 0.117687 (2.71%) (init=-4.335256)
+    t1:   1.31237613 +/- 0.132677 (10.11%) (init= 1.309932)
+    t2:   11.8062444 +/- 0.457356 (3.87%) (init= 11.82408)
+    f:    0.09810770 +/- 0.004350 (4.43%) (init= 1)
+[[Correlations]] (unreported correlations are &amp;lt;  0.100)
+    C(a2, t2)                    =  0.980
+    C(a2, t1)                    = -0.926
+    C(t1, t2)                    = -0.873
+    C(a1, t1)                    = -0.541
+    C(a1, a2)                    =  0.224
+    C(a1, t2)                    =  0.171
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;lets-find-the-maximum-likelihood-solution&#34;&gt;Let&amp;rsquo;s find the maximum likelihood solution&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;highest_prob = np.argmax(res.lnprob)
+hp_loc = np.unravel_index(highest_prob, res.lnprob.shape)
+mle_soln = res.chain[hp_loc]
+for i, par in enumerate(p):
+    p[par].value = mle_soln[i]
+
+print(&amp;quot;\nMaximum likelihood Estimation&amp;quot;)
+print(&#39;-----------------------------&#39;)
+print(p)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Maximum likelihood Estimation
+-----------------------------
+Parameters([(&#39;a1&#39;, &amp;lt;Parameter &#39;a1&#39;, 2.9874185587879265, bounds=[-inf:inf]&amp;gt;), (&#39;a2&#39;, &amp;lt;Parameter &#39;a2&#39;, -4.3357546840836836, bounds=[-inf:inf]&amp;gt;), (&#39;t1&#39;, &amp;lt;Parameter &#39;t1&#39;, 1.3090319527167826, bounds=[-inf:inf]&amp;gt;), (&#39;t2&#39;, &amp;lt;Parameter &#39;t2&#39;, 11.823518108067935, bounds=[-inf:inf]&amp;gt;)])
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;finally-lets-work-out-a-1-and-2-sigma-error-estimate-for-t1&#34;&gt;Finally lets work out a 1 and 2-sigma error estimate for &amp;lsquo;t1&amp;rsquo;&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;quantiles = np.percentile(res.flatchain[&#39;t1&#39;], [2.28, 15.9, 50, 84.2, 97.7])
+print(&amp;quot;2 sigma spread&amp;quot;, 0.5 * (quantiles[-1] - quantiles[0]))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;(&#39;2 sigma spread&#39;, 0.2826990333440581)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>github | MICHELE SCIPIONI</title>
+    <link>/tags/github/</link>
+      <atom:link href="/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <description>github</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2020</copyright><lastBuildDate>Mon, 11 Feb 2019 16:00:00 +0100</lastBuildDate>
+    <image>
+      <url>/img/foto_bw.jpg</url>
+      <title>github</title>
+      <link>/tags/github/</link>
+    </image>
+    
+    <item>
+      <title>Add comments to your Hugo-Academic blog in 10 minutes, using Utteranc.es</title>
+      <link>/post/utterances-comment-engine/</link>
+      <pubDate>Mon, 11 Feb 2019 16:00:00 +0100</pubDate>
+      <guid>/post/utterances-comment-engine/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://utteranc.es/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Utteranc.es&lt;/strong&gt;&lt;/a&gt; is a lightweigth comments widget, which allows you to use &lt;strong&gt;Github Issues&lt;/strong&gt; for blog comments. It&amp;rsquo;s open source, looks clean, comments are stored on Github, and even comes with a dark theme. Sure, you need to sign with Github, but that&amp;rsquo;s fine since most coders already have an account.&lt;/p&gt;
+&lt;h2 id=&#34;installation-steps&#34;&gt;Installation steps&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;You will, obviously, need to have your website hosted on 
+&lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;GitHub&lt;/strong&gt;&lt;/a&gt;, in a &lt;em&gt;&lt;strong&gt;public&lt;/strong&gt;&lt;/em&gt; repository, in order to &lt;em&gt;utterances&lt;/em&gt; to work as intended.&lt;/li&gt;
+&lt;li&gt;Install 
+&lt;a href=&#34;https://github.com/apps/utterances&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;utterances app&lt;/strong&gt;&lt;/a&gt; on that repo. You have a choice to install the app on every (current and future) repo, but I don&amp;rsquo;t think you will have any need for this. Usually you will have a (public) repo with a name like &lt;em&gt;&lt;strong&gt;&amp;lt;username&amp;gt;.github.io&lt;/strong&gt;&lt;/em&gt;: select this from the drop-down menu that will appear:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/utterances/app-setup.png&#34; alt=&#34;python-vs-matlab&#34; width=&#34;500&#34; vspace=&#34;150&#34;/&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Go to 
+&lt;a href=&#34;https://utteranc.es/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;utterances web-app&lt;/strong&gt;&lt;/a&gt; and fill the form as requested. It will generate (at the bottom of the page) a custom &lt;code&gt;html&lt;/code&gt; that you could &lt;em&gt;copy&amp;amp;paste&lt;/em&gt; in your blog template. you will require just a couple of information:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;name of the repository&lt;/strong&gt; : usually, it will be something like &lt;em&gt;&lt;strong&gt;&amp;lt;username&amp;gt;/&amp;lt;username&amp;gt;.github.io&lt;/strong&gt;&lt;/em&gt; (or more generally &lt;em&gt;&lt;strong&gt;owner/repo&lt;/strong&gt;&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;label&lt;/strong&gt;: as the comments will be managed via &lt;em&gt;GitHub&lt;/em&gt; Issue system, you will need to set-up a proper label to indentify those issues created by utterances (in case you have other &lt;em&gt;normal&lt;/em&gt; issues as well in you repo)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;theme&lt;/strong&gt;: your choice of a light or dark theme, according to the overall style of your current blog template&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Copy to your clipboard.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;[The following will apply only to &lt;strong&gt;Hugo&lt;/strong&gt; Academic template, but it you are a little bit tech-savy you will find a way to make it work with whatever template you are using, even a custom one] Go to the folder in which the Hugo surce of your blog is hosted, and navigate to &lt;em&gt;&lt;strong&gt;themes/academic/layouts/partials&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Open the source file &lt;em&gt;&lt;strong&gt;comments.html&lt;/strong&gt;&lt;/em&gt; and replace everything in it with &lt;em&gt;utterances&lt;/em&gt; script code:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;script src=&amp;quot;https://utteranc.es/client.js&amp;quot;
+  repo=&amp;quot;mscipio/mscipio.github.io&amp;quot;
+  issue-term=&amp;quot;pathname&amp;quot;
+  label=&amp;quot;Comment&amp;quot;
+  theme=&amp;quot;github-light&amp;quot;
+  crossorigin=&amp;quot;anonymous&amp;quot;
+  async&amp;gt;
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;That&amp;rsquo;s it! Now, check that everything is set-up correctly in the post template file, which can be found at &lt;em&gt;&lt;strong&gt;themes/academic/layouts/_defaults/single.html&lt;/strong&gt;&lt;/em&gt;. Towards the end you should find something similar to this:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;div class=&amp;quot;article-container&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+{{ partial &amp;quot;comments.html&amp;quot; . }}
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;8&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Just in case you wanted to activate comments also for the &lt;em&gt;&lt;strong&gt;Publications&lt;/strong&gt;&lt;/em&gt; section provided by the Academic template, just copy the code snippet above and past it in &lt;em&gt;&lt;strong&gt;themes/academic/layouts/publications/single.html&lt;/strong&gt;&lt;/em&gt;, towards the end, just before the &lt;code&gt;&amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;&lt;/code&gt; tag.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Save and deploy, as you normally would.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Voila! Check it out below! 👇&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

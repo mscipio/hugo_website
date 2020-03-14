@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maria F Santarelli | MICHELE SCIPIONI</title>
+    <link>/authors/maria-f-santarelli/</link>
+      <atom:link href="/authors/maria-f-santarelli/index.xml" rel="self" type="application/rss+xml" />
+    <description>Maria F Santarelli</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2020</copyright><lastBuildDate>Thu, 15 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/foto_bw.jpg</url>
+      <title>Maria F Santarelli</title>
+      <link>/authors/maria-f-santarelli/</link>
+    </image>
+    
+    <item>
+      <title>Kinetic Compressive Sensing</title>
+      <link>/publication/kinetic-compressive-sensing/</link>
+      <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/kinetic-compressive-sensing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Direct parametric maps estimation from dynamic PET data: an iterated conditional modes approach</title>
+      <link>/publication/icm-em/</link>
+      <pubDate>Sun, 08 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/icm-em/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Accelerated PET kinetic maps estimation by analytic fitting method</title>
+      <link>/publication/fast-kinetic-modeling/</link>
+      <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/fast-kinetic-modeling/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

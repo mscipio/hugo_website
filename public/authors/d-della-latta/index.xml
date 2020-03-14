@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>D Della Latta | MICHELE SCIPIONI</title>
+    <link>/authors/d-della-latta/</link>
+      <atom:link href="/authors/d-della-latta/index.xml" rel="self" type="application/rss+xml" />
+    <description>D Della Latta</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2020</copyright><lastBuildDate>Mon, 01 Aug 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/foto_bw.jpg</url>
+      <title>D Della Latta</title>
+      <link>/authors/d-della-latta/</link>
+    </image>
+    
+    <item>
+      <title>A Conway-Maxwell-Poisson (CMP) model to address data dispersion on positron emission tomography</title>
+      <link>/publication/com-poisson/</link>
+      <pubDate>Mon, 01 Aug 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/com-poisson/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

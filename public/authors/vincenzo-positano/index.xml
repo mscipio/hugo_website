@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vincenzo Positano | MICHELE SCIPIONI</title>
+    <link>/authors/vincenzo-positano/</link>
+      <atom:link href="/authors/vincenzo-positano/index.xml" rel="self" type="application/rss+xml" />
+    <description>Vincenzo Positano</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2020</copyright><lastBuildDate>Thu, 10 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/foto_bw.jpg</url>
+      <title>Vincenzo Positano</title>
+      <link>/authors/vincenzo-positano/</link>
+    </image>
+    
+    <item>
+      <title>Negative binomial maximum likelihood expectation maximization (NB-MLEM) algorithm for reconstruction of pre-corrected PET data</title>
+      <link>/publication/nb-mlem/</link>
+      <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/nb-mlem/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Direct parametric maps estimation from dynamic PET data: an iterated conditional modes approach</title>
+      <link>/publication/icm-em/</link>
+      <pubDate>Sun, 08 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/icm-em/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Accelerated PET kinetic maps estimation by analytic fitting method</title>
+      <link>/publication/fast-kinetic-modeling/</link>
+      <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/fast-kinetic-modeling/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>G Valvano | MICHELE SCIPIONI</title>
+    <link>/authors/g-valvano/</link>
+      <atom:link href="/authors/g-valvano/index.xml" rel="self" type="application/rss+xml" />
+    <description>G Valvano</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2020</copyright><lastBuildDate>Wed, 01 Mar 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/foto_bw.jpg</url>
+      <title>G Valvano</title>
+      <link>/authors/g-valvano/</link>
+    </image>
+    
+    <item>
+      <title>New Imaging Frontiers in Cardiology: Fast and Quantitative Maps from Raw Data</title>
+      <link>/publication/newimagingfrontiers/</link>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/newimagingfrontiers/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

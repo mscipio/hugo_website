@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>invited | MICHELE SCIPIONI</title>
+    <link>/tags/invited/</link>
+      <atom:link href="/tags/invited/index.xml" rel="self" type="application/rss+xml" />
+    <description>invited</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2020</copyright><lastBuildDate>Fri, 13 Mar 2020 22:04:30 -0400</lastBuildDate>
+    <image>
+      <url>/img/foto_bw.jpg</url>
+      <title>invited</title>
+      <link>/tags/invited/</link>
+    </image>
+    
+    <item>
+      <title>Introduction to Matlab </title>
+      <link>/talk/intro-to-matlab-whyehow/</link>
+      <pubDate>Fri, 13 Mar 2020 22:04:30 -0400</pubDate>
+      <guid>/talk/intro-to-matlab-whyehow/</guid>
+      <description>&lt;embed src=&#34;http://localhost:43859/data/teaching/2020_IntroMATLAB_why&amp;how.pdf&#34; width=&#34;100%&#34; height=&#34;440&#34;&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

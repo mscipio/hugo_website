@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>curve fitting | MICHELE SCIPIONI</title>
+    <link>/tags/curve-fitting/</link>
+      <atom:link href="/tags/curve-fitting/index.xml" rel="self" type="application/rss+xml" />
+    <description>curve fitting</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2020</copyright><lastBuildDate>Sun, 01 May 2016 11:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/foto_bw.jpg</url>
+      <title>curve fitting</title>
+      <link>/tags/curve-fitting/</link>
+    </image>
+    
+    <item>
+      <title>Simple nonlinear least squares curve fitting in Python</title>
+      <link>/post/python_nonlinear_least_squares/</link>
+      <pubDate>Sun, 01 May 2016 11:00:00 +0000</pubDate>
+      <guid>/post/python_nonlinear_least_squares/</guid>
+      <description>&lt;h2 id=&#34;the-problem&#34;&gt;The problem&lt;/h2&gt;
+&lt;p&gt;Today we are going to test a very simple example of nonlinear least squares curve fitting using the &lt;em&gt;scipy.optimize&lt;/em&gt; module.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;%matplotlib inline
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.optimize import curve_fit
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;create-data&#34;&gt;Create data&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s assume we have the following points &lt;em&gt;[xdata, ydata]&lt;/em&gt; and that we want to fit these data with the following model function using nonlinear least squares:&lt;/p&gt;
+&lt;p&gt;$F(p_1,p_2,x) = p_1\cos(p_2x) + p_2\sin(p_1x)$&lt;/p&gt;
+&lt;p&gt;For now, we are primarily interested in the following results:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;strong&gt;fit parameters&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Sum of squared &lt;strong&gt;residuals&lt;/strong&gt;&lt;!-- TEASER_END --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;xdata = np.array([-2,-1.64,-1.33,-0.7,0,0.45,1.2,1.64,2.32,2.9])
+ydata = np.array([0.699369,0.700462,0.695354,1.03905,1.97389,2.41143,1.91091,0.919576,-0.730975,-1.42001])
+
+# Show data points
+plt.plot(xdata,ydata,&#39;*&#39;)
+plt.xlabel(&#39;xdata&#39;)
+plt.ylabel(&#39;ydata&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/Python_nonlinear_least_squares/output_3_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;define-fit-function&#34;&gt;Define fit function&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def func(x, p1,p2):
+  return p1*np.cos(p2*x) + p2*np.sin(p1*x)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;calculate-and-show-fit-parameters&#34;&gt;Calculate and show fit parameters.&lt;/h2&gt;
+&lt;p&gt;Use a starting guess of $p_1=1$ and $p_2=0.2$&lt;/p&gt;
+&lt;p&gt;The outputs of the &lt;em&gt;curve_fit&lt;/em&gt; function are the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;popt&lt;/strong&gt; : array of &lt;em&gt;optimal values&lt;/em&gt; for the parameters so that the sum of the squared error of $f(xdata, *popt) - ydata$ is minimized&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;pcov&lt;/strong&gt; : 2d array of the estimated covariance of &lt;em&gt;popt&lt;/em&gt;. The diagonals provide the &lt;em&gt;variance of the parameter estimate&lt;/em&gt;. To compute one standard deviation errors on the parameters use $perr = np.sqrt(np.diag(pcov))$. If the Jacobian matrix at the solution doesn&amp;rsquo;t have a full rank, then &amp;lsquo;lm&amp;rsquo; method returns a matrix filled with &lt;code&gt;np.inf&lt;/code&gt;, on the other hand &amp;lsquo;trf&amp;rsquo;  and &amp;lsquo;dogbox&amp;rsquo; methods use Moore-Penrose pseudoinverse to compute the covariance matrix.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;popt, pcov = curve_fit(func, xdata, ydata,p0=(1.0,0.2))
+
+print(&amp;quot;Parameter estimation results:&amp;quot;)
+print(&amp;quot;p1 = &amp;quot;,popt[0],&amp;quot; | p2 = &amp;quot;,popt[1])
+print(&amp;quot;--------------------------&amp;quot;)
+print(&amp;quot;Covariance matrix of the estimate:&amp;quot;)
+print(pcov)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Parameter estimation results:
+p1 =  1.881850994  | p2 =  0.700229857403
+--------------------------
+Covariance matrix of the estimate:
+[[  7.52408290e-04   1.00812823e-04]
+ [  1.00812823e-04   8.37695698e-05]]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;sum-of-squares-of-residuals&#34;&gt;Sum of squares of residuals&lt;/h2&gt;
+&lt;p&gt;Since it&amp;rsquo;s not given by the &lt;em&gt;curve_fit&lt;/em&gt; function, we have to compute it &lt;em&gt;by hand&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;p1 = popt[0]
+p2 = popt[1]
+residuals = ydata - func(xdata,p1,p2)
+fres = sum(residuals**2)
+
+print(&amp;quot;Residuals sum of squares:&amp;quot;)
+print(fres)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Residuals sum of squared:
+0.0538126964188
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Plot fitted curve along with data&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;curvex=np.linspace(-2,3,100)
+curvey=func(curvex,p1,p2)
+plt.plot(xdata,ydata,&#39;*&#39;)
+plt.plot(curvex,curvey,&#39;r&#39;)
+plt.xlabel(&#39;xdata&#39;)
+plt.ylabel(&#39;ydata&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/posts/Python_nonlinear_least_squares/output_11_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
