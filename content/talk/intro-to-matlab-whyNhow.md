@@ -59,7 +59,7 @@ Also, a shoutout to the amazing [***Laura Gee***](laura.gee@mgh.harvard.edu) ([l
 *Note: This is the complete, unabridged set of slides, with few additional slides left out from the actual presentation for time constraints*
 
 
-<embed src="http://mscipio.github.io/data/teaching/2020_IntroMATLAB_why&how.pdf" width="100%" height="440">
+{{< box-preview1 id="teaching/2020_IntroMATLAB_why&how.pdf" height="440" >}}
 
 ---
 
